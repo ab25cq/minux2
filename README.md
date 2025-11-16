@@ -1,1 +1,1 @@
-Real time OS by comelang for raspberry pi pico
+Real time OS by neo-c for raspberry pi pico

@@ -1,4 +1,4 @@
-#include <comelang.h>
+#include <neo-c.h>
 
 #define STACK_SIZE 1024
 
