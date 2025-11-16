@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sh clean.sh
+
 export EDITOR=vin
 git config --global user.email ab25cq@icloud.com
 git config --global user.name ab25cq
