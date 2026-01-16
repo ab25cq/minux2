@@ -2,21 +2,21 @@ cmake_minimum_required(VERSION 3.13)
 
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
-project(minux)
+project(hello C CXX ASM)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 pico_sdk_init()
 
-add_executable(minux main.c.c)
+add_executable(minux2
+    main_.c
+)
 
-target_compile_options(minux PRIVATE -mthumb -mcpu=cortex-m0plus -O0 -fomit-frame-pointer)
+target_link_libraries(minux2 pico_stdlib)
 
-# 必要なライブラリをリンク
-target_link_libraries(minux pico_stdlib hardware_gpio pico_malloc hardware_timer)
+# USBシリアル有効
+pico_enable_stdio_usb(minux2 1)
+pico_enable_stdio_uart(minux2 0)
 
-# フラッシュ設定
-pico_enable_stdio_usb(minux 1)
-#pico_enable_stdio_uart(minux 0)
-
-pico_add_extra_outputs(minux)
-
+pico_add_extra_outputs(minux2)
 
