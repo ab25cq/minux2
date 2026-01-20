@@ -1,5 +1,4 @@
 #include <neo-c.h>
-#include <stdint.h>
 
 #define STACK_SIZE 1024
 

@@ -1,3 +1,20 @@
+/// c_include definition ///
+#define _GNU_SOURCE
+#include "stdarg.h"
+#include "stdlib.h"
+#include "stdint.h"
+#include "string.h"
+#include "stdio.h"
+#include "ctype.h"
+#include "wchar.h"
+#include "pico/stdlib.h"
+#include "pico/stdio.h"
+#include "pico/time.h"
+#include "hardware/irq.h"
+#include "hardware/timer.h"
+#include "hardware/uart.h"
+#include "pico/mutex.h"
+#include "pico/multicore.h"
 /// typedef definition ///
 typedef __builtin_va_list __gnuc_va_list;
 
@@ -17,67 +34,7 @@ typedef struct anonymous_typeX5 compiler_state;
 
 typedef struct anonymous_typeX6 match_context;
 
-typedef unsigned char uint8_t;
-
-typedef unsigned short int uint16_t;
-
-typedef unsigned int uint32_t;
-
-typedef unsigned long  long uint64_t;
-
-typedef int8_t int_least8_t;
-
-typedef int16_t int_least16_t;
-
-typedef int32_t int_least32_t;
-
-typedef int64_t int_least64_t;
-
-typedef unsigned char uint_least8_t  ;
-
-typedef unsigned short int uint_least16_t  ;
-
-typedef unsigned int uint_least32_t  ;
-
-typedef unsigned long  long uint_least64_t  ;
-
-typedef int8_t int_fast8_t;
-
-typedef int16_t int_fast16_t;
-
-typedef int32_t int_fast32_t;
-
-typedef int64_t int_fast64_t;
-
-typedef unsigned char uint_fast8_t  ;
-
-typedef unsigned short int uint_fast16_t  ;
-
-typedef unsigned int uint_fast32_t  ;
-
-typedef unsigned long  long uint_fast64_t  ;
-
-typedef long  int intmax_t;
-
-typedef unsigned long  int uintmax_t;
-
 /// previous struct definition ///
-#define _GNU_SOURCE
-#include "stdarg.h"
-#include "stdlib.h"
-#include "stdint.h"
-#include "string.h"
-#include "stdio.h"
-#include "ctype.h"
-#include "wchar.h"
-#include "pico/stdlib.h"
-#include "pico/stdio.h"
-#include "pico/time.h"
-#include "hardware/irq.h"
-#include "hardware/timer.h"
-#include "hardware/uart.h"
-#include "pico/mutex.h"
-#include "pico/multicore.h"
 struct re_program;
 
 /// struct definition ///
@@ -325,16 +282,16 @@ struct anonymous_typeX6
 
 struct sTask
 {
-    unsigned int sp  ;
-    unsigned int pc  ;
-    unsigned int r4  ;
-    unsigned int r5  ;
-    unsigned int r6  ;
-    unsigned int r7  ;
-    unsigned int r8  ;
-    unsigned int r9  ;
-    unsigned int r10  ;
-    unsigned int r11  ;
+    uint32_t sp;
+    uint32_t pc;
+    uint32_t r4;
+    uint32_t r5;
+    uint32_t r6;
+    uint32_t r7;
+    uint32_t r8;
+    uint32_t r9;
+    uint32_t r10;
+    uint32_t r11;
 };
 
 struct list_item$1sTask$ph
@@ -361,19 +318,19 @@ extern int gNumAlloc;
 
 extern int gNumFree;
 
-unsigned int SP  ;
-unsigned int PC  ;
-unsigned int R4  ;
-unsigned int R5  ;
-unsigned int R6  ;
-unsigned int R7  ;
-unsigned int R8  ;
-unsigned int R9  ;
-unsigned int R10  ;
-unsigned int R11  ;
-unsigned int* O  ;
-unsigned int* P  ;
-unsigned int* Q  ;
+uint32_t SP;
+uint32_t PC;
+uint32_t R4;
+uint32_t R5;
+uint32_t R6;
+uint32_t R7;
+uint32_t R8;
+uint32_t R9;
+uint32_t R10;
+uint32_t R11;
+uint32_t* O;
+uint32_t** P;
+uint32_t** Q;
 struct list$1sTask$ph* gTasks;
 int gCurrentTask=0;
 // source head
@@ -685,21 +642,21 @@ int gNumFree=0;
 // body function
 void init_task(void (*fun)())
 {
-    unsigned int* stack  ;
-    unsigned int* stack_end  ;
+    uint32_t* stack;
+    uint32_t* stack_end;
     int i;
     void* __right_value0 = (void*)0;
     struct sTask* task  ;
-    stack=(unsigned int*)calloc(1,sizeof(unsigned int)*1024);
-    stack_end=(unsigned int*)(&stack[1024-1]);
+    stack=(uint32_t*)calloc(1,sizeof(uint32_t)*1024);
+    stack_end=(uint32_t*)(&stack[1024-1]);
     *(--stack_end)=0x01000000;
-    *(--stack_end)=(unsigned int)fun;
+    *(--stack_end)=(uint32_t)fun;
     *(--stack_end)=0xFFFFFFFD;
     for(i=0;i<5;i++){
         *(--stack_end)=0;
     }
-    task=(struct sTask*)come_increment_ref_count((struct sTask*)come_calloc_v2(1, sizeof(struct sTask)*(1), "main.nc", 50, "struct sTask*"));
-    task->sp=(unsigned int)stack_end;
+    task=(struct sTask*)come_increment_ref_count((struct sTask*)come_calloc_v2(1, sizeof(struct sTask)*(1), "main.nc", 49, "struct sTask*"));
+    task->sp=(uint32_t)stack_end;
     list$1sTask$ph_add(gTasks,(struct sTask*)come_increment_ref_count(task));
     come_call_finalizer(sTask_finalize, task, (void*)0, (void*)0, 0, 0, 0, (void*)0);
 }
@@ -834,7 +791,7 @@ void save_context(struct sTask* task  )
 void restore_context(struct sTask* task  )
 {
     SP=task->sp;
-    PC=*((unsigned int*)SP+6);
+    PC=*((uint32_t*)SP+6);
     __asm volatile("ldr r0, =SP; \n"
         "ldr r3, [r0]; \n"
         "msr psp, r3; \n"
@@ -1026,7 +983,7 @@ int main()
     stdio_init_all();
     sleep_ms(5000);
     __dec_obj4=gTasks,
-    gTasks=(struct list$1sTask$ph*)come_increment_ref_count(list$1sTask$ph_initialize((struct list$1sTask$ph*)come_increment_ref_count((struct list$1sTask$ph*)come_calloc_v2(1, sizeof(struct list$1sTask$ph)*(1), "main.nc", 259, "struct list$1sTask$ph*"))));
+    gTasks=(struct list$1sTask$ph*)come_increment_ref_count(list$1sTask$ph_initialize((struct list$1sTask$ph*)come_increment_ref_count((struct list$1sTask$ph*)come_calloc_v2(1, sizeof(struct list$1sTask$ph)*(1), "main.nc", 258, "struct list$1sTask$ph*"))));
     come_call_finalizer(list$1sTask$ph_finalize, __dec_obj4,(void*)0, (void*)0, 0, 0, 0, (void*)0);
     init_task(task1);
     init_task(task2);
