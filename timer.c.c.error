@@ -1,0 +1,3 @@
+clang: error: unknown argument: '-pico'
+clang: error: no such file or directory: 'timer.c.c'
+clang: error: no input files
