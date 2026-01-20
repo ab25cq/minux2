@@ -1,5 +1,6 @@
 #!/bin/sh
 
+rm -rf build
 sh clean.sh
 
 export EDITOR=vin
