@@ -1,4 +1,4 @@
-ncc main.nc
+ncc -D__PICO__ main.nc
 rm -rf build
 mkdir build
 (cd build; cmake .. && make)

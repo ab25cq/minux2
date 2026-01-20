@@ -15,7459 +15,41 @@
 #line 20 "/usr/local/include/neo-c.h"
 typedef char*% string;
 
-#line 29 "/usr/local/include/neo-c.h"
-var UNIX=1
+#line 27 "/usr/local/include/neo-c.h"
+var UNIX=0
 #line 31 "/usr/local/include/neo-c.h"
 
 
 
 
-#line 72 "/usr/local/include/neo-c.h"
-    using C;
+#line 36 "/usr/local/include/neo-c.h"
+    __c__ {#define _GNU_SOURCE}
+    __c__ {#include "stdarg.h"}
+    __c__ {#include "stdlib.h"}
+    __c__ {#include "stdint.h"}
+    __c__ {#include "string.h"}
+    __c__ {#include "stdio.h"}
+    __c__ {#include "ctype.h"}
+    __c__ {#include "wchar.h"}
+    __c__ {#include "pico/stdlib.h"}
+    __c__ {#include "pico/stdio.h"}
+    __c__ {#include "pico/time.h"}
+    __c__ {#include "hardware/irq.h"}
+    __c__ {#include "hardware/timer.h"}
+    __c__ {#include "hardware/uart.h"}
     
-#line 1 "/usr/include/stdio.h"
+    __c__ {#include "pico/mutex.h"}
+    __c__ {#include "pico/multicore.h"}
 
+#line 56 "/usr/local/include/neo-c.h"
 
+    typedef __builtin_va_list va_list;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 26 "/usr/include/stdio.h"
-
-#line 1 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 30 "/usr/include/bits/libc-header-start.h"
-
-#line 32 "/usr/include/bits/libc-header-start.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 20 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 158 "/usr/include/features.h"
-
-
-
-#line 164 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-#line 177 "/usr/include/features.h"
-
-
-
-
-
-#line 187 "/usr/include/features.h"
-
-
-#line 190 "/usr/include/features.h"
-
-
-
-
-
-#line 200 "/usr/include/features.h"
-
-
-#line 207 "/usr/include/features.h"
-
-
-#line 237 "/usr/include/features.h"
-
-
-
-#line 244 "/usr/include/features.h"
-
-
-#line 251 "/usr/include/features.h"
-
-
-#line 258 "/usr/include/features.h"
-
-
-#line 263 "/usr/include/features.h"
-
-
-#line 268 "/usr/include/features.h"
-
-
-#line 273 "/usr/include/features.h"
-
-#line 286 "/usr/include/features.h"
-
-
-
-
-#line 299 "/usr/include/features.h"
-
-#line 313 "/usr/include/features.h"
-
-
-
-
-
-
-
-#line 325 "/usr/include/features.h"
-
-#line 329 "/usr/include/features.h"
-
-#line 333 "/usr/include/features.h"
-
-#line 337 "/usr/include/features.h"
-
-#line 341 "/usr/include/features.h"
-
-#line 349 "/usr/include/features.h"
-
-#line 355 "/usr/include/features.h"
-
-#line 381 "/usr/include/features.h"
-
-#line 385 "/usr/include/features.h"
-
-#line 389 "/usr/include/features.h"
-
-#line 393 "/usr/include/features.h"
-
-#line 1 "/usr/include/features-time64.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 1 "/usr/include/bits/wordsize.h"
-
-
-#line 10 "/usr/include/bits/wordsize.h"
-
-#line 12 "/usr/include/bits/wordsize.h"
-
-#line 14 "/usr/include/bits/wordsize.h"
-#line 21 "/usr/include/features-time64.h"
-#line 1 "/usr/include/bits/timesize.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 1 "/usr/include/bits/wordsize.h"
-
-
-#line 10 "/usr/include/bits/wordsize.h"
-
-#line 12 "/usr/include/bits/wordsize.h"
-
-#line 14 "/usr/include/bits/wordsize.h"
-#line 20 "/usr/include/bits/timesize.h"
-
-#line 25 "/usr/include/bits/timesize.h"
-#line 22 "/usr/include/features-time64.h"
-
-#line 39 "/usr/include/features-time64.h"
-#line 395 "/usr/include/features.h"
-
-#line 399 "/usr/include/features.h"
-
-#line 403 "/usr/include/features.h"
-
-#line 407 "/usr/include/features.h"
-
-#line 411 "/usr/include/features.h"
-
-#line 435 "/usr/include/features.h"
-
-
-
-
-
-#line 445 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 463 "/usr/include/features.h"
-
-
-
-
-
-
-#line 474 "/usr/include/features.h"
-
-
-
-#line 1 "/usr/include/stdc-predef.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 20 "/usr/include/stdc-predef.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 45 "/usr/include/stdc-predef.h"
-
-#line 55 "/usr/include/stdc-predef.h"
-
-
-
-
-
-
-
-#line 63 "/usr/include/stdc-predef.h"
-#line 478 "/usr/include/features.h"
-
-
-
-
-
-
-
-#line 487 "/usr/include/features.h"
-
-
-
-#line 492 "/usr/include/features.h"
-
-#line 494 "/usr/include/features.h"
-
-
-#line 1 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/sys/cdefs.h"
-
-
-#line 26 "/usr/include/sys/cdefs.h"
-
-
-
-
-#line 33 "/usr/include/sys/cdefs.h"
-
-
-#line 37 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-#line 57 "/usr/include/sys/cdefs.h"
-
-#line 59 "/usr/include/sys/cdefs.h"
-
-
-
-#line 69 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-
-#line 97 "/usr/include/sys/cdefs.h"
-
-#line 103 "/usr/include/sys/cdefs.h"
-
-#line 118 "/usr/include/sys/cdefs.h"
-
-
-
-#line 123 "/usr/include/sys/cdefs.h"
-
-
-
-
-#line 129 "/usr/include/sys/cdefs.h"
-
-
-#line 132 "/usr/include/sys/cdefs.h"
-
-
-
-#line 142 "/usr/include/sys/cdefs.h"
-
-
-
-#line 150 "/usr/include/sys/cdefs.h"
-
-
-#line 154 "/usr/include/sys/cdefs.h"
-
-
-#line 163 "/usr/include/sys/cdefs.h"
-
-#line 286 "/usr/include/sys/cdefs.h"
-
-#line 294 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-#line 317 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-
-
-
-
-
-
-
-#line 330 "/usr/include/sys/cdefs.h"
-
-#line 341 "/usr/include/sys/cdefs.h"
-
-#line 345 "/usr/include/sys/cdefs.h"
-
-#line 349 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-
-#line 356 "/usr/include/sys/cdefs.h"
-
-
-
-
-#line 363 "/usr/include/sys/cdefs.h"
-
-
-
-
-#line 372 "/usr/include/sys/cdefs.h"
-
-
-
-#line 380 "/usr/include/sys/cdefs.h"
-
-
-
-#line 388 "/usr/include/sys/cdefs.h"
-
-
-
-
-#line 397 "/usr/include/sys/cdefs.h"
-
-
-#line 404 "/usr/include/sys/cdefs.h"
-
-#line 410 "/usr/include/sys/cdefs.h"
-
-
-
-
-#line 421 "/usr/include/sys/cdefs.h"
-
-
-#line 428 "/usr/include/sys/cdefs.h"
-
-
-
-
-#line 437 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-
-
-#line 449 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-#line 459 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-#line 474 "/usr/include/sys/cdefs.h"
-
-
-
-#line 484 "/usr/include/sys/cdefs.h"
-
-
-
-#line 498 "/usr/include/sys/cdefs.h"
-
-
-#line 501 "/usr/include/sys/cdefs.h"
-
-
-
-#line 510 "/usr/include/sys/cdefs.h"
-
-
-
-#line 518 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-
-
-
-
-
-#line 537 "/usr/include/sys/cdefs.h"
-
-#line 541 "/usr/include/sys/cdefs.h"
-
-
-
-#line 548 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-#line 556 "/usr/include/sys/cdefs.h"
-
-
-
-
-#line 567 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-#line 586 "/usr/include/sys/cdefs.h"
-
-#line 594 "/usr/include/sys/cdefs.h"
-
-#line 602 "/usr/include/sys/cdefs.h"
-
-#line 611 "/usr/include/sys/cdefs.h"
-
-
-#line 621 "/usr/include/sys/cdefs.h"
-
-#line 625 "/usr/include/sys/cdefs.h"
-
-
-
-#line 1 "/usr/include/bits/wordsize.h"
-
-
-#line 10 "/usr/include/bits/wordsize.h"
-
-#line 12 "/usr/include/bits/wordsize.h"
-
-#line 14 "/usr/include/bits/wordsize.h"
-#line 630 "/usr/include/sys/cdefs.h"
-#line 1 "/usr/include/bits/long-double.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 631 "/usr/include/sys/cdefs.h"
-#line 632 "/usr/include/sys/cdefs.h"
-
-#line 683 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-
-#line 695 "/usr/include/sys/cdefs.h"
-
-
-
-
-
-
-
-
-#line 708 "/usr/include/sys/cdefs.h"
-
-#line 735 "/usr/include/sys/cdefs.h"
-
-#line 745 "/usr/include/sys/cdefs.h"
-
-
-
-#line 753 "/usr/include/sys/cdefs.h"
-
-
-
-
-#line 762 "/usr/include/sys/cdefs.h"
-#line 499 "/usr/include/features.h"
-#line 500 "/usr/include/features.h"
-
-
-
-#line 507 "/usr/include/features.h"
-
-#line 509 "/usr/include/features.h"
-
-
-#line 514 "/usr/include/features.h"
-
-
-
-
-
-
-#line 1 "/usr/include/gnu/stubs.h"
-
-
-
-
-
-#line 1 "/usr/include/gnu/stubs-64.h"
-
-
-
-
-
-#line 9 "/usr/include/gnu/stubs-64.h"
-#line 11 "/usr/include/gnu/stubs.h"
-#line 521 "/usr/include/features.h"
-
-#line 34 "/usr/include/bits/libc-header-start.h"
-
-
-
-#line 43 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 84 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-#line 101 "/usr/include/bits/libc-header-start.h"
-
-
-#line 29 "/usr/include/stdio.h"
-
-
-
-#line 1 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 37 "/usr/lib/clang/21/include/stddef.h"
-
-#line 80 "/usr/lib/clang/21/include/stddef.h"
-
-#line 85 "/usr/lib/clang/21/include/stddef.h"
-
-#line 1 "/usr/lib/clang/21/include/__stddef_size_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 16 "/usr/lib/clang/21/include/__stddef_size_t.h"
-
-typedef unsigned long size_t;
-#line 88 "/usr/lib/clang/21/include/stddef.h"
-#line 90 "/usr/lib/clang/21/include/stddef.h"
-
-#line 95 "/usr/lib/clang/21/include/stddef.h"
-
-#line 100 "/usr/lib/clang/21/include/stddef.h"
-
-#line 1 "/usr/lib/clang/21/include/__stddef_null.h"
-
-
-
-
-
-
-
-
-
-#line 11 "/usr/lib/clang/21/include/__stddef_null.h"
-
-
-
-
-
-
-#line 18 "/usr/lib/clang/21/include/__stddef_null.h"
-
-#line 28 "/usr/lib/clang/21/include/__stddef_null.h"
-#line 103 "/usr/lib/clang/21/include/stddef.h"
-#line 105 "/usr/lib/clang/21/include/stddef.h"
-
-#line 110 "/usr/lib/clang/21/include/stddef.h"
-
-#line 115 "/usr/lib/clang/21/include/stddef.h"
-
-#line 120 "/usr/lib/clang/21/include/stddef.h"
-
-#line 125 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-#line 132 "/usr/lib/clang/21/include/stddef.h"
-#line 35 "/usr/include/stdio.h"
-
-#line 1 "/usr/lib/clang/21/include/stdarg.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 45 "/usr/lib/clang/21/include/stdarg.h"
-
-#line 1 "/usr/lib/clang/21/include/__stdarg___gnuc_va_list.h"
-
-
-
-
-
-
-
-
-
-#line 12 "/usr/lib/clang/21/include/__stdarg___gnuc_va_list.h"
-typedef __builtin_va_list __gnuc_va_list;
-#line 48 "/usr/lib/clang/21/include/stdarg.h"
-#line 50 "/usr/lib/clang/21/include/stdarg.h"
-
-#line 55 "/usr/lib/clang/21/include/stdarg.h"
-
-#line 60 "/usr/lib/clang/21/include/stdarg.h"
-
-#line 65 "/usr/lib/clang/21/include/stdarg.h"
-
-#line 70 "/usr/lib/clang/21/include/stdarg.h"
-#line 38 "/usr/include/stdio.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 25 "/usr/include/bits/types.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 27 "/usr/include/bits/types.h"
-#line 1 "/usr/include/bits/wordsize.h"
-
-
-#line 10 "/usr/include/bits/wordsize.h"
-
-#line 12 "/usr/include/bits/wordsize.h"
-
-#line 14 "/usr/include/bits/wordsize.h"
-#line 28 "/usr/include/bits/types.h"
-#line 1 "/usr/include/bits/timesize.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 1 "/usr/include/bits/wordsize.h"
-
-
-#line 10 "/usr/include/bits/wordsize.h"
-
-#line 12 "/usr/include/bits/wordsize.h"
-
-#line 14 "/usr/include/bits/wordsize.h"
-#line 20 "/usr/include/bits/timesize.h"
-
-#line 25 "/usr/include/bits/timesize.h"
-#line 29 "/usr/include/bits/types.h"
-
-
-typedef unsigned char __u_char;
-typedef unsigned short int __u_short;
-typedef unsigned int __u_int;
-typedef unsigned long int __u_long;
-
-
-typedef signed char __int8_t;
-typedef unsigned char __uint8_t;
-typedef signed short int __int16_t;
-typedef unsigned short int __uint16_t;
-typedef signed int __int32_t;
-typedef unsigned int __uint32_t;
-#line 44 "/usr/include/bits/types.h"
-typedef signed long int __int64_t;
-typedef unsigned long int __uint64_t;
-#line 50 "/usr/include/bits/types.h"
-
-
-typedef __int8_t __int_least8_t;
-typedef __uint8_t __uint_least8_t;
-typedef __int16_t __int_least16_t;
-typedef __uint16_t __uint_least16_t;
-typedef __int32_t __int_least32_t;
-typedef __uint32_t __uint_least32_t;
-typedef __int64_t __int_least64_t;
-typedef __uint64_t __uint_least64_t;
-
-
-#line 63 "/usr/include/bits/types.h"
-typedef long int __quad_t;
-typedef unsigned long int __u_quad_t;
-#line 69 "/usr/include/bits/types.h"
-
-
-#line 72 "/usr/include/bits/types.h"
-typedef long int __intmax_t;
-typedef unsigned long int __uintmax_t;
-#line 78 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 136 "/usr/include/bits/types.h"
-
-#line 1 "/usr/include/bits/typesizes.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/bits/typesizes.h"
-
-#line 25 "/usr/include/bits/typesizes.h"
-
-
-
-
-
-#line 37 "/usr/include/bits/typesizes.h"
-
-#line 76 "/usr/include/bits/typesizes.h"
-
-#line 78 "/usr/include/bits/typesizes.h"
-
-
-
-#line 82 "/usr/include/bits/typesizes.h"
-
-
-#line 85 "/usr/include/bits/typesizes.h"
-
-
-#line 88 "/usr/include/bits/typesizes.h"
-
-
-#line 91 "/usr/include/bits/typesizes.h"
-
-
-#line 101 "/usr/include/bits/typesizes.h"
-
-
-#line 104 "/usr/include/bits/typesizes.h"
-
-#line 142 "/usr/include/bits/types.h"
-#line 1 "/usr/include/bits/time64.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/bits/time64.h"
-
-#line 25 "/usr/include/bits/time64.h"
-
-
-
-#line 29 "/usr/include/bits/time64.h"
-
-#line 35 "/usr/include/bits/time64.h"
-#line 143 "/usr/include/bits/types.h"
-
-
-typedef unsigned long int __dev_t;	
-typedef unsigned int __uid_t;	
-typedef unsigned int __gid_t;	
-typedef unsigned long int __ino_t;	
-typedef unsigned long int __ino64_t;	
-typedef unsigned int __mode_t;	
-typedef unsigned long int __nlink_t;	
-typedef long int __off_t;	
-typedef long int __off64_t;	
-typedef int __pid_t;	
-typedef struct __fsid_t { int __val[2]; } __fsid_t;	
-typedef long int __clock_t;	
-typedef unsigned long int __rlim_t;	
-typedef unsigned long int __rlim64_t;	
-typedef unsigned int __id_t;		
-typedef long int __time_t;	
-typedef unsigned int __useconds_t; 
-typedef long int __suseconds_t; 
-typedef long int __suseconds64_t;
-
-typedef int __daddr_t;	
-typedef int __key_t;	
-
-
-typedef int __clockid_t;
-
-
-typedef void * __timer_t;
-
-
-typedef long int __blksize_t;
-
-
-
-
-typedef long int __blkcnt_t;
-typedef long int __blkcnt64_t;
-
-
-typedef unsigned long int __fsblkcnt_t;
-typedef unsigned long int __fsblkcnt64_t;
-
-
-typedef unsigned long int __fsfilcnt_t;
-typedef unsigned long int __fsfilcnt64_t;
-
-
-typedef long int __fsword_t;
-
-typedef long int __ssize_t; 
-
-
-typedef long int __syscall_slong_t;
-
-typedef unsigned long int __syscall_ulong_t;
-
-
-
-typedef __off64_t __loff_t;	
-typedef char *__caddr_t;
-
-
-typedef long int __intptr_t;
-
-
-typedef unsigned int __socklen_t;
-
-
-
-
-typedef int __sig_atomic_t;
-
-
-
-
-#line 225 "/usr/include/bits/types.h"
-
-#line 227 "/usr/include/bits/types.h"
-#line 40 "/usr/include/stdio.h"
-#line 1 "/usr/include/bits/types/__fpos_t.h"
-#line 3 "/usr/include/bits/types/__fpos_t.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 5 "/usr/include/bits/types/__fpos_t.h"
-#line 1 "/usr/include/bits/types/__mbstate_t.h"
-#line 3 "/usr/include/bits/types/__mbstate_t.h"
-
-
-
-
-
-#line 11 "/usr/include/bits/types/__mbstate_t.h"
-
-
-typedef struct
-{
-  int __count;
-  union
-  {
-    unsigned int __wch;
-    char __wchb[4];
-  } __value;		
-} __mbstate_t;
-#line 6 "/usr/include/bits/types/__fpos_t.h"
-
-
-
-
-typedef struct _G_fpos_t
-{
-  __off_t __pos;
-  __mbstate_t __state;
-} __fpos_t;
-#line 41 "/usr/include/stdio.h"
-#line 1 "/usr/include/bits/types/__fpos64_t.h"
-#line 3 "/usr/include/bits/types/__fpos64_t.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 5 "/usr/include/bits/types/__fpos64_t.h"
-#line 1 "/usr/include/bits/types/__mbstate_t.h"
-#line 6 "/usr/include/bits/types/__fpos64_t.h"
-
-
-
-
-typedef struct _G_fpos64_t
-{
-  __off64_t __pos;
-  __mbstate_t __state;
-} __fpos64_t;
-#line 42 "/usr/include/stdio.h"
-#line 1 "/usr/include/bits/types/__FILE.h"
-#line 3 "/usr/include/bits/types/__FILE.h"
-
-struct _IO_FILE;
-typedef struct _IO_FILE __FILE;
-#line 43 "/usr/include/stdio.h"
-#line 1 "/usr/include/bits/types/FILE.h"
-#line 3 "/usr/include/bits/types/FILE.h"
-
-struct _IO_FILE;
-
-
-typedef struct _IO_FILE FILE;
-#line 44 "/usr/include/stdio.h"
-#line 1 "/usr/include/bits/types/struct_FILE.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/types/struct_FILE.h"
-
-
-
-
-
-#line 29 "/usr/include/bits/types/struct_FILE.h"
-
-#line 33 "/usr/include/bits/types/struct_FILE.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 35 "/usr/include/bits/types/struct_FILE.h"
-#line 1 "/usr/include/bits/wordsize.h"
-
-
-#line 10 "/usr/include/bits/wordsize.h"
-
-#line 12 "/usr/include/bits/wordsize.h"
-
-#line 14 "/usr/include/bits/wordsize.h"
-#line 36 "/usr/include/bits/types/struct_FILE.h"
-
-struct _IO_FILE;
-struct _IO_marker;
-struct _IO_codecvt;
-struct _IO_wide_data;
-
-
-
-#line 45 "/usr/include/bits/types/struct_FILE.h"
-typedef void _IO_lock_t;
-#line 47 "/usr/include/bits/types/struct_FILE.h"
-
-
-
-
-struct _IO_FILE
-{
-  int _flags;		
-
-  
-  char *_IO_read_ptr;	
-  char *_IO_read_end;	
-  char *_IO_read_base;	
-  char *_IO_write_base;	
-  char *_IO_write_ptr;	
-  char *_IO_write_end;	
-  char *_IO_buf_base;	
-  char *_IO_buf_end;	
-
-  
-  char *_IO_save_base; 
-  char *_IO_backup_base;  
-  char *_IO_save_end; 
-
-  struct _IO_marker *_markers;
-
-  struct _IO_FILE *_chain;
-
-  int _fileno;
-  int _flags2:24;
-  
-  char _short_backupbuf[1];
-  __off_t _old_offset; 
-
-  
-  unsigned short _cur_column;
-  signed char _vtable_offset;
-  char _shortbuf[1];
-
-  _IO_lock_t *_lock;
-#line 93 "/usr/include/bits/types/struct_FILE.h"
-  __off64_t _offset;
-  
-  struct _IO_codecvt *_codecvt;
-  struct _IO_wide_data *_wide_data;
-  struct _IO_FILE *_freeres_list;
-  void *_freeres_buf;
-  struct _IO_FILE **_prevchain;
-  int _mode;
-#line 102 "/usr/include/bits/types/struct_FILE.h"
-  int _unused3;
-#line 104 "/usr/include/bits/types/struct_FILE.h"
-  __uint64_t _total_written;
-#line 108 "/usr/include/bits/types/struct_FILE.h"
-  
-  char _unused2[12 * sizeof (int) - 5 * sizeof (void *)];
-};
-
-
-#line 114 "/usr/include/bits/types/struct_FILE.h"
-
-#line 116 "/usr/include/bits/types/struct_FILE.h"
-
-#line 119 "/usr/include/bits/types/struct_FILE.h"
-
-#line 122 "/usr/include/bits/types/struct_FILE.h"
-
-#line 124 "/usr/include/bits/types/struct_FILE.h"
-
-#line 45 "/usr/include/stdio.h"
-
-#line 1 "/usr/include/bits/types/cookie_io_functions_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 20 "/usr/include/bits/types/cookie_io_functions_t.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/bits/types/cookie_io_functions_t.h"
-
-
-
-
-
-typedef __ssize_t cookie_read_function_t (void *__cookie, char *__buf,
-                                          size_t __nbytes);
-
-
-
-
-
-
-
-typedef __ssize_t cookie_write_function_t (void *__cookie, const char *__buf,
-                                           size_t __nbytes);
-
-
-
-
-
-
-
-typedef int cookie_seek_function_t (void *__cookie, __off64_t *__pos, int __w);
-
-
-typedef int cookie_close_function_t (void *__cookie);
-
-
-
-
-
-
-typedef struct _IO_cookie_io_functions_t
-{
-  cookie_read_function_t *read;		
-  cookie_write_function_t *write;	
-  cookie_seek_function_t *seek;		
-  cookie_close_function_t *close;	
-} cookie_io_functions_t;
-#line 48 "/usr/include/stdio.h"
-#line 49 "/usr/include/stdio.h"
-
-#line 53 "/usr/include/stdio.h"
-typedef __gnuc_va_list va_list;
-#line 60 "/usr/include/stdio.h"
-
-#line 64 "/usr/include/stdio.h"
-typedef __off_t off_t;
-#line 71 "/usr/include/stdio.h"
-typedef __off64_t off64_t;
-#line 75 "/usr/include/stdio.h"
-
-#line 78 "/usr/include/stdio.h"
-typedef __ssize_t ssize_t;
-#line 82 "/usr/include/stdio.h"
-
-
-#line 85 "/usr/include/stdio.h"
-typedef __fpos_t fpos_t;
-#line 90 "/usr/include/stdio.h"
-typedef __fpos64_t fpos64_t;
-#line 92 "/usr/include/stdio.h"
-
-
-#line 97 "/usr/include/stdio.h"
-
-
-
-#line 101 "/usr/include/stdio.h"
-
-
-
-
-#line 106 "/usr/include/stdio.h"
-
-
-
-
-#line 117 "/usr/include/stdio.h"
-
-
-#line 120 "/usr/include/stdio.h"
-
-#line 123 "/usr/include/stdio.h"
-
-#line 126 "/usr/include/stdio.h"
-
-
-
-#line 1 "/usr/include/bits/stdio_lim.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/stdio_lim.h"
-
-#line 25 "/usr/include/bits/stdio_lim.h"
-
-#line 27 "/usr/include/bits/stdio_lim.h"
-#line 130 "/usr/include/stdio.h"
-
-#line 137 "/usr/include/stdio.h"
-
-#line 140 "/usr/include/stdio.h"
-
-
-#line 143 "/usr/include/stdio.h"
-
-#line 146 "/usr/include/stdio.h"
-
-
-
-extern FILE *stdin;		
-extern FILE *stdout;		
-extern FILE *stderr;		
-
-#line 156 "/usr/include/stdio.h"
-
-
-extern int remove (const char *__filename) ;
-
-extern int rename (const char *__old, const char *__new) ;
-
-#line 163 "/usr/include/stdio.h"
-
-extern int renameat (int __oldfd, const char *__old, int __newfd,
-		     const char *__new) ;
-#line 167 "/usr/include/stdio.h"
-
-#line 169 "/usr/include/stdio.h"
-
-#line 176 "/usr/include/stdio.h"
-
-
-
-extern int renameat2 (int __oldfd, const char *__old, int __newfd,
-		      const char *__new, unsigned int __flags) ;
-#line 182 "/usr/include/stdio.h"
-
-
-
-
-
-extern int fclose (FILE *__stream) ;
-
-#line 191 "/usr/include/stdio.h"
-
-
-
-
-
-#line 197 "/usr/include/stdio.h"
-extern FILE *tmpfile (void)
-  __attribute__ ((__malloc__))  ;
-#line 207 "/usr/include/stdio.h"
-
-#line 209 "/usr/include/stdio.h"
-extern FILE *tmpfile64 (void)
-   __attribute__ ((__malloc__))  ;
-#line 212 "/usr/include/stdio.h"
-
-
-extern char *tmpnam (char[20])  ;
-
-#line 217 "/usr/include/stdio.h"
-
-
-extern char *tmpnam_r (char __s[20])  ;
-#line 221 "/usr/include/stdio.h"
-
-
-#line 224 "/usr/include/stdio.h"
-
-
-
-
-
-
-
-extern char *tempnam (const char *__dir, const char *__pfx)
-    __attribute__ ((__malloc__))  ;
-#line 234 "/usr/include/stdio.h"
-
-
-
-
-
-extern int fflush (FILE *__stream);
-
-#line 242 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern int fflush_unlocked (FILE *__stream);
-#line 250 "/usr/include/stdio.h"
-
-#line 252 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern int fcloseall (void);
-#line 260 "/usr/include/stdio.h"
-
-
-#line 263 "/usr/include/stdio.h"
-
-
-
-
-extern FILE *fopen (const char *__restrict __filename,
-		    const char *__restrict __modes)
-  __attribute__ ((__malloc__))  ;
-
-
-
-
-extern FILE *freopen (const char *__restrict __filename,
-		      const char *__restrict __modes,
-		      FILE *__restrict __stream)  ;
-#line 292 "/usr/include/stdio.h"
-extern FILE *fopen64 (const char *__restrict __filename,
-		      const char *__restrict __modes)
-  __attribute__ ((__malloc__))  ;
-extern FILE *freopen64 (const char *__restrict __filename,
-			const char *__restrict __modes,
-			FILE *__restrict __stream)  ;
-#line 299 "/usr/include/stdio.h"
-
-#line 301 "/usr/include/stdio.h"
-
-extern FILE *fdopen (int __fd, const char *__modes) 
-  __attribute__ ((__malloc__))  ;
-#line 305 "/usr/include/stdio.h"
-
-#line 307 "/usr/include/stdio.h"
-
-
-extern FILE *fopencookie (void *__restrict __magic_cookie,
-			  const char *__restrict __modes,
-			  cookie_io_functions_t __io_funcs) 
-  __attribute__ ((__malloc__))  ;
-#line 314 "/usr/include/stdio.h"
-
-#line 316 "/usr/include/stdio.h"
-
-extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
-   __attribute__ ((__malloc__))  ;
-
-
-
-
-extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) 
-  __attribute__ ((__malloc__))  ;
-
-#line 334 "/usr/include/stdio.h"
-
-
-
-extern void setbuf (FILE *__restrict __stream, char *__restrict __buf) 
-  ;
-
-
-
-extern int setvbuf (FILE *__restrict __stream, char *__restrict __buf,
-		    int __modes, size_t __n)  ;
-
-#line 346 "/usr/include/stdio.h"
-
-
-extern void setbuffer (FILE *__restrict __stream, char *__restrict __buf,
-		       size_t __size)  ;
-
-
-extern void setlinebuf (FILE *__stream)  ;
-#line 354 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern int fprintf (FILE *__restrict __stream,
-		    const char *__restrict __format, ...) ;
-
-
-
-
-extern int printf (const char *__restrict __format, ...);
-
-extern int sprintf (char *__restrict __s,
-		    const char *__restrict __format, ...) ;
-
-
-
-
-
-extern int vfprintf (FILE *__restrict __s, const char *__restrict __format,
-		     __gnuc_va_list __arg) ;
-
-
-
-
-extern int vprintf (const char *__restrict __format, __gnuc_va_list __arg);
-
-extern int vsprintf (char *__restrict __s, const char *__restrict __format,
-		     __gnuc_va_list __arg) ;
-
-#line 387 "/usr/include/stdio.h"
-
-extern int snprintf (char *__restrict __s, size_t __maxlen,
-		     const char *__restrict __format, ...)
-      __attribute__ ((__format__ (__printf__, 3, 4)));
-
-extern int vsnprintf (char *__restrict __s, size_t __maxlen,
-		      const char *__restrict __format, __gnuc_va_list __arg)
-      __attribute__ ((__format__ (__printf__, 3, 0)));
-#line 396 "/usr/include/stdio.h"
-
-#line 398 "/usr/include/stdio.h"
-
-
-extern int vasprintf (char **__restrict __ptr, const char *__restrict __f,
-		      __gnuc_va_list __arg)
-      __attribute__ ((__format__ (__printf__, 2, 0))) ;
-extern int __asprintf (char **__restrict __ptr,
-		       const char *__restrict __fmt, ...)
-      __attribute__ ((__format__ (__printf__, 2, 3))) ;
-extern int asprintf (char **__restrict __ptr,
-		     const char *__restrict __fmt, ...)
-      __attribute__ ((__format__ (__printf__, 2, 3))) ;
-#line 410 "/usr/include/stdio.h"
-
-#line 412 "/usr/include/stdio.h"
-
-extern int vdprintf (int __fd, const char *__restrict __fmt,
-		     __gnuc_va_list __arg)
-     __attribute__ ((__format__ (__printf__, 2, 0)));
-extern int dprintf (int __fd, const char *__restrict __fmt, ...)
-     __attribute__ ((__format__ (__printf__, 2, 3)));
-#line 419 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern int fscanf (FILE *__restrict __stream,
-		   const char *__restrict __format, ...)  ;
-
-
-
-
-extern int scanf (const char *__restrict __format, ...) ;
-
-extern int sscanf (const char *__restrict __s,
-		   const char *__restrict __format, ...) ;
-
-
-
-
-
-#line 1 "/usr/include/bits/floatn.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/floatn.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 23 "/usr/include/bits/floatn.h"
-
-
-
-
-
-
-
-
-#line 36 "/usr/include/bits/floatn.h"
-
-
-
-#line 44 "/usr/include/bits/floatn.h"
-
-
-
-
-#line 49 "/usr/include/bits/floatn.h"
-
-
-
-
-
-#line 55 "/usr/include/bits/floatn.h"
-
-#line 57 "/usr/include/bits/floatn.h"
-
-
-
-#line 68 "/usr/include/bits/floatn.h"
-
-
-#line 80 "/usr/include/bits/floatn.h"
-
-
-#line 117 "/usr/include/bits/floatn.h"
-
-#line 119 "/usr/include/bits/floatn.h"
-
-#line 1 "/usr/include/bits/floatn-common.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/bits/floatn-common.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 24 "/usr/include/bits/floatn-common.h"
-#line 1 "/usr/include/bits/long-double.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 25 "/usr/include/bits/floatn-common.h"
-
-
-
-
-
-
-
-
-
-#line 39 "/usr/include/bits/floatn-common.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 58 "/usr/include/bits/floatn-common.h"
-
-
-
-
-
-#line 64 "/usr/include/bits/floatn-common.h"
-
-
-
-
-#line 73 "/usr/include/bits/floatn-common.h"
-
-#line 75 "/usr/include/bits/floatn-common.h"
-
-
-
-
-#line 87 "/usr/include/bits/floatn-common.h"
-
-#line 95 "/usr/include/bits/floatn-common.h"
-
-#line 107 "/usr/include/bits/floatn-common.h"
-
-#line 115 "/usr/include/bits/floatn-common.h"
-
-#line 127 "/usr/include/bits/floatn-common.h"
-
-#line 135 "/usr/include/bits/floatn-common.h"
-
-
-#line 145 "/usr/include/bits/floatn-common.h"
-
-#line 153 "/usr/include/bits/floatn-common.h"
-
-#line 165 "/usr/include/bits/floatn-common.h"
-
-#line 173 "/usr/include/bits/floatn-common.h"
-
-#line 185 "/usr/include/bits/floatn-common.h"
-
-#line 193 "/usr/include/bits/floatn-common.h"
-
-
-#line 209 "/usr/include/bits/floatn-common.h"
-
-#line 211 "/usr/include/bits/floatn-common.h"
-
-#line 213 "/usr/include/bits/floatn-common.h"
-typedef float _Float32;
-#line 215 "/usr/include/bits/floatn-common.h"
-
-#line 222 "/usr/include/bits/floatn-common.h"
-
-#line 224 "/usr/include/bits/floatn-common.h"
-
-#line 226 "/usr/include/bits/floatn-common.h"
-
-
-
-
-
-
-
-
-#line 248 "/usr/include/bits/floatn-common.h"
-
-#line 250 "/usr/include/bits/floatn-common.h"
-typedef double _Float64;
-#line 252 "/usr/include/bits/floatn-common.h"
-
-#line 259 "/usr/include/bits/floatn-common.h"
-
-#line 261 "/usr/include/bits/floatn-common.h"
-
-#line 263 "/usr/include/bits/floatn-common.h"
-
-#line 265 "/usr/include/bits/floatn-common.h"
-
-#line 267 "/usr/include/bits/floatn-common.h"
-typedef double _Float32x;
-#line 269 "/usr/include/bits/floatn-common.h"
-
-#line 276 "/usr/include/bits/floatn-common.h"
-
-#line 278 "/usr/include/bits/floatn-common.h"
-
-#line 280 "/usr/include/bits/floatn-common.h"
-
-#line 282 "/usr/include/bits/floatn-common.h"
-
-#line 284 "/usr/include/bits/floatn-common.h"
-typedef long double _Float64x;
-#line 286 "/usr/include/bits/floatn-common.h"
-
-#line 293 "/usr/include/bits/floatn-common.h"
-
-#line 308 "/usr/include/bits/floatn-common.h"
-
-#line 310 "/usr/include/bits/floatn-common.h"
-
-#line 325 "/usr/include/bits/floatn-common.h"
-
-#line 327 "/usr/include/bits/floatn-common.h"
-#line 121 "/usr/include/bits/floatn.h"
-#line 441 "/usr/include/stdio.h"
-#line 453 "/usr/include/stdio.h"
-extern int __isoc23_fscanf (FILE *__restrict __stream,
-			    const char *__restrict __format, ...) 
-  ;
-extern int __isoc23_scanf (const char *__restrict __format, ...) ;
-extern int __isoc23_sscanf (const char *__restrict __s,
-			    const char *__restrict __format, ...) ;
-#line 486 "/usr/include/stdio.h"
-
-#line 488 "/usr/include/stdio.h"
-
-
-
-
-extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
-		    __gnuc_va_list __arg)
-     __attribute__ ((__format__ (__scanf__, 2, 0)))  ;
-
-
-
-
-
-extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg)
-     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
-
-
-extern int vsscanf (const char *__restrict __s,
-		    const char *__restrict __format, __gnuc_va_list __arg)
-      __attribute__ ((__format__ (__scanf__, 2, 0)));
-
-
-#line 526 "/usr/include/stdio.h"
-extern int __isoc23_vfscanf (FILE *__restrict __s,
-			     const char *__restrict __format,
-			     __gnuc_va_list __arg)  ;
-extern int __isoc23_vscanf (const char *__restrict __format,
-			    __gnuc_va_list __arg) ;
-extern int __isoc23_vsscanf (const char *__restrict __s,
-			     const char *__restrict __format,
-			     __gnuc_va_list __arg) ;
-#line 569 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern int fgetc (FILE *__stream) ;
-extern int getc (FILE *__stream) ;
-
-
-
-
-
-extern int getchar (void);
-
-#line 585 "/usr/include/stdio.h"
-
-
-
-
-extern int getc_unlocked (FILE *__stream) ;
-extern int getchar_unlocked (void);
-#line 592 "/usr/include/stdio.h"
-
-#line 594 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern int fgetc_unlocked (FILE *__stream) ;
-#line 602 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern int fputc (int __c, FILE *__stream) ;
-extern int putc (int __c, FILE *__stream) ;
-
-
-
-
-
-extern int putchar (int __c);
-
-#line 618 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern int fputc_unlocked (int __c, FILE *__stream) ;
-#line 626 "/usr/include/stdio.h"
-
-#line 628 "/usr/include/stdio.h"
-
-
-
-
-extern int putc_unlocked (int __c, FILE *__stream) ;
-extern int putchar_unlocked (int __c);
-#line 635 "/usr/include/stdio.h"
-
-
-#line 638 "/usr/include/stdio.h"
-
-extern int getw (FILE *__stream) ;
-
-
-extern int putw (int __w, FILE *__stream) ;
-#line 644 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
-       ;
-
-#line 665 "/usr/include/stdio.h"
-
-#line 667 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern char *fgets_unlocked (char *__restrict __s, int __n,
-			     FILE *__restrict __stream) 
-     ;
-#line 677 "/usr/include/stdio.h"
-
-
-#line 680 "/usr/include/stdio.h"
-
-
-
-
-
-extern __ssize_t __getdelim (char **__restrict __lineptr,
-                             size_t *__restrict __n, int __delimiter,
-                             FILE *__restrict __stream)  ;
-extern __ssize_t getdelim (char **__restrict __lineptr,
-                           size_t *__restrict __n, int __delimiter,
-                           FILE *__restrict __stream)  ;
-
-
-extern __ssize_t getline (char **__restrict __lineptr,
-                          size_t *__restrict __n,
-                          FILE *__restrict __stream)  ;
-#line 697 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern int fputs (const char *__restrict __s, FILE *__restrict __stream)
-  ;
-
-
-
-
-
-extern int puts (const char *__s);
-
-
-
-
-
-
-extern int ungetc (int __c, FILE *__stream) ;
-
-
-
-
-
-
-extern size_t fread (void *__restrict __ptr, size_t __size,
-		     size_t __n, FILE *__restrict __stream) 
-  ;
-
-
-
-
-extern size_t fwrite (const void *__restrict __ptr, size_t __size,
-		      size_t __n, FILE *__restrict __s) ;
-
-#line 735 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern int fputs_unlocked (const char *__restrict __s,
-			   FILE *__restrict __stream) ;
-#line 744 "/usr/include/stdio.h"
-
-#line 746 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
-			      size_t __n, FILE *__restrict __stream) 
-  ;
-extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
-			       size_t __n, FILE *__restrict __stream)
-  ;
-#line 759 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern int fseek (FILE *__stream, long int __off, int __whence)
-  ;
-
-
-
-
-extern long int ftell (FILE *__stream)  ;
-
-
-
-
-extern void rewind (FILE *__stream) ;
-
-
-
-
-
-
-#line 785 "/usr/include/stdio.h"
-
-
-
-
-extern int fseeko (FILE *__stream, __off_t __off, int __whence)
-  ;
-
-
-
-
-extern __off_t ftello (FILE *__stream)  ;
-#line 809 "/usr/include/stdio.h"
-
-#line 811 "/usr/include/stdio.h"
-
-
-
-
-extern int fgetpos (FILE *__restrict __stream, fpos_t *__restrict __pos)
-  ;
-
-
-
-
-extern int fsetpos (FILE *__stream, const fpos_t *__pos) ;
-#line 835 "/usr/include/stdio.h"
-
-#line 837 "/usr/include/stdio.h"
-extern int fseeko64 (FILE *__stream, __off64_t __off, int __whence)
-  ;
-extern __off64_t ftello64 (FILE *__stream)  ;
-extern int fgetpos64 (FILE *__restrict __stream, fpos64_t *__restrict __pos)
-  ;
-extern int fsetpos64 (FILE *__stream, const fpos64_t *__pos) ;
-#line 844 "/usr/include/stdio.h"
-
-
-extern void clearerr (FILE *__stream)  ;
-
-extern int feof (FILE *__stream)   ;
-
-extern int ferror (FILE *__stream)   ;
-
-#line 853 "/usr/include/stdio.h"
-
-extern void clearerr_unlocked (FILE *__stream)  ;
-extern int feof_unlocked (FILE *__stream)   ;
-extern int ferror_unlocked (FILE *__stream)   ;
-#line 858 "/usr/include/stdio.h"
-
-
-
-
-
-
-extern void perror (const char *__s) ;
-
-
-#line 868 "/usr/include/stdio.h"
-
-extern int fileno (FILE *__stream)   ;
-#line 871 "/usr/include/stdio.h"
-
-#line 873 "/usr/include/stdio.h"
-
-extern int fileno_unlocked (FILE *__stream)   ;
-#line 876 "/usr/include/stdio.h"
-
-
-#line 879 "/usr/include/stdio.h"
-
-
-
-
-extern int pclose (FILE *__stream) ;
-
-
-
-
-
-extern FILE *popen (const char *__command, const char *__modes)
-  __attribute__ ((__malloc__))  ;
-
-#line 893 "/usr/include/stdio.h"
-
-
-#line 896 "/usr/include/stdio.h"
-
-extern char *ctermid (char *__s) 
-  ;
-#line 900 "/usr/include/stdio.h"
-
-
-#line 903 "/usr/include/stdio.h"
-
-extern char *cuserid (char *__s)
-  ;
-#line 907 "/usr/include/stdio.h"
-
-
-#line 910 "/usr/include/stdio.h"
-struct obstack;			
-
-
-extern int obstack_printf (struct obstack *__restrict __obstack,
-			   const char *__restrict __format, ...)
-      __attribute__ ((__format__ (__printf__, 2, 3)));
-extern int obstack_vprintf (struct obstack *__restrict __obstack,
-			    const char *__restrict __format,
-			    __gnuc_va_list __args)
-      __attribute__ ((__format__ (__printf__, 2, 0)));
-#line 921 "/usr/include/stdio.h"
-
-
-#line 924 "/usr/include/stdio.h"
-
-
-
-extern void flockfile (FILE *__stream)  ;
-
-
-
-extern int ftrylockfile (FILE *__stream)   ;
-
-
-extern void funlockfile (FILE *__stream)  ;
-#line 936 "/usr/include/stdio.h"
-
-#line 942 "/usr/include/stdio.h"
-
-
-
-extern int __uflow (FILE *);
-extern int __overflow (FILE *, int);
-
-#line 952 "/usr/include/stdio.h"
-
-
-
-#line 958 "/usr/include/stdio.h"
-
-
-
-#line 968 "/usr/include/stdio.h"
-
-
-#line 75 "/usr/local/include/neo-c.h"
-#line 1 "/usr/include/stdlib.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 24 "/usr/include/stdlib.h"
-
-#line 1 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 30 "/usr/include/bits/libc-header-start.h"
-
-#line 32 "/usr/include/bits/libc-header-start.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 34 "/usr/include/bits/libc-header-start.h"
-
-
-
-#line 43 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 84 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-#line 101 "/usr/include/bits/libc-header-start.h"
-
-
-#line 27 "/usr/include/stdlib.h"
-
-
-#line 1 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 37 "/usr/lib/clang/21/include/stddef.h"
-
-#line 80 "/usr/lib/clang/21/include/stddef.h"
-
-#line 85 "/usr/lib/clang/21/include/stddef.h"
-
-#line 1 "/usr/lib/clang/21/include/__stddef_size_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-#line 88 "/usr/lib/clang/21/include/stddef.h"
-#line 90 "/usr/lib/clang/21/include/stddef.h"
-
-#line 95 "/usr/lib/clang/21/include/stddef.h"
-
-#line 1 "/usr/lib/clang/21/include/__stddef_wchar_t.h"
-
-
-
-
-
-
-
-
-
-#line 11 "/usr/lib/clang/21/include/__stddef_wchar_t.h"
-
-
-
-
-
-#line 18 "/usr/lib/clang/21/include/__stddef_wchar_t.h"
-
-#line 22 "/usr/lib/clang/21/include/__stddef_wchar_t.h"
-
-typedef int wchar_t;
-
-#line 26 "/usr/lib/clang/21/include/__stddef_wchar_t.h"
-#line 98 "/usr/lib/clang/21/include/stddef.h"
-#line 100 "/usr/lib/clang/21/include/stddef.h"
-
-#line 1 "/usr/lib/clang/21/include/__stddef_null.h"
-
-
-
-
-
-
-
-
-
-#line 11 "/usr/lib/clang/21/include/__stddef_null.h"
-
-
-
-
-
-
-#line 18 "/usr/lib/clang/21/include/__stddef_null.h"
-
-#line 28 "/usr/lib/clang/21/include/__stddef_null.h"
-#line 103 "/usr/lib/clang/21/include/stddef.h"
-#line 105 "/usr/lib/clang/21/include/stddef.h"
-
-#line 110 "/usr/lib/clang/21/include/stddef.h"
-
-#line 115 "/usr/lib/clang/21/include/stddef.h"
-
-#line 120 "/usr/lib/clang/21/include/stddef.h"
-
-#line 125 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-#line 132 "/usr/lib/clang/21/include/stddef.h"
-#line 33 "/usr/include/stdlib.h"
-
-
-
-#line 37 "/usr/include/stdlib.h"
-
-#line 39 "/usr/include/stdlib.h"
-
-#line 1 "/usr/include/bits/waitflags.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/bits/waitflags.h"
-
-
-
-#line 27 "/usr/include/bits/waitflags.h"
-
-
-#line 35 "/usr/include/bits/waitflags.h"
-#line 41 "/usr/include/stdlib.h"
-#line 1 "/usr/include/bits/waitstatus.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/bits/waitstatus.h"
-
-
-
-
-
-
-#line 29 "/usr/include/bits/waitstatus.h"
-
-
-#line 32 "/usr/include/bits/waitstatus.h"
-
-
-#line 35 "/usr/include/bits/waitstatus.h"
-
-
-#line 38 "/usr/include/bits/waitstatus.h"
-
-
-#line 41 "/usr/include/bits/waitstatus.h"
-
-
-#line 44 "/usr/include/bits/waitstatus.h"
-
-
-
-#line 50 "/usr/include/bits/waitstatus.h"
-
-
-#line 53 "/usr/include/bits/waitstatus.h"
-
-#line 42 "/usr/include/stdlib.h"
-
-
-#line 54 "/usr/include/stdlib.h"
-
-
-#line 1 "/usr/include/bits/floatn.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 57 "/usr/include/stdlib.h"
-
-
-typedef struct
-  {
-    int quot;			
-    int rem;			
-  } div_t;
-
-
-#line 67 "/usr/include/stdlib.h"
-typedef struct
-  {
-    long int quot;		
-    long int rem;		
-  } ldiv_t;
-#line 74 "/usr/include/stdlib.h"
-
-#line 76 "/usr/include/stdlib.h"
-
-typedef struct
-  {
-    long long int quot;		
-    long long int rem;		
-  } lldiv_t;
-#line 84 "/usr/include/stdlib.h"
-
-
-
-#line 88 "/usr/include/stdlib.h"
-
-
-
-
-#line 94 "/usr/include/stdlib.h"
-
-
-
-#line 98 "/usr/include/stdlib.h"
-extern size_t __ctype_get_mb_cur_max (void)  ;
-
-
-
-extern double atof (const char *__nptr)
-      __attribute__ ((__pure__))  ;
-
-extern int atoi (const char *__nptr)
-      __attribute__ ((__pure__))  ;
-
-extern long int atol (const char *__nptr)
-      __attribute__ ((__pure__))  ;
-
-#line 112 "/usr/include/stdlib.h"
-
-extern long long int atoll (const char *__nptr)
-      __attribute__ ((__pure__))  ;
-#line 116 "/usr/include/stdlib.h"
-
-
-extern double strtod (const char *__restrict __nptr,
-		      char **__restrict __endptr)
-      ;
-
-#line 123 "/usr/include/stdlib.h"
-
-extern float strtof (const char *__restrict __nptr,
-		     char **__restrict __endptr)  ;
-
-extern long double strtold (const char *__restrict __nptr,
-			    char **__restrict __endptr)
-      ;
-#line 131 "/usr/include/stdlib.h"
-
-
-
-#line 139 "/usr/include/stdlib.h"
-
-#line 141 "/usr/include/stdlib.h"
-extern _Float32 strtof32 (const char *__restrict __nptr,
-			  char **__restrict __endptr)
-      ;
-#line 145 "/usr/include/stdlib.h"
-
-#line 147 "/usr/include/stdlib.h"
-extern _Float64 strtof64 (const char *__restrict __nptr,
-			  char **__restrict __endptr)
-      ;
-#line 151 "/usr/include/stdlib.h"
-
-#line 157 "/usr/include/stdlib.h"
-
-#line 159 "/usr/include/stdlib.h"
-extern _Float32x strtof32x (const char *__restrict __nptr,
-			    char **__restrict __endptr)
-      ;
-#line 163 "/usr/include/stdlib.h"
-
-#line 165 "/usr/include/stdlib.h"
-extern _Float64x strtof64x (const char *__restrict __nptr,
-			    char **__restrict __endptr)
-      ;
-#line 169 "/usr/include/stdlib.h"
-
-#line 175 "/usr/include/stdlib.h"
-
-
-extern long int strtol (const char *__restrict __nptr,
-			char **__restrict __endptr, int __base)
-      ;
-
-extern unsigned long int strtoul (const char *__restrict __nptr,
-				  char **__restrict __endptr, int __base)
-      ;
-
-#line 186 "/usr/include/stdlib.h"
-
-
-extern long long int strtoq (const char *__restrict __nptr,
-			     char **__restrict __endptr, int __base)
-      ;
-
-
-extern unsigned long long int strtouq (const char *__restrict __nptr,
-				       char **__restrict __endptr, int __base)
-      ;
-#line 197 "/usr/include/stdlib.h"
-
-#line 199 "/usr/include/stdlib.h"
-
-
-extern long long int strtoll (const char *__restrict __nptr,
-			      char **__restrict __endptr, int __base)
-      ;
-
-
-extern unsigned long long int strtoull (const char *__restrict __nptr,
-					char **__restrict __endptr, int __base)
-      ;
-#line 210 "/usr/include/stdlib.h"
-
-
-
-#line 249 "/usr/include/stdlib.h"
-extern long int __isoc23_strtol (const char *__restrict __nptr,
-				 char **__restrict __endptr, int __base)
-      ;
-extern unsigned long int __isoc23_strtoul (const char *__restrict __nptr,
-					   char **__restrict __endptr,
-					   int __base)
-      ;
-
-extern long long int __isoc23_strtoll (const char *__restrict __nptr,
-				       char **__restrict __endptr, int __base)
-      ;
-
-extern unsigned long long int __isoc23_strtoull (const char *__restrict __nptr,
-						 char **__restrict __endptr,
-						 int __base)
-      ;
-#line 275 "/usr/include/stdlib.h"
-
-
-#line 278 "/usr/include/stdlib.h"
-extern int strfromd (char *__dest, size_t __size, const char *__format,
-		     double __f)
-      ;
-
-extern int strfromf (char *__dest, size_t __size, const char *__format,
-		     float __f)
-      ;
-
-extern int strfroml (char *__dest, size_t __size, const char *__format,
-		     long double __f)
-      ;
-#line 290 "/usr/include/stdlib.h"
-
-#line 296 "/usr/include/stdlib.h"
-
-#line 298 "/usr/include/stdlib.h"
-extern int strfromf32 (char *__dest, size_t __size, const char * __format,
-		       _Float32 __f)
-      ;
-#line 302 "/usr/include/stdlib.h"
-
-#line 304 "/usr/include/stdlib.h"
-extern int strfromf64 (char *__dest, size_t __size, const char * __format,
-		       _Float64 __f)
-      ;
-#line 308 "/usr/include/stdlib.h"
-
-#line 314 "/usr/include/stdlib.h"
-
-#line 316 "/usr/include/stdlib.h"
-extern int strfromf32x (char *__dest, size_t __size, const char * __format,
-			_Float32x __f)
-      ;
-#line 320 "/usr/include/stdlib.h"
-
-#line 322 "/usr/include/stdlib.h"
-extern int strfromf64x (char *__dest, size_t __size, const char * __format,
-			_Float64x __f)
-      ;
-#line 326 "/usr/include/stdlib.h"
-
-#line 332 "/usr/include/stdlib.h"
-
-
-#line 335 "/usr/include/stdlib.h"
-
-
-
-#line 1 "/usr/include/bits/types/locale_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/types/locale_t.h"
-
-#line 1 "/usr/include/bits/types/__locale_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/types/__locale_t.h"
-
-
-
-
-
-
-struct __locale_struct
-{
-  
-  struct __locale_data *__locales[13]; 
-
-  
-  const unsigned short int *__ctype_b;
-  const int *__ctype_tolower;
-  const int *__ctype_toupper;
-
-  
-  const char *__names[13];
-};
-
-typedef struct __locale_struct *__locale_t;
-#line 23 "/usr/include/bits/types/locale_t.h"
-
-typedef __locale_t locale_t;
-#line 339 "/usr/include/stdlib.h"
-
-extern long int strtol_l (const char *__restrict __nptr,
-			  char **__restrict __endptr, int __base,
-			  locale_t __loc)  ;
-
-extern unsigned long int strtoul_l (const char *__restrict __nptr,
-				    char **__restrict __endptr,
-				    int __base, locale_t __loc)
-      ;
-
-
-extern long long int strtoll_l (const char *__restrict __nptr,
-				char **__restrict __endptr, int __base,
-				locale_t __loc)
-      ;
-
-
-extern unsigned long long int strtoull_l (const char *__restrict __nptr,
-					  char **__restrict __endptr,
-					  int __base, locale_t __loc)
-      ;
-
-
-
-#line 391 "/usr/include/stdlib.h"
-extern long int __isoc23_strtol_l (const char *__restrict __nptr,
-				   char **__restrict __endptr, int __base,
-				   locale_t __loc)  ;
-extern unsigned long int __isoc23_strtoul_l (const char *__restrict __nptr,
-					     char **__restrict __endptr,
-					     int __base, locale_t __loc)
-      ;
-
-extern long long int __isoc23_strtoll_l (const char *__restrict __nptr,
-					 char **__restrict __endptr,
-					 int __base, locale_t __loc)
-      ;
-
-extern unsigned long long int __isoc23_strtoull_l (const char *__restrict __nptr,
-						   char **__restrict __endptr,
-						   int __base, locale_t __loc)
-      ;
-#line 414 "/usr/include/stdlib.h"
-
-extern double strtod_l (const char *__restrict __nptr,
-			char **__restrict __endptr, locale_t __loc)
-      ;
-
-extern float strtof_l (const char *__restrict __nptr,
-		       char **__restrict __endptr, locale_t __loc)
-      ;
-
-extern long double strtold_l (const char *__restrict __nptr,
-			      char **__restrict __endptr,
-			      locale_t __loc)
-      ;
-
-#line 434 "/usr/include/stdlib.h"
-
-#line 436 "/usr/include/stdlib.h"
-extern _Float32 strtof32_l (const char *__restrict __nptr,
-			    char **__restrict __endptr,
-			    locale_t __loc)
-      ;
-#line 441 "/usr/include/stdlib.h"
-
-#line 443 "/usr/include/stdlib.h"
-extern _Float64 strtof64_l (const char *__restrict __nptr,
-			    char **__restrict __endptr,
-			    locale_t __loc)
-      ;
-#line 448 "/usr/include/stdlib.h"
-
-#line 455 "/usr/include/stdlib.h"
-
-#line 457 "/usr/include/stdlib.h"
-extern _Float32x strtof32x_l (const char *__restrict __nptr,
-			      char **__restrict __endptr,
-			      locale_t __loc)
-      ;
-#line 462 "/usr/include/stdlib.h"
-
-#line 464 "/usr/include/stdlib.h"
-extern _Float64x strtof64x_l (const char *__restrict __nptr,
-			      char **__restrict __endptr,
-			      locale_t __loc)
-      ;
-#line 469 "/usr/include/stdlib.h"
-
-#line 477 "/usr/include/stdlib.h"
-
-
-#line 499 "/usr/include/stdlib.h"
-
-
-#line 502 "/usr/include/stdlib.h"
-
-
-
-extern char *l64a (long int __n)  ;
-
-
-extern long int a64l (const char *__s)
-      __attribute__ ((__pure__))  ;
-
-#line 512 "/usr/include/stdlib.h"
-
-#line 1 "/usr/include/sys/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 24 "/usr/include/sys/types.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 26 "/usr/include/sys/types.h"
-
-
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 30 "/usr/include/sys/types.h"
-
-#line 33 "/usr/include/sys/types.h"
-typedef __u_char u_char;
-typedef __u_short u_short;
-typedef __u_int u_int;
-typedef __u_long u_long;
-typedef __quad_t quad_t;
-typedef __u_quad_t u_quad_t;
-typedef __fsid_t fsid_t;
-#line 42 "/usr/include/sys/types.h"
-typedef __loff_t loff_t;
-#line 44 "/usr/include/sys/types.h"
-
-#line 47 "/usr/include/sys/types.h"
-typedef __ino_t ino_t;
-#line 54 "/usr/include/sys/types.h"
-typedef __ino64_t ino64_t;
-#line 57 "/usr/include/sys/types.h"
-
-#line 59 "/usr/include/sys/types.h"
-typedef __dev_t dev_t;
-#line 62 "/usr/include/sys/types.h"
-
-#line 64 "/usr/include/sys/types.h"
-typedef __gid_t gid_t;
-#line 67 "/usr/include/sys/types.h"
-
-#line 69 "/usr/include/sys/types.h"
-typedef __mode_t mode_t;
-#line 72 "/usr/include/sys/types.h"
-
-#line 74 "/usr/include/sys/types.h"
-typedef __nlink_t nlink_t;
-#line 77 "/usr/include/sys/types.h"
-
-#line 79 "/usr/include/sys/types.h"
-typedef __uid_t uid_t;
-#line 82 "/usr/include/sys/types.h"
-
-#line 95 "/usr/include/sys/types.h"
-
-#line 97 "/usr/include/sys/types.h"
-typedef __pid_t pid_t;
-#line 100 "/usr/include/sys/types.h"
-
-#line 102 "/usr/include/sys/types.h"
-typedef __id_t id_t;
-#line 105 "/usr/include/sys/types.h"
-
-#line 110 "/usr/include/sys/types.h"
-
-#line 113 "/usr/include/sys/types.h"
-typedef __daddr_t daddr_t;
-typedef __caddr_t caddr_t;
-#line 118 "/usr/include/sys/types.h"
-
-#line 120 "/usr/include/sys/types.h"
-typedef __key_t key_t;
-#line 123 "/usr/include/sys/types.h"
-
-#line 1 "/usr/include/bits/types/clock_t.h"
-#line 3 "/usr/include/bits/types/clock_t.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 5 "/usr/include/bits/types/clock_t.h"
-
-
-typedef __clock_t clock_t;
-#line 126 "/usr/include/sys/types.h"
-#line 1 "/usr/include/bits/types/clockid_t.h"
-#line 3 "/usr/include/bits/types/clockid_t.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 5 "/usr/include/bits/types/clockid_t.h"
-
-
-typedef __clockid_t clockid_t;
-#line 128 "/usr/include/sys/types.h"
-#line 1 "/usr/include/bits/types/time_t.h"
-#line 3 "/usr/include/bits/types/time_t.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 5 "/usr/include/bits/types/time_t.h"
-
-
-#line 10 "/usr/include/bits/types/time_t.h"
-typedef __time_t time_t;
-#line 12 "/usr/include/bits/types/time_t.h"
-#line 129 "/usr/include/sys/types.h"
-#line 1 "/usr/include/bits/types/timer_t.h"
-#line 3 "/usr/include/bits/types/timer_t.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 5 "/usr/include/bits/types/timer_t.h"
-
-
-typedef __timer_t timer_t;
-#line 130 "/usr/include/sys/types.h"
-
-#line 133 "/usr/include/sys/types.h"
-typedef __useconds_t useconds_t;
-#line 137 "/usr/include/sys/types.h"
-typedef __suseconds_t suseconds_t;
-#line 141 "/usr/include/sys/types.h"
-
-#line 1 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 37 "/usr/lib/clang/21/include/stddef.h"
-
-#line 80 "/usr/lib/clang/21/include/stddef.h"
-
-#line 85 "/usr/lib/clang/21/include/stddef.h"
-
-#line 1 "/usr/lib/clang/21/include/__stddef_size_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-#line 88 "/usr/lib/clang/21/include/stddef.h"
-#line 90 "/usr/lib/clang/21/include/stddef.h"
-
-#line 95 "/usr/lib/clang/21/include/stddef.h"
-
-#line 100 "/usr/lib/clang/21/include/stddef.h"
-
-#line 105 "/usr/lib/clang/21/include/stddef.h"
-
-#line 110 "/usr/lib/clang/21/include/stddef.h"
-
-#line 115 "/usr/lib/clang/21/include/stddef.h"
-
-#line 120 "/usr/lib/clang/21/include/stddef.h"
-
-#line 125 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-#line 132 "/usr/lib/clang/21/include/stddef.h"
-#line 144 "/usr/include/sys/types.h"
-
-#line 146 "/usr/include/sys/types.h"
-
-typedef unsigned long int ulong;
-typedef unsigned short int ushort;
-typedef unsigned int uint;
-#line 151 "/usr/include/sys/types.h"
-
-
-
-#line 1 "/usr/include/bits/stdint-intn.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/stdint-intn.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 23 "/usr/include/bits/stdint-intn.h"
-
-typedef __int8_t int8_t;
-typedef __int16_t int16_t;
-typedef __int32_t int32_t;
-typedef __int64_t int64_t;
-#line 155 "/usr/include/sys/types.h"
-
-
-typedef __uint8_t u_int8_t;
-typedef __uint16_t u_int16_t;
-typedef __uint32_t u_int32_t;
-typedef __uint64_t u_int64_t;
-
-#line 163 "/usr/include/sys/types.h"
-typedef int register_t __attribute__ ((__mode__ (__word__)));
-#line 167 "/usr/include/sys/types.h"
-
-
-
-#line 171 "/usr/include/sys/types.h"
-
-
-#line 174 "/usr/include/sys/types.h"
-
-#line 1 "/usr/include/endian.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 20 "/usr/include/endian.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/endian.h"
-
-
-#line 1 "/usr/include/bits/endian.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/endian.h"
-
-
-
-
-
-
-
-
-
-#line 33 "/usr/include/bits/endian.h"
-
-
-#line 1 "/usr/include/bits/endianness.h"
-#line 3 "/usr/include/bits/endianness.h"
-
-#line 7 "/usr/include/bits/endianness.h"
-
-
-#line 10 "/usr/include/bits/endianness.h"
-#line 36 "/usr/include/bits/endian.h"
-
-
-
-#line 42 "/usr/include/bits/endian.h"
-
-#line 48 "/usr/include/bits/endian.h"
-#line 25 "/usr/include/endian.h"
-
-#line 32 "/usr/include/endian.h"
-
-#line 34 "/usr/include/endian.h"
-
-#line 1 "/usr/include/bits/byteswap.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/bits/byteswap.h"
-
-#line 25 "/usr/include/bits/byteswap.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 27 "/usr/include/bits/byteswap.h"
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 28 "/usr/include/bits/byteswap.h"
-
-
-#line 31 "/usr/include/bits/byteswap.h"
-
-static __inline __uint16_t
-__bswap_16 (__uint16_t __bsx)
-{
-#line 38 "/usr/include/bits/byteswap.h"
-  return ((__uint16_t) ((((__bsx) >> 8) & 0xff) | (((__bsx) & 0xff) << 8)));
-#line 40 "/usr/include/bits/byteswap.h"
-}
-
-
-#line 44 "/usr/include/bits/byteswap.h"
-
-static __inline __uint32_t
-__bswap_32 (__uint32_t __bsx)
-{
-#line 51 "/usr/include/bits/byteswap.h"
-  return ((((__bsx) & 0xff000000u) >> 24) | (((__bsx) & 0x00ff0000u) >> 8)	   | (((__bsx) & 0x0000ff00u) << 8) | (((__bsx) & 0x000000ffu) << 24));
-#line 53 "/usr/include/bits/byteswap.h"
-}
-
-
-#line 57 "/usr/include/bits/byteswap.h"
-
-static __inline __uint64_t
-__bswap_64 (__uint64_t __bsx)
-{
-#line 64 "/usr/include/bits/byteswap.h"
-  return ((((__bsx) & 0xff00000000000000ull) >> 56)	   | (((__bsx) & 0x00ff000000000000ull) >> 40)	   | (((__bsx) & 0x0000ff0000000000ull) >> 24)	   | (((__bsx) & 0x000000ff00000000ull) >> 8)	   | (((__bsx) & 0x00000000ff000000ull) << 8)	   | (((__bsx) & 0x0000000000ff0000ull) << 24)	   | (((__bsx) & 0x000000000000ff00ull) << 40)	   | (((__bsx) & 0x00000000000000ffull) << 56));
-#line 66 "/usr/include/bits/byteswap.h"
-}
-#line 36 "/usr/include/endian.h"
-#line 1 "/usr/include/bits/uintn-identity.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/bits/uintn-identity.h"
-
-#line 25 "/usr/include/bits/uintn-identity.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 27 "/usr/include/bits/uintn-identity.h"
-
-
-
-
-
-static __inline __uint16_t
-__uint16_identity (__uint16_t __x)
-{
-  return __x;
-}
-
-static __inline __uint32_t
-__uint32_identity (__uint32_t __x)
-{
-  return __x;
-}
-
-static __inline __uint64_t
-__uint64_identity (__uint64_t __x)
-{
-  return __x;
-}
-#line 37 "/usr/include/endian.h"
-
-#line 43 "/usr/include/endian.h"
-
-#line 48 "/usr/include/endian.h"
-
-#line 53 "/usr/include/endian.h"
-
-#line 71 "/usr/include/endian.h"
-#line 176 "/usr/include/sys/types.h"
-
-
-#line 1 "/usr/include/sys/select.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 23 "/usr/include/sys/select.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 25 "/usr/include/sys/select.h"
-
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 28 "/usr/include/sys/select.h"
-
-
-#line 1 "/usr/include/bits/select.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/select.h"
-
-
-
-#line 31 "/usr/include/sys/select.h"
-
-
-#line 1 "/usr/include/bits/types/sigset_t.h"
-#line 3 "/usr/include/bits/types/sigset_t.h"
-
-#line 1 "/usr/include/bits/types/__sigset_t.h"
-#line 3 "/usr/include/bits/types/__sigset_t.h"
-
-#line 5 "/usr/include/bits/types/__sigset_t.h"
-typedef struct
-{
-  unsigned long int __val[(1024 / (8 * sizeof (unsigned long int)))];
-} __sigset_t;
-#line 5 "/usr/include/bits/types/sigset_t.h"
-
-
-typedef __sigset_t sigset_t;
-#line 34 "/usr/include/sys/select.h"
-
-
-#line 1 "/usr/include/bits/types/time_t.h"
-#line 37 "/usr/include/sys/select.h"
-#line 1 "/usr/include/bits/types/struct_timeval.h"
-#line 3 "/usr/include/bits/types/struct_timeval.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 5 "/usr/include/bits/types/struct_timeval.h"
-
-
-
-struct timeval
-{
-#line 14 "/usr/include/bits/types/struct_timeval.h"
-  __time_t tv_sec;		
-  __suseconds_t tv_usec;	
-#line 17 "/usr/include/bits/types/struct_timeval.h"
-};
-#line 38 "/usr/include/sys/select.h"
-#line 1 "/usr/include/bits/types/struct_timespec.h"
-
-#line 4 "/usr/include/bits/types/struct_timespec.h"
-
-#line 1 "/usr/include/bits/types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 6 "/usr/include/bits/types/struct_timespec.h"
-#line 1 "/usr/include/bits/endian.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 7 "/usr/include/bits/types/struct_timespec.h"
-#line 1 "/usr/include/bits/types/time_t.h"
-#line 8 "/usr/include/bits/types/struct_timespec.h"
-
-
-
-struct timespec
-{
-#line 16 "/usr/include/bits/types/struct_timespec.h"
-  __time_t tv_sec;		
-#line 19 "/usr/include/bits/types/struct_timespec.h"
-  __syscall_slong_t tv_nsec;	
-#line 29 "/usr/include/bits/types/struct_timespec.h"
-};
-#line 40 "/usr/include/sys/select.h"
-#line 41 "/usr/include/sys/select.h"
-
-#line 46 "/usr/include/sys/select.h"
-
-
-
-typedef long int __fd_mask;
-
-
-#line 53 "/usr/include/sys/select.h"
-
-#line 57 "/usr/include/sys/select.h"
-
-
-typedef struct
-  {
-    
-
-#line 64 "/usr/include/sys/select.h"
-    __fd_mask fds_bits[1024 / (8 * (int) sizeof (__fd_mask))];
-#line 70 "/usr/include/sys/select.h"
-  } fd_set;
-
-
-#line 74 "/usr/include/sys/select.h"
-
-#line 76 "/usr/include/sys/select.h"
-
-typedef __fd_mask fd_mask;
-
-
-#line 82 "/usr/include/sys/select.h"
-
-
-
-#line 89 "/usr/include/sys/select.h"
-
-
-
-
-
-
-
-
-
-
-
-
-#line 102 "/usr/include/sys/select.h"
-extern int select (int __nfds, fd_set *__restrict __readfds,
-		   fd_set *__restrict __writefds,
-		   fd_set *__restrict __exceptfds,
-		   struct timeval *__restrict __timeout);
-#line 118 "/usr/include/sys/select.h"
-
-#line 120 "/usr/include/sys/select.h"
-
-
-
-
-
-
-#line 127 "/usr/include/sys/select.h"
-extern int pselect (int __nfds, fd_set *__restrict __readfds,
-		    fd_set *__restrict __writefds,
-		    fd_set *__restrict __exceptfds,
-		    const struct timespec *__restrict __timeout,
-		    const __sigset_t *__restrict __sigmask);
-#line 146 "/usr/include/sys/select.h"
-
-
-
-#line 152 "/usr/include/sys/select.h"
-
-
-#line 179 "/usr/include/sys/types.h"
-#line 180 "/usr/include/sys/types.h"
-
-
-#line 183 "/usr/include/sys/types.h"
-typedef __blksize_t blksize_t;
-#line 186 "/usr/include/sys/types.h"
-
-
-#line 190 "/usr/include/sys/types.h"
-typedef __blkcnt_t blkcnt_t;	 
-#line 194 "/usr/include/sys/types.h"
-typedef __fsblkcnt_t fsblkcnt_t; 
-#line 198 "/usr/include/sys/types.h"
-typedef __fsfilcnt_t fsfilcnt_t; 
-#line 215 "/usr/include/sys/types.h"
-
-#line 217 "/usr/include/sys/types.h"
-typedef __blkcnt64_t blkcnt64_t;     
-typedef __fsblkcnt64_t fsblkcnt64_t; 
-typedef __fsfilcnt64_t fsfilcnt64_t; 
-#line 221 "/usr/include/sys/types.h"
-
-
-
-#line 1 "/usr/include/bits/pthreadtypes.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/pthreadtypes.h"
-
-
-#line 1 "/usr/include/bits/thread-shared-types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/thread-shared-types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 1 "/usr/include/bits/pthreadtypes-arch.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 20 "/usr/include/bits/pthreadtypes-arch.h"
-
-#line 1 "/usr/include/bits/wordsize.h"
-
-
-#line 10 "/usr/include/bits/wordsize.h"
-
-#line 12 "/usr/include/bits/wordsize.h"
-
-#line 14 "/usr/include/bits/wordsize.h"
-#line 22 "/usr/include/bits/pthreadtypes-arch.h"
-
-#line 46 "/usr/include/bits/pthreadtypes-arch.h"
-
-#line 49 "/usr/include/bits/pthreadtypes-arch.h"
-
-#line 54 "/usr/include/bits/pthreadtypes-arch.h"
-#line 45 "/usr/include/bits/thread-shared-types.h"
-
-#line 1 "/usr/include/bits/atomic_wide_counter.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/atomic_wide_counter.h"
-
-
-
-
-typedef union
-{
-  unsigned long long int __value64;
-  struct
-  {
-    unsigned int __low;
-    unsigned int __high;
-  } __value32;
-} __atomic_wide_counter;
-#line 47 "/usr/include/bits/thread-shared-types.h"
-
-
-
-
-typedef struct __pthread_internal_list
-{
-  struct __pthread_internal_list *__prev;
-  struct __pthread_internal_list *__next;
-} __pthread_list_t;
-
-typedef struct __pthread_internal_slist
-{
-  struct __pthread_internal_slist *__next;
-} __pthread_slist_t;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 1 "/usr/include/bits/struct_mutex.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/struct_mutex.h"
-
-struct __pthread_mutex_s
-{
-  int __lock;
-  unsigned int __count;
-  int __owner;
-#line 28 "/usr/include/bits/struct_mutex.h"
-  unsigned int __nusers;
-#line 30 "/usr/include/bits/struct_mutex.h"
-  
-
-  int __kind;
-#line 34 "/usr/include/bits/struct_mutex.h"
-  short __spins;
-  short __elision;
-  __pthread_list_t __list;
-#line 53 "/usr/include/bits/struct_mutex.h"
-};
-
-#line 60 "/usr/include/bits/struct_mutex.h"
-#line 77 "/usr/include/bits/thread-shared-types.h"
-
-
-
-
-
-
-
-
-
-
-
-
-#line 1 "/usr/include/bits/struct_rwlock.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/bits/struct_rwlock.h"
-
-struct __pthread_rwlock_arch_t
-{
-  unsigned int __readers;
-  unsigned int __writers;
-  unsigned int __wrphase_futex;
-  unsigned int __writers_futex;
-  unsigned int __pad3;
-  unsigned int __pad4;
-#line 32 "/usr/include/bits/struct_rwlock.h"
-  int __cur_writer;
-  int __shared;
-  signed char __rwelision;
-#line 39 "/usr/include/bits/struct_rwlock.h"
-  unsigned char __pad1[7];
-#line 42 "/usr/include/bits/struct_rwlock.h"
-  unsigned long int __pad2;
-  
-
-  unsigned int __flags;
-#line 55 "/usr/include/bits/struct_rwlock.h"
-};
-
-#line 62 "/usr/include/bits/struct_rwlock.h"
-#line 90 "/usr/include/bits/thread-shared-types.h"
-
-
-
-
-struct __pthread_cond_s
-{
-  __atomic_wide_counter __wseq;
-  __atomic_wide_counter __g1_start;
-  unsigned int __g_size[2] ;
-  unsigned int __g1_orig_size;
-  unsigned int __wrefs;
-  unsigned int __g_signals[2];
-  unsigned int __unused_initialized_1;
-  unsigned int __unused_initialized_2;
-};
-
-typedef unsigned int __tss_t;
-typedef unsigned long int __thrd_t;
-
-typedef struct
-{
-  int __data ;
-} __once_flag;
-
-#line 115 "/usr/include/bits/thread-shared-types.h"
-#line 24 "/usr/include/bits/pthreadtypes.h"
-
-
-
-typedef unsigned long int pthread_t;
-
-
-
-
-typedef union
-{
-  char __size[4];
-  int __align;
-} pthread_mutexattr_t;
-
-
-
-
-typedef union
-{
-  char __size[4];
-  int __align;
-} pthread_condattr_t;
-
-
-
-typedef unsigned int pthread_key_t;
-
-
-
-typedef int  pthread_once_t;
-
-
-union pthread_attr_t
-{
-  char __size[56];
-  long int __align;
-};
-#line 62 "/usr/include/bits/pthreadtypes.h"
-typedef union pthread_attr_t pthread_attr_t;
-#line 65 "/usr/include/bits/pthreadtypes.h"
-
-
-typedef union
-{
-  struct __pthread_mutex_s __data;
-  char __size[40];
-  long int __align;
-} pthread_mutex_t;
-
-
-typedef union
-{
-  struct __pthread_cond_s __data;
-  char __size[48];
-  long long int __align;
-} pthread_cond_t;
-
-
-#line 84 "/usr/include/bits/pthreadtypes.h"
-
-
-typedef union
-{
-  struct __pthread_rwlock_arch_t __data;
-  char __size[56];
-  long int __align;
-} pthread_rwlock_t;
-
-typedef union
-{
-  char __size[8];
-  long int __align;
-} pthread_rwlockattr_t;
-#line 99 "/usr/include/bits/pthreadtypes.h"
-
-
-#line 102 "/usr/include/bits/pthreadtypes.h"
-
-typedef volatile int pthread_spinlock_t;
-
-
-
-
-typedef union
-{
-  char __size[32];
-  long int __align;
-} pthread_barrier_t;
-
-typedef union
-{
-  char __size[4];
-  int __align;
-} pthread_barrierattr_t;
-#line 120 "/usr/include/bits/pthreadtypes.h"
-#line 226 "/usr/include/sys/types.h"
-#line 227 "/usr/include/sys/types.h"
-
-
-#line 515 "/usr/include/stdlib.h"
-
-
-
-
-
-
-extern long int random (void) ;
-
-
-extern void srandom (unsigned int __seed) ;
-
-
-
-
-
-extern char *initstate (unsigned int __seed, char *__statebuf,
-			size_t __statelen)  ;
-
-
-
-extern char *setstate (char *__statebuf)  ;
-
-
-#line 539 "/usr/include/stdlib.h"
-
-
-
-
-struct random_data
-  {
-    int32_t *fptr;		
-    int32_t *rptr;		
-    int32_t *state;		
-    int rand_type;		
-    int rand_deg;		
-    int rand_sep;		
-    int32_t *end_ptr;		
-  };
-
-extern int random_r (struct random_data *__restrict __buf,
-		     int32_t *__restrict __result)  ;
-
-extern int srandom_r (unsigned int __seed, struct random_data *__buf)
-      ;
-
-extern int initstate_r (unsigned int __seed, char *__restrict __statebuf,
-			size_t __statelen,
-			struct random_data *__restrict __buf)
-      ;
-
-extern int setstate_r (char *__restrict __statebuf,
-		       struct random_data *__restrict __buf)
-      ;
-#line 570 "/usr/include/stdlib.h"
-
-
-
-extern int rand (void) ;
-
-extern void srand (unsigned int __seed) ;
-
-#line 578 "/usr/include/stdlib.h"
-
-extern int rand_r (unsigned int *__seed) ;
-#line 581 "/usr/include/stdlib.h"
-
-
-#line 584 "/usr/include/stdlib.h"
-
-
-
-extern double drand48 (void) ;
-extern double erand48 (unsigned short int __xsubi[3])  ;
-
-
-extern long int lrand48 (void) ;
-extern long int nrand48 (unsigned short int __xsubi[3])
-      ;
-
-
-extern long int mrand48 (void) ;
-extern long int jrand48 (unsigned short int __xsubi[3])
-      ;
-
-
-extern void srand48 (long int __seedval) ;
-extern unsigned short int *seed48 (unsigned short int __seed16v[3])
-      ;
-extern void lcong48 (unsigned short int __param[7])  ;
-
-#line 607 "/usr/include/stdlib.h"
-
-
-
-struct drand48_data
-  {
-    unsigned short int __x[3];	
-    unsigned short int __old_x[3]; 
-    unsigned short int __c;	
-    unsigned short int __init;	
-    unsigned long long int __a;	
-
-  };
-
-
-extern int drand48_r (struct drand48_data *__restrict __buffer,
-		      double *__restrict __result)  ;
-extern int erand48_r (unsigned short int __xsubi[3],
-		      struct drand48_data *__restrict __buffer,
-		      double *__restrict __result)  ;
-
-
-extern int lrand48_r (struct drand48_data *__restrict __buffer,
-		      long int *__restrict __result)
-      ;
-extern int nrand48_r (unsigned short int __xsubi[3],
-		      struct drand48_data *__restrict __buffer,
-		      long int *__restrict __result)
-      ;
-
-
-extern int mrand48_r (struct drand48_data *__restrict __buffer,
-		      long int *__restrict __result)
-      ;
-extern int jrand48_r (unsigned short int __xsubi[3],
-		      struct drand48_data *__restrict __buffer,
-		      long int *__restrict __result)
-      ;
-
-
-extern int srand48_r (long int __seedval, struct drand48_data *__buffer)
-      ;
-
-extern int seed48_r (unsigned short int __seed16v[3],
-		     struct drand48_data *__buffer)  ;
-
-extern int lcong48_r (unsigned short int __param[7],
-		      struct drand48_data *__buffer)
-      ;
-
-
-extern __uint32_t arc4random (void)
-      ;
-
-
-extern void arc4random_buf (void *__buf, size_t __size)
-      ;
-
-
-
-extern __uint32_t arc4random_uniform (__uint32_t __upper_bound)
-      ;
-#line 670 "/usr/include/stdlib.h"
-
-
-extern void *malloc (size_t __size)  __attribute__ ((__malloc__))
-      ;
-
-extern void *calloc (size_t __nmemb, size_t __size)
-      __attribute__ ((__malloc__))  ;
-
-
-
-
-
-
-extern void *realloc (void *__ptr, size_t __size)
-       ;
-
-
-extern void free (void *__ptr) ;
-
-#line 690 "/usr/include/stdlib.h"
-
-
-
-
-
-extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
-      
-     
-    ;
-
-
-extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
-      ;
-#line 704 "/usr/include/stdlib.h"
-
-#line 1 "/usr/include/alloca.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 20 "/usr/include/alloca.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/alloca.h"
-
-#line 1 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 37 "/usr/lib/clang/21/include/stddef.h"
-
-#line 80 "/usr/lib/clang/21/include/stddef.h"
-
-#line 85 "/usr/lib/clang/21/include/stddef.h"
-
-#line 1 "/usr/lib/clang/21/include/__stddef_size_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-#line 88 "/usr/lib/clang/21/include/stddef.h"
-#line 90 "/usr/lib/clang/21/include/stddef.h"
-
-#line 95 "/usr/lib/clang/21/include/stddef.h"
-
-#line 100 "/usr/lib/clang/21/include/stddef.h"
-
-#line 105 "/usr/lib/clang/21/include/stddef.h"
-
-#line 110 "/usr/lib/clang/21/include/stddef.h"
-
-#line 115 "/usr/lib/clang/21/include/stddef.h"
-
-#line 120 "/usr/lib/clang/21/include/stddef.h"
-
-#line 125 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-#line 132 "/usr/lib/clang/21/include/stddef.h"
-#line 25 "/usr/include/alloca.h"
-
-
-
-
-#line 30 "/usr/include/alloca.h"
-
-
-extern void *alloca (size_t __size) ;
-
-#line 37 "/usr/include/alloca.h"
-
-
-#line 707 "/usr/include/stdlib.h"
-#line 708 "/usr/include/stdlib.h"
-
-#line 710 "/usr/include/stdlib.h"
-
-extern void *valloc (size_t __size)  __attribute__ ((__malloc__))
-      ;
-#line 714 "/usr/include/stdlib.h"
-
-#line 716 "/usr/include/stdlib.h"
-
-extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
-       ;
-#line 720 "/usr/include/stdlib.h"
-
-#line 722 "/usr/include/stdlib.h"
-
-extern void *aligned_alloc (size_t __alignment, size_t __size)
-      __attribute__ ((__malloc__)) 
-      ;
-#line 727 "/usr/include/stdlib.h"
-
-
-extern void abort (void)  __attribute__ ((__noreturn__)) ;
-
-
-
-extern int atexit (void (*__func) (void))  ;
-
-#line 736 "/usr/include/stdlib.h"
-
-#line 741 "/usr/include/stdlib.h"
-extern int at_quick_exit (void (*__func) (void))  ;
-#line 744 "/usr/include/stdlib.h"
-
-#line 746 "/usr/include/stdlib.h"
-
-
-extern int on_exit (void (*__func) (int __status, void *__arg), void *__arg)
-      ;
-#line 751 "/usr/include/stdlib.h"
-
-
-
-
-extern void exit (int __status)  __attribute__ ((__noreturn__));
-
-#line 758 "/usr/include/stdlib.h"
-
-
-
-extern void quick_exit (int __status)  __attribute__ ((__noreturn__));
-#line 763 "/usr/include/stdlib.h"
-
-#line 765 "/usr/include/stdlib.h"
-
-
-extern void _Exit (int __status)  __attribute__ ((__noreturn__));
-#line 769 "/usr/include/stdlib.h"
-
-
-
-extern char *getenv (const char *__name)   ;
-
-#line 775 "/usr/include/stdlib.h"
-
-
-extern char *secure_getenv (const char *__name)
-       ;
-#line 780 "/usr/include/stdlib.h"
-
-#line 782 "/usr/include/stdlib.h"
-
-
-
-extern int putenv (char *__string)  ;
-#line 787 "/usr/include/stdlib.h"
-
-#line 789 "/usr/include/stdlib.h"
-
-
-extern int setenv (const char *__name, const char *__value, int __replace)
-      ;
-
-
-extern int unsetenv (const char *__name)  ;
-#line 797 "/usr/include/stdlib.h"
-
-#line 799 "/usr/include/stdlib.h"
-
-
-
-extern int clearenv (void) ;
-#line 804 "/usr/include/stdlib.h"
-
-
-#line 807 "/usr/include/stdlib.h"
-
-
-
-
-
-extern char *mktemp (char *__template)  ;
-#line 814 "/usr/include/stdlib.h"
-
-#line 816 "/usr/include/stdlib.h"
-
-
-
-
-
-
-
-
-#line 825 "/usr/include/stdlib.h"
-extern int mkstemp (char *__template)  ;
-#line 835 "/usr/include/stdlib.h"
-extern int mkstemp64 (char *__template)  ;
-#line 838 "/usr/include/stdlib.h"
-
-#line 840 "/usr/include/stdlib.h"
-
-
-
-
-
-
-#line 847 "/usr/include/stdlib.h"
-extern int mkstemps (char *__template, int __suffixlen)  ;
-#line 857 "/usr/include/stdlib.h"
-extern int mkstemps64 (char *__template, int __suffixlen)
-      ;
-#line 861 "/usr/include/stdlib.h"
-
-#line 863 "/usr/include/stdlib.h"
-
-
-
-
-
-extern char *mkdtemp (char *__template)   ;
-#line 870 "/usr/include/stdlib.h"
-
-#line 872 "/usr/include/stdlib.h"
-
-
-
-
-
-
-#line 879 "/usr/include/stdlib.h"
-extern int mkostemp (char *__template, int __flags)  ;
-#line 889 "/usr/include/stdlib.h"
-extern int mkostemp64 (char *__template, int __flags)  ;
-#line 891 "/usr/include/stdlib.h"
-
-
-
-
-
-
-
-#line 899 "/usr/include/stdlib.h"
-extern int mkostemps (char *__template, int __suffixlen, int __flags)
-      ;
-#line 911 "/usr/include/stdlib.h"
-extern int mkostemps64 (char *__template, int __suffixlen, int __flags)
-      ;
-#line 915 "/usr/include/stdlib.h"
-
-
-
-
-
-
-extern int system (const char *__command) ;
-
-
-#line 925 "/usr/include/stdlib.h"
-
-
-extern char *canonicalize_file_name (const char *__name)
-       __attribute__ ((__malloc__))
-      ;
-#line 931 "/usr/include/stdlib.h"
-
-#line 933 "/usr/include/stdlib.h"
-
-
-
-
-
-extern char *realpath (const char *__restrict __name,
-		       char *__restrict __resolved)  ;
-#line 941 "/usr/include/stdlib.h"
-
-
-
-#line 946 "/usr/include/stdlib.h"
-typedef int (*__compar_fn_t) (const void *, const void *);
-
-#line 949 "/usr/include/stdlib.h"
-typedef __compar_fn_t comparison_fn_t;
-#line 953 "/usr/include/stdlib.h"
-typedef int (*__compar_d_fn_t) (const void *, const void *, void *);
-#line 955 "/usr/include/stdlib.h"
-
-
-
-extern void *bsearch (const void *__key, const void *__base,
-		      size_t __nmemb, size_t __size, __compar_fn_t __compar)
-      ;
-
-#line 965 "/usr/include/stdlib.h"
-
-
-
-extern void qsort (void *__base, size_t __nmemb, size_t __size,
-		   __compar_fn_t __compar) ;
-#line 971 "/usr/include/stdlib.h"
-extern void qsort_r (void *__base, size_t __nmemb, size_t __size,
-		     __compar_d_fn_t __compar, void *__arg)
-  ;
-#line 975 "/usr/include/stdlib.h"
-
-
-
-extern int abs (int __x)  __attribute__ ((__const__)) ;
-extern long int labs (long int __x)  __attribute__ ((__const__)) ;
-
-#line 982 "/usr/include/stdlib.h"
-extern long long int llabs (long long int __x)
-      __attribute__ ((__const__)) ;
-#line 985 "/usr/include/stdlib.h"
-
-#line 987 "/usr/include/stdlib.h"
-extern unsigned int uabs (int __x)  __attribute__ ((__const__)) ;
-extern unsigned long int ulabs (long int __x)  __attribute__ ((__const__)) ;
-extern unsigned long long int ullabs (long long int __x)
-      __attribute__ ((__const__)) ;
-#line 992 "/usr/include/stdlib.h"
-
-
-
-
-extern div_t div (int __numer, int __denom)
-      __attribute__ ((__const__)) ;
-extern ldiv_t ldiv (long int __numer, long int __denom)
-      __attribute__ ((__const__)) ;
-
-#line 1002 "/usr/include/stdlib.h"
-extern lldiv_t lldiv (long long int __numer,
-				    long long int __denom)
-      __attribute__ ((__const__)) ;
-#line 1006 "/usr/include/stdlib.h"
-
-
-#line 1009 "/usr/include/stdlib.h"
-
-
-
-
-
-
-extern char *ecvt (double __value, int __ndigit, int *__restrict __decpt,
-		   int *__restrict __sign)   ;
-
-
-
-
-extern char *fcvt (double __value, int __ndigit, int *__restrict __decpt,
-		   int *__restrict __sign)   ;
-
-
-
-
-extern char *gcvt (double __value, int __ndigit, char *__buf)
-       ;
-#line 1030 "/usr/include/stdlib.h"
-
-#line 1032 "/usr/include/stdlib.h"
-
-extern char *qecvt (long double __value, int __ndigit,
-		    int *__restrict __decpt, int *__restrict __sign)
-       ;
-extern char *qfcvt (long double __value, int __ndigit,
-		    int *__restrict __decpt, int *__restrict __sign)
-       ;
-extern char *qgcvt (long double __value, int __ndigit, char *__buf)
-       ;
-
-
-
-
-extern int ecvt_r (double __value, int __ndigit, int *__restrict __decpt,
-		   int *__restrict __sign, char *__restrict __buf,
-		   size_t __len)  ;
-extern int fcvt_r (double __value, int __ndigit, int *__restrict __decpt,
-		   int *__restrict __sign, char *__restrict __buf,
-		   size_t __len)  ;
-
-extern int qecvt_r (long double __value, int __ndigit,
-		    int *__restrict __decpt, int *__restrict __sign,
-		    char *__restrict __buf, size_t __len)
-      ;
-extern int qfcvt_r (long double __value, int __ndigit,
-		    int *__restrict __decpt, int *__restrict __sign,
-		    char *__restrict __buf, size_t __len)
-      ;
-#line 1061 "/usr/include/stdlib.h"
-
-
-
-
-extern int mblen (const char *__s, size_t __n) ;
-
-
-extern int mbtowc (wchar_t *__restrict __pwc,
-		   const char *__restrict __s, size_t __n) ;
-
-
-extern int wctomb (char *__s, wchar_t __wchar) ;
-
-
-
-extern size_t mbstowcs (wchar_t *__restrict  __pwcs,
-			const char *__restrict __s, size_t __n) 
-    ;
-
-extern size_t wcstombs (char *__restrict __s,
-			const wchar_t *__restrict __pwcs, size_t __n)
-     
-  
-  ;
-
-#line 1087 "/usr/include/stdlib.h"
-
-
-
-
-extern int rpmatch (const char *__response)   ;
-#line 1093 "/usr/include/stdlib.h"
-
-
-#line 1096 "/usr/include/stdlib.h"
-
-
-
-
-
-
-extern int getsubopt (char **__restrict __optionp,
-		      char *const *__restrict __tokens,
-		      char **__restrict __valuep)
-       ;
-#line 1107 "/usr/include/stdlib.h"
-
-
-
-
-#line 1112 "/usr/include/stdlib.h"
-
-extern int posix_openpt (int __oflag) ;
-#line 1115 "/usr/include/stdlib.h"
-
-#line 1117 "/usr/include/stdlib.h"
-
-
-
-
-extern int grantpt (int __fd) ;
-
-
-
-extern int unlockpt (int __fd) ;
-
-
-
-
-extern char *ptsname (int __fd)  ;
-#line 1132 "/usr/include/stdlib.h"
-
-#line 1134 "/usr/include/stdlib.h"
-
-
-
-extern int ptsname_r (int __fd, char *__buf, size_t __buflen)
-       ;
-
-
-extern int getpt (void);
-#line 1143 "/usr/include/stdlib.h"
-
-#line 1145 "/usr/include/stdlib.h"
-
-
-
-extern int getloadavg (double __loadavg[], int __nelem)
-      ;
-#line 1151 "/usr/include/stdlib.h"
-
-#line 1157 "/usr/include/stdlib.h"
-
-#line 1 "/usr/include/bits/stdlib-float.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/bits/stdlib-float.h"
-#line 1159 "/usr/include/stdlib.h"
-
-
-#line 1164 "/usr/include/stdlib.h"
-
-#line 1 "/usr/include/bits/floatn.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 1166 "/usr/include/stdlib.h"
-#line 1169 "/usr/include/stdlib.h"
-
-
-#line 76 "/usr/local/include/neo-c.h"
-#line 1 "/usr/include/string.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 24 "/usr/include/string.h"
-
-#line 1 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 30 "/usr/include/bits/libc-header-start.h"
-
-#line 32 "/usr/include/bits/libc-header-start.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 34 "/usr/include/bits/libc-header-start.h"
-
-
-
-#line 43 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 84 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-#line 101 "/usr/include/bits/libc-header-start.h"
-
-
-#line 27 "/usr/include/string.h"
-
-
-
-
-#line 1 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 37 "/usr/lib/clang/21/include/stddef.h"
-
-#line 80 "/usr/lib/clang/21/include/stddef.h"
-
-#line 85 "/usr/lib/clang/21/include/stddef.h"
-
-#line 1 "/usr/lib/clang/21/include/__stddef_size_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-#line 88 "/usr/lib/clang/21/include/stddef.h"
-#line 90 "/usr/lib/clang/21/include/stddef.h"
-
-#line 95 "/usr/lib/clang/21/include/stddef.h"
-
-#line 100 "/usr/lib/clang/21/include/stddef.h"
-
-#line 1 "/usr/lib/clang/21/include/__stddef_null.h"
-
-
-
-
-
-
-
-
-
-#line 11 "/usr/lib/clang/21/include/__stddef_null.h"
-
-
-
-
-
-
-#line 18 "/usr/lib/clang/21/include/__stddef_null.h"
-
-#line 28 "/usr/lib/clang/21/include/__stddef_null.h"
-#line 103 "/usr/lib/clang/21/include/stddef.h"
-#line 105 "/usr/lib/clang/21/include/stddef.h"
-
-#line 110 "/usr/lib/clang/21/include/stddef.h"
-
-#line 115 "/usr/lib/clang/21/include/stddef.h"
-
-#line 120 "/usr/lib/clang/21/include/stddef.h"
-
-#line 125 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-#line 132 "/usr/lib/clang/21/include/stddef.h"
-#line 34 "/usr/include/string.h"
-
-
-#line 39 "/usr/include/string.h"
-
-
-
-extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
-		     size_t __n)  ;
-
-
-extern void *memmove (void *__dest, const void *__src, size_t __n)
-      ;
-
-
-
-
-#line 53 "/usr/include/string.h"
-extern void *memccpy (void *__restrict __dest, const void *__restrict __src,
-		      int __c, size_t __n)
-      ;
-#line 57 "/usr/include/string.h"
-
-
-
-extern void *memset (void *__s, int __c, size_t __n)  ;
-
-
-extern int memcmp (const void *__s1, const void *__s2, size_t __n)
-      __attribute__ ((__pure__)) ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-extern int __memcmpeq (const void *__s1, const void *__s2, size_t __n)
-      __attribute__ ((__pure__)) ;
-
-
-#line 106 "/usr/include/string.h"
-extern void *memchr (const void *__s, int __c, size_t __n)
-       __attribute__ ((__pure__)) ;
-#line 109 "/usr/include/string.h"
-
-#line 111 "/usr/include/string.h"
-
-
-#line 119 "/usr/include/string.h"
-extern void *rawmemchr (const void *__s, int __c)
-      __attribute__ ((__pure__)) ;
-#line 122 "/usr/include/string.h"
-
-
-#line 132 "/usr/include/string.h"
-extern void *memrchr (const void *__s, int __c, size_t __n)
-       __attribute__ ((__pure__)) 
-      ;
-#line 137 "/usr/include/string.h"
-
-
-
-extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
-      ;
-
-extern char *strncpy (char *__restrict __dest,
-		      const char *__restrict __src, size_t __n)
-      ;
-
-
-extern char *strcat (char *__restrict __dest, const char *__restrict __src)
-      ;
-
-extern char *strncat (char *__restrict __dest, const char *__restrict __src,
-		      size_t __n)  ;
-
-
-extern int strcmp (const char *__s1, const char *__s2)
-      __attribute__ ((__pure__)) ;
-
-extern int strncmp (const char *__s1, const char *__s2, size_t __n)
-      __attribute__ ((__pure__)) ;
-
-
-extern int strcoll (const char *__s1, const char *__s2)
-      __attribute__ ((__pure__)) ;
-
-extern size_t strxfrm (char *__restrict __dest,
-		       const char *__restrict __src, size_t __n)
-      ;
-
-#line 170 "/usr/include/string.h"
-
-#line 1 "/usr/include/bits/types/locale_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 172 "/usr/include/string.h"
-
-
-extern int strcoll_l (const char *__s1, const char *__s2, locale_t __l)
-      __attribute__ ((__pure__)) ;
-
-
-extern size_t strxfrm_l (char *__dest, const char *__src, size_t __n,
-			 locale_t __l)  
-     ;
-#line 182 "/usr/include/string.h"
-
-#line 184 "/usr/include/string.h"
-
-extern char *strdup (const char *__s)
-      __attribute__ ((__malloc__)) ;
-#line 188 "/usr/include/string.h"
-
-
-
-
-#line 193 "/usr/include/string.h"
-extern char *strndup (const char *__string, size_t __n)
-      __attribute__ ((__malloc__)) ;
-#line 196 "/usr/include/string.h"
-
-#line 198 "/usr/include/string.h"
-
-#line 200 "/usr/include/string.h"
-
-
-#line 204 "/usr/include/string.h"
-
-
-#line 229 "/usr/include/string.h"
-extern char *strchr (const char *__s, int __c)
-      __attribute__ ((__pure__)) ;
-#line 232 "/usr/include/string.h"
-
-#line 256 "/usr/include/string.h"
-extern char *strrchr (const char *__s, int __c)
-      __attribute__ ((__pure__)) ;
-#line 259 "/usr/include/string.h"
-
-#line 261 "/usr/include/string.h"
-
-
-#line 269 "/usr/include/string.h"
-extern char *strchrnul (const char *__s, int __c)
-      __attribute__ ((__pure__)) ;
-#line 273 "/usr/include/string.h"
-
-
-
-extern size_t strcspn (const char *__s, const char *__reject)
-      __attribute__ ((__pure__)) ;
-
-
-extern size_t strspn (const char *__s, const char *__accept)
-      __attribute__ ((__pure__)) ;
-
-#line 306 "/usr/include/string.h"
-extern char *strpbrk (const char *__s, const char *__accept)
-      __attribute__ ((__pure__)) ;
-#line 309 "/usr/include/string.h"
-
-#line 333 "/usr/include/string.h"
-extern char *strstr (const char *__haystack, const char *__needle)
-      __attribute__ ((__pure__)) ;
-#line 336 "/usr/include/string.h"
-
-
-
-extern char *strtok (char *__restrict __s, const char *__restrict __delim)
-      ;
-
-
-
-extern char *__strtok_r (char *__restrict __s,
-			 const char *__restrict __delim,
-			 char **__restrict __save_ptr)
-      ;
-#line 349 "/usr/include/string.h"
-extern char *strtok_r (char *__restrict __s, const char *__restrict __delim,
-		       char **__restrict __save_ptr)
-      ;
-#line 353 "/usr/include/string.h"
-
-#line 355 "/usr/include/string.h"
-
-#line 363 "/usr/include/string.h"
-extern char *strcasestr (const char *__haystack, const char *__needle)
-      __attribute__ ((__pure__)) ;
-#line 367 "/usr/include/string.h"
-
-#line 369 "/usr/include/string.h"
-
-
-
-extern void *memmem (const void *__haystack, size_t __haystacklen,
-		     const void *__needle, size_t __needlelen)
-      __attribute__ ((__pure__)) 
-    
-    ;
-
-
-
-extern void *__mempcpy (void *__restrict __dest,
-			const void *__restrict __src, size_t __n)
-      ;
-extern void *mempcpy (void *__restrict __dest,
-		      const void *__restrict __src, size_t __n)
-      ;
-#line 387 "/usr/include/string.h"
-
-
-
-extern size_t strlen (const char *__s)
-      __attribute__ ((__pure__)) ;
-
-#line 394 "/usr/include/string.h"
-
-
-extern size_t strnlen (const char *__string, size_t __maxlen)
-      __attribute__ ((__pure__)) ;
-#line 399 "/usr/include/string.h"
-
-
-
-extern char *strerror (int __errnum) ;
-#line 404 "/usr/include/string.h"
-
-
-
-
-
-
-
-#line 425 "/usr/include/string.h"
-
-
-extern char *strerror_r (int __errnum, char *__buf, size_t __buflen)
-         ;
-#line 430 "/usr/include/string.h"
-
-#line 432 "/usr/include/string.h"
-
-extern const char *strerrordesc_np (int __err) ;
-
-extern const char *strerrorname_np (int __err) ;
-#line 438 "/usr/include/string.h"
-
-#line 440 "/usr/include/string.h"
-
-extern char *strerror_l (int __errnum, locale_t __l) ;
-#line 443 "/usr/include/string.h"
-
-#line 1 "/usr/include/strings.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 20 "/usr/include/strings.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/strings.h"
-#line 1 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 37 "/usr/lib/clang/21/include/stddef.h"
-
-#line 80 "/usr/lib/clang/21/include/stddef.h"
-
-#line 85 "/usr/lib/clang/21/include/stddef.h"
-
-#line 1 "/usr/lib/clang/21/include/__stddef_size_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-#line 88 "/usr/lib/clang/21/include/stddef.h"
-#line 90 "/usr/lib/clang/21/include/stddef.h"
-
-#line 95 "/usr/lib/clang/21/include/stddef.h"
-
-#line 100 "/usr/lib/clang/21/include/stddef.h"
-
-#line 105 "/usr/lib/clang/21/include/stddef.h"
-
-#line 110 "/usr/lib/clang/21/include/stddef.h"
-
-#line 115 "/usr/lib/clang/21/include/stddef.h"
-
-#line 120 "/usr/lib/clang/21/include/stddef.h"
-
-#line 125 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-#line 132 "/usr/lib/clang/21/include/stddef.h"
-#line 24 "/usr/include/strings.h"
-
-
-#line 29 "/usr/include/strings.h"
-
-
-
-#line 33 "/usr/include/strings.h"
-
-extern int bcmp (const void *__s1, const void *__s2, size_t __n)
-      __attribute__ ((__pure__)) ;
-
-
-extern void bcopy (const void *__src, void *__dest, size_t __n)
-   ;
-
-
-extern void bzero (void *__s, size_t __n)  ;
-
-
-#line 68 "/usr/include/strings.h"
-extern char *index (const char *__s, int __c)
-      __attribute__ ((__pure__)) ;
-#line 71 "/usr/include/strings.h"
-
-
-#line 96 "/usr/include/strings.h"
-extern char *rindex (const char *__s, int __c)
-      __attribute__ ((__pure__)) ;
-#line 100 "/usr/include/strings.h"
-
-#line 102 "/usr/include/strings.h"
-
-
-extern int ffs (int __i)  __attribute__ ((__const__));
-#line 106 "/usr/include/strings.h"
-
-
-
-#line 110 "/usr/include/strings.h"
-extern int ffsl (long int __l)  __attribute__ ((__const__));
-extern int ffsll (long long int __ll)
-      __attribute__ ((__const__));
-#line 114 "/usr/include/strings.h"
-
-
-extern int strcasecmp (const char *__s1, const char *__s2)
-      __attribute__ ((__pure__)) ;
-
-
-extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
-      __attribute__ ((__pure__)) ;
-
-#line 124 "/usr/include/strings.h"
-
-#line 1 "/usr/include/bits/types/locale_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 126 "/usr/include/strings.h"
-
-
-extern int strcasecmp_l (const char *__s1, const char *__s2, locale_t __loc)
-      __attribute__ ((__pure__)) ;
-
-
-
-extern int strncasecmp_l (const char *__s1, const char *__s2,
-			  size_t __n, locale_t __loc)
-      __attribute__ ((__pure__)) ;
-#line 137 "/usr/include/strings.h"
-
-
-
-#line 146 "/usr/include/strings.h"
-#line 446 "/usr/include/string.h"
-
-
-
-extern void explicit_bzero (void *__s, size_t __n)  
-    ;
-
-
-
-extern char *strsep (char **__restrict __stringp,
-		     const char *__restrict __delim)
-      ;
-#line 458 "/usr/include/string.h"
-
-#line 460 "/usr/include/string.h"
-
-extern char *strsignal (int __sig) ;
-
-#line 464 "/usr/include/string.h"
-
-extern const char *sigabbrev_np (int __sig) ;
-
-
-extern const char *sigdescr_np (int __sig) ;
-#line 470 "/usr/include/string.h"
-
-
-extern char *__stpcpy (char *__restrict __dest, const char *__restrict __src)
-      ;
-extern char *stpcpy (char *__restrict __dest, const char *__restrict __src)
-      ;
-
-
-
-extern char *__stpncpy (char *__restrict __dest,
-			const char *__restrict __src, size_t __n)
-      ;
-extern char *stpncpy (char *__restrict __dest,
-		      const char *__restrict __src, size_t __n)
-      ;
-#line 486 "/usr/include/string.h"
-
-#line 488 "/usr/include/string.h"
-
-extern size_t strlcpy (char *__restrict __dest,
-		       const char *__restrict __src, size_t __n)
-    ;
-
-
-
-extern size_t strlcat (char *__restrict __dest,
-		       const char *__restrict __src, size_t __n)
-     ;
-#line 499 "/usr/include/string.h"
-
-#line 501 "/usr/include/string.h"
-
-extern int strverscmp (const char *__s1, const char *__s2)
-      __attribute__ ((__pure__)) ;
-
-
-extern char *strfry (char *__string)  ;
-
-
-extern void *memfrob (void *__s, size_t __n)  
-    ;
-
-#line 513 "/usr/include/string.h"
-
-
-
-
-#line 523 "/usr/include/string.h"
-extern char *basename (const char *__filename)  ;
-#line 527 "/usr/include/string.h"
-
-#line 534 "/usr/include/string.h"
-
-
-#line 77 "/usr/local/include/neo-c.h"
-#line 1 "/usr/lib/clang/21/include/stdarg.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 37 "/usr/lib/clang/21/include/stdarg.h"
-
-
-
-#line 1 "/usr/lib/clang/21/include/__stdarg_header_macro.h"
-
-
-
-
-
-
-
-
-#line 44 "/usr/lib/clang/21/include/stdarg.h"
-#line 45 "/usr/lib/clang/21/include/stdarg.h"
-
-#line 1 "/usr/lib/clang/21/include/__stdarg___gnuc_va_list.h"
-
-
-
-
-
-
-
-
-#line 48 "/usr/lib/clang/21/include/stdarg.h"
-#line 50 "/usr/lib/clang/21/include/stdarg.h"
-
-#line 1 "/usr/lib/clang/21/include/__stdarg_va_list.h"
-
-
-
-
-
-
-
-
-
-#line 12 "/usr/lib/clang/21/include/__stdarg_va_list.h"
-typedef __builtin_va_list va_list;
-#line 53 "/usr/lib/clang/21/include/stdarg.h"
-#line 55 "/usr/lib/clang/21/include/stdarg.h"
-
-#line 1 "/usr/lib/clang/21/include/__stdarg_va_arg.h"
-
-
-
-
-
-
-
-
-
-#line 11 "/usr/lib/clang/21/include/__stdarg_va_arg.h"
-
-#line 16 "/usr/lib/clang/21/include/__stdarg_va_arg.h"
-
-#line 21 "/usr/lib/clang/21/include/__stdarg_va_arg.h"
-#line 58 "/usr/lib/clang/21/include/stdarg.h"
-#line 60 "/usr/lib/clang/21/include/stdarg.h"
-
-#line 1 "/usr/lib/clang/21/include/__stdarg___va_copy.h"
-
-
-
-
-
-
-
-
-#line 63 "/usr/lib/clang/21/include/stdarg.h"
-#line 65 "/usr/lib/clang/21/include/stdarg.h"
-
-#line 1 "/usr/lib/clang/21/include/__stdarg_va_copy.h"
-
-
-
-
-
-
-
-
-#line 68 "/usr/lib/clang/21/include/stdarg.h"
-#line 70 "/usr/lib/clang/21/include/stdarg.h"
-#line 78 "/usr/local/include/neo-c.h"
-#line 1 "/usr/include/limits.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 24 "/usr/include/limits.h"
-
-#line 1 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 30 "/usr/include/bits/libc-header-start.h"
-
-#line 32 "/usr/include/bits/libc-header-start.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 34 "/usr/include/bits/libc-header-start.h"
-
-
-
-#line 43 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 84 "/usr/include/bits/libc-header-start.h"
-
-
-
-
-
-#line 101 "/usr/include/bits/libc-header-start.h"
-
-
-#line 27 "/usr/include/limits.h"
-
-
-
-
-
-#line 33 "/usr/include/limits.h"
-
-
-
-
-#line 114 "/usr/include/limits.h"
-
-#line 116 "/usr/include/limits.h"
-
- 
-
-
-
-
-#line 123 "/usr/include/limits.h"
-
-#line 1 "/usr/lib/clang/21/include/limits.h"
-
-
-
-
-
-
-
-#line 10 "/usr/lib/clang/21/include/limits.h"
-
-#line 14 "/usr/lib/clang/21/include/limits.h"
-
-
-
-#line 20 "/usr/lib/clang/21/include/limits.h"
-
-
-
-#line 26 "/usr/lib/clang/21/include/limits.h"
-
-
-
-#line 41 "/usr/lib/clang/21/include/limits.h"
-
-#line 45 "/usr/lib/clang/21/include/limits.h"
-
-
-#line 51 "/usr/lib/clang/21/include/limits.h"
-
-#line 56 "/usr/lib/clang/21/include/limits.h"
-
-#line 65 "/usr/lib/clang/21/include/limits.h"
-
-#line 69 "/usr/lib/clang/21/include/limits.h"
-
-#line 71 "/usr/lib/clang/21/include/limits.h"
-
-
-#line 89 "/usr/lib/clang/21/include/limits.h"
-
-#line 97 "/usr/lib/clang/21/include/limits.h"
-
-
-
-
-#line 102 "/usr/lib/clang/21/include/limits.h"
-
-#line 106 "/usr/lib/clang/21/include/limits.h"
-
-#line 111 "/usr/lib/clang/21/include/limits.h"
-
-
-
-
-
-
-#line 118 "/usr/lib/clang/21/include/limits.h"
-
-#line 122 "/usr/lib/clang/21/include/limits.h"
-
-#line 127 "/usr/lib/clang/21/include/limits.h"
-#line 125 "/usr/include/limits.h"
-#line 126 "/usr/include/limits.h"
-
-
-
-
-#line 141 "/usr/include/limits.h"
-
-
-
-
-#line 180 "/usr/include/limits.h"
-
-
-
-
-#line 192 "/usr/include/limits.h"
-
-#line 194 "/usr/include/limits.h"
-
-#line 1 "/usr/include/bits/posix1_lim.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 26 "/usr/include/bits/posix1_lim.h"
-
-#line 1 "/usr/include/bits/wordsize.h"
-
-
-#line 10 "/usr/include/bits/wordsize.h"
-
-#line 12 "/usr/include/bits/wordsize.h"
-
-#line 14 "/usr/include/bits/wordsize.h"
-#line 28 "/usr/include/bits/posix1_lim.h"
-
-
-
-
-#line 33 "/usr/include/bits/posix1_lim.h"
-
-
-#line 36 "/usr/include/bits/posix1_lim.h"
-
-
-#line 39 "/usr/include/bits/posix1_lim.h"
-
-
-#line 46 "/usr/include/bits/posix1_lim.h"
-
-
-#line 49 "/usr/include/bits/posix1_lim.h"
-
-
-
-#line 53 "/usr/include/bits/posix1_lim.h"
-
-
-#line 56 "/usr/include/bits/posix1_lim.h"
-
-
-#line 59 "/usr/include/bits/posix1_lim.h"
-
-
-#line 62 "/usr/include/bits/posix1_lim.h"
-
-
-
-#line 66 "/usr/include/bits/posix1_lim.h"
-
-
-#line 69 "/usr/include/bits/posix1_lim.h"
-
-
-#line 72 "/usr/include/bits/posix1_lim.h"
-
-
-#line 75 "/usr/include/bits/posix1_lim.h"
-
-
-#line 82 "/usr/include/bits/posix1_lim.h"
-
-
-#line 89 "/usr/include/bits/posix1_lim.h"
-
-#line 91 "/usr/include/bits/posix1_lim.h"
-
-
-#line 95 "/usr/include/bits/posix1_lim.h"
-
-
-#line 98 "/usr/include/bits/posix1_lim.h"
-
-
-#line 101 "/usr/include/bits/posix1_lim.h"
-
-
-
-#line 105 "/usr/include/bits/posix1_lim.h"
-
-
-#line 108 "/usr/include/bits/posix1_lim.h"
-
-
-#line 111 "/usr/include/bits/posix1_lim.h"
-
-
-#line 114 "/usr/include/bits/posix1_lim.h"
-
-
-#line 117 "/usr/include/bits/posix1_lim.h"
-
-
-#line 120 "/usr/include/bits/posix1_lim.h"
-
-
-#line 123 "/usr/include/bits/posix1_lim.h"
-
-
-#line 126 "/usr/include/bits/posix1_lim.h"
-
-
-
-#line 130 "/usr/include/bits/posix1_lim.h"
-
-
-#line 133 "/usr/include/bits/posix1_lim.h"
-
-
-#line 136 "/usr/include/bits/posix1_lim.h"
-
-
-#line 143 "/usr/include/bits/posix1_lim.h"
-
-#line 145 "/usr/include/bits/posix1_lim.h"
-
-#line 147 "/usr/include/bits/posix1_lim.h"
-
-
-
-#line 151 "/usr/include/bits/posix1_lim.h"
-
-
-#line 155 "/usr/include/bits/posix1_lim.h"
-
-
-#line 158 "/usr/include/bits/posix1_lim.h"
-
-
-
-#line 1 "/usr/include/bits/local_lim.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 36 "/usr/include/bits/local_lim.h"
-
-
-#line 1 "/usr/include/linux/limits.h"
-
-#line 4 "/usr/include/linux/limits.h"
-
-#line 6 "/usr/include/linux/limits.h"
-
-#line 18 "/usr/include/linux/limits.h"
-
-#line 20 "/usr/include/linux/limits.h"
-#line 39 "/usr/include/bits/local_lim.h"
-
-
-#line 45 "/usr/include/bits/local_lim.h"
-
-#line 50 "/usr/include/bits/local_lim.h"
-
-#line 55 "/usr/include/bits/local_lim.h"
-
-#line 60 "/usr/include/bits/local_lim.h"
-
-
-#line 63 "/usr/include/bits/local_lim.h"
-
-#line 65 "/usr/include/bits/local_lim.h"
-
-
-#line 68 "/usr/include/bits/local_lim.h"
-
-#line 70 "/usr/include/bits/local_lim.h"
-
-
-#line 73 "/usr/include/bits/local_lim.h"
-
-#line 75 "/usr/include/bits/local_lim.h"
-
-
-
-#line 79 "/usr/include/bits/local_lim.h"
-
-
-#line 1 "/usr/include/bits/pthread_stack_min-dynamic.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 23 "/usr/include/bits/pthread_stack_min-dynamic.h"
-
-extern long int __sysconf (int __name) ;
-#line 82 "/usr/include/bits/local_lim.h"
-
-
-#line 85 "/usr/include/bits/local_lim.h"
-
-
-#line 88 "/usr/include/bits/local_lim.h"
-
-
-#line 91 "/usr/include/bits/local_lim.h"
-
-
-#line 94 "/usr/include/bits/local_lim.h"
-
-
-#line 97 "/usr/include/bits/local_lim.h"
-
-#line 162 "/usr/include/bits/posix1_lim.h"
-
-
-#line 165 "/usr/include/bits/posix1_lim.h"
-
-
-
-#line 174 "/usr/include/bits/posix1_lim.h"
-
-
-
-
-
-#line 182 "/usr/include/bits/posix1_lim.h"
-#line 196 "/usr/include/limits.h"
-#line 197 "/usr/include/limits.h"
-
-#line 1 "/usr/include/bits/posix2_lim.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 24 "/usr/include/bits/posix2_lim.h"
-
-
-
-#line 28 "/usr/include/bits/posix2_lim.h"
-
-
-#line 31 "/usr/include/bits/posix2_lim.h"
-
-
-#line 34 "/usr/include/bits/posix2_lim.h"
-
-
-#line 37 "/usr/include/bits/posix2_lim.h"
-
-
-
-#line 41 "/usr/include/bits/posix2_lim.h"
-
-
-
-#line 45 "/usr/include/bits/posix2_lim.h"
-
-
-#line 48 "/usr/include/bits/posix2_lim.h"
-
-
-
-#line 52 "/usr/include/bits/posix2_lim.h"
-
-
-
-#line 56 "/usr/include/bits/posix2_lim.h"
-
-
-
-
-
-
-#line 86 "/usr/include/bits/posix2_lim.h"
-
-
-#line 89 "/usr/include/bits/posix2_lim.h"
-#line 200 "/usr/include/limits.h"
-#line 201 "/usr/include/limits.h"
-
-#line 1 "/usr/include/bits/xopen_lim.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 31 "/usr/include/bits/xopen_lim.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 63 "/usr/include/bits/xopen_lim.h"
-
-#line 1 "/usr/include/bits/uio_lim.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/uio_lim.h"
-
-
-
-
-
-
-
-
-
-#line 31 "/usr/include/bits/uio_lim.h"
-#line 65 "/usr/include/bits/xopen_lim.h"
-#line 70 "/usr/include/bits/xopen_lim.h"
-
-
-
-#line 74 "/usr/include/bits/xopen_lim.h"
-
-
-#line 77 "/usr/include/bits/xopen_lim.h"
-
-
-#line 80 "/usr/include/bits/xopen_lim.h"
-
-
-
-#line 86 "/usr/include/bits/xopen_lim.h"
-
-
-#line 89 "/usr/include/bits/xopen_lim.h"
-
-
-#line 92 "/usr/include/bits/xopen_lim.h"
-
-
-#line 95 "/usr/include/bits/xopen_lim.h"
-
-
-
-#line 123 "/usr/include/bits/xopen_lim.h"
-
-
-#line 129 "/usr/include/bits/xopen_lim.h"
-
-#line 147 "/usr/include/bits/xopen_lim.h"
-#line 204 "/usr/include/limits.h"
-#line 81 "/usr/local/include/neo-c.h"
-#line 1 "/usr/include/locale.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 24 "/usr/include/locale.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 26 "/usr/include/locale.h"
-
-#line 1 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 37 "/usr/lib/clang/21/include/stddef.h"
-
-#line 80 "/usr/lib/clang/21/include/stddef.h"
-
-#line 85 "/usr/lib/clang/21/include/stddef.h"
-
-#line 90 "/usr/lib/clang/21/include/stddef.h"
-
-#line 95 "/usr/lib/clang/21/include/stddef.h"
-
-#line 100 "/usr/lib/clang/21/include/stddef.h"
-
-#line 1 "/usr/lib/clang/21/include/__stddef_null.h"
-
-
-
-
-
-
-
-
-
-#line 11 "/usr/lib/clang/21/include/__stddef_null.h"
-
-
-
-
-
-
-#line 18 "/usr/lib/clang/21/include/__stddef_null.h"
-
-#line 28 "/usr/lib/clang/21/include/__stddef_null.h"
-#line 103 "/usr/lib/clang/21/include/stddef.h"
-#line 105 "/usr/lib/clang/21/include/stddef.h"
-
-#line 110 "/usr/lib/clang/21/include/stddef.h"
-
-#line 115 "/usr/lib/clang/21/include/stddef.h"
-
-#line 120 "/usr/lib/clang/21/include/stddef.h"
-
-#line 125 "/usr/lib/clang/21/include/stddef.h"
-
-
-
-#line 132 "/usr/lib/clang/21/include/stddef.h"
-#line 29 "/usr/include/locale.h"
-#line 1 "/usr/include/bits/locale.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 22 "/usr/include/bits/locale.h"
-
-#line 25 "/usr/include/bits/locale.h"
-
-#line 39 "/usr/include/bits/locale.h"
-#line 30 "/usr/include/locale.h"
-
-
-
-
-
-#line 48 "/usr/include/locale.h"
-
-
-
-struct lconv
-{
-  
-
-  char *decimal_point;		
-  char *thousands_sep;		
-  
-
-
-
-
-  char *grouping;
-
-  
-
-  
-
-  char *int_curr_symbol;
-  char *currency_symbol;	
-  char *mon_decimal_point;	
-  char *mon_thousands_sep;	
-  char *mon_grouping;		
-  char *positive_sign;		
-  char *negative_sign;		
-  char int_frac_digits;		
-  char frac_digits;		
-  
-  char p_cs_precedes;
-  
-  char p_sep_by_space;
-  
-  char n_cs_precedes;
-  
-  char n_sep_by_space;
-  
-
-
-
-
-
-  char p_sign_posn;
-  char n_sign_posn;
-#line 94 "/usr/include/locale.h"
-  
-  char int_p_cs_precedes;
-  
-  char int_p_sep_by_space;
-  
-  char int_n_cs_precedes;
-  
-  char int_n_sep_by_space;
-  
-
-
-
-
-
-  char int_p_sign_posn;
-  char int_n_sign_posn;
-#line 118 "/usr/include/locale.h"
-};
-
-
-
-extern char *setlocale (int __category, const char *__locale) ;
-
-
-extern struct lconv *localeconv (void) ;
-
-
-#line 129 "/usr/include/locale.h"
-
-
-
-
-
-
-#line 1 "/usr/include/bits/types/locale_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 136 "/usr/include/locale.h"
-
-
-
-
-
-extern locale_t newlocale (int __category_mask, const char *__locale,
-			   locale_t __base) ;
-
-
-
-
-
-#line 161 "/usr/include/locale.h"
-
-
-
-extern locale_t duplocale (locale_t __dataset) ;
-
-
-
-extern void freelocale (locale_t __dataset) ;
-
-
-
-
-
-
-extern locale_t uselocale (locale_t __dataset) ;
-
-
-
-#line 180 "/usr/include/locale.h"
-
-#line 182 "/usr/include/locale.h"
-
-
-#line 82 "/usr/local/include/neo-c.h"
-#line 1 "/usr/include/errno.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 24 "/usr/include/errno.h"
-
-#line 1 "/usr/include/features.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 26 "/usr/include/errno.h"
-
-
-#line 1 "/usr/include/bits/errno.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/errno.h"
-
-#line 25 "/usr/include/bits/errno.h"
-
-#line 1 "/usr/include/linux/errno.h"
-#line 1 "/usr/include/asm/errno.h"
-#line 1 "/usr/include/asm-generic/errno.h"
-
-#line 4 "/usr/include/asm-generic/errno.h"
-
-#line 1 "/usr/include/asm-generic/errno-base.h"
-
-#line 4 "/usr/include/asm-generic/errno-base.h"
-
-#line 39 "/usr/include/asm-generic/errno-base.h"
-#line 6 "/usr/include/asm-generic/errno.h"
-
-#line 10 "/usr/include/asm-generic/errno.h"
-
-
-
-
-
-
-
-
-#line 19 "/usr/include/asm-generic/errno.h"
-
-#line 39 "/usr/include/asm-generic/errno.h"
-
-#line 41 "/usr/include/asm-generic/errno.h"
-
-#line 106 "/usr/include/asm-generic/errno.h"
-
-#line 114 "/usr/include/asm-generic/errno.h"
-
-
-#line 118 "/usr/include/asm-generic/errno.h"
-
-#line 120 "/usr/include/asm-generic/errno.h"
-
-#line 122 "/usr/include/asm-generic/errno.h"
-#line 2 "/usr/include/asm/errno.h"
-#line 2 "/usr/include/linux/errno.h"
-#line 27 "/usr/include/bits/errno.h"
-
-
-#line 32 "/usr/include/bits/errno.h"
-
-#line 36 "/usr/include/bits/errno.h"
-
-#line 40 "/usr/include/bits/errno.h"
-
-#line 44 "/usr/include/bits/errno.h"
-
-#line 48 "/usr/include/bits/errno.h"
-
-#line 52 "/usr/include/bits/errno.h"
-#line 29 "/usr/include/errno.h"
-
-
-
-#line 33 "/usr/include/errno.h"
-
-
-
-
-extern int *__errno_location (void)  __attribute__ ((__const__));
-#line 39 "/usr/include/errno.h"
-
-#line 41 "/usr/include/errno.h"
-
-
-
-
-extern char *program_invocation_name;
-extern char *program_invocation_short_name;
-
-#line 1 "/usr/include/bits/types/error_t.h"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 21 "/usr/include/bits/types/error_t.h"
-
-typedef int error_t;
-#line 49 "/usr/include/errno.h"
-
-#line 51 "/usr/include/errno.h"
-
-
-#line 83 "/usr/local/include/neo-c.h"
-    __c__ {#include <assert.h>}
-#line 1 "/usr/lib/clang/21/include/stdbool.h"
-
-
-
-
-
-
-
-
-
-#line 12 "/usr/lib/clang/21/include/stdbool.h"
-
-#line 14 "/usr/lib/clang/21/include/stdbool.h"
-
-#line 18 "/usr/lib/clang/21/include/stdbool.h"
-
-#line 37 "/usr/lib/clang/21/include/stdbool.h"
-#line 85 "/usr/local/include/neo-c.h"
-    
     using neo-c;
+
+
+
+
 #line 88 "/usr/local/include/neo-c.h"
 
 
@@ -7484,14 +66,14 @@ struct buffer
 uniq buffer*% buffer*::initialize(buffer*% self);
 uniq void buffer*::finalize(buffer* self);
 uniq buffer*% buffer*::clone(buffer* self);
-uniq _Bool buffer*::equals(buffer* left, buffer* right);
+uniq bool buffer*::equals(buffer* left, buffer* right);
 uniq buffer* buffer*::append_str(buffer* self, char* mem);
 uniq buffer* buffer*::append(buffer* self, char* mem, size_t size);
 uniq string xsprintf(char* msg, ...);
 uniq string char*::to_string(char* self);
 uniq string int::to_string(int self);
-uniq unsigned int _Bool::get_hash_key(_Bool value);
-uniq unsigned int _Bool::get_hash_key(_Bool value);
+uniq unsigned int bool::get_hash_key(bool value);
+uniq unsigned int _Bool::get_hash_key(bool value);
 uniq unsigned int char::get_hash_key(char value);
 uniq unsigned int short::get_hash_key(short int value);
 uniq unsigned int int::get_hash_key(int value);
@@ -7514,9 +96,9 @@ uniq string long::to_string(long self);
 uniq string int::to_string(int self);
 uniq string short::to_string(short self);
 uniq string char::to_string(char self);
-uniq string _Bool::to_string(_Bool self);
-uniq string _Bool::to_string(_Bool self);
-uniq _Bool string::equals(char* self, char* right);
+uniq string bool::to_string(bool self);
+uniq string _Bool::to_string(bool self);
+uniq bool string::equals(char* self, char* right);
 
 
 #line 140 "/usr/local/include/neo-c.h"
@@ -7543,7 +125,7 @@ if($UNIX == 0) {
         return string("");
     }
     
-    uniq _Bool die(char* msg)
+    uniq bool die(char* msg)
     {
         puts(msg);
         exit(4);
@@ -7603,7 +185,7 @@ else  {
         return string(gComeStackFrameBuffer);
     }
     
-    record uniq _Bool die(char* msg)
+    record uniq bool die(char* msg)
     {
         perror(msg);
         stackframe();
@@ -7670,7 +252,7 @@ if($UNIX == 1) {
             while(it) {
                 n++;
                 
-                _Bool flag = 0;
+                bool flag = 0;
                 printf("#%d ", n);
                 if(it->class_name) {
                     printf("%p (%s): ", (char*)it + sizeof(sMemHeader) + sizeof(size_t) + sizeof(size_t), it->class_name);
@@ -8098,7 +680,7 @@ uniq int come_get_ref_count(void* mem)
     return *ref_count;
 }
 
-uniq void* come_decrement_ref_count(void* mem, void* protocol_fun, void* protocol_obj, _Bool no_decrement, _Bool no_free, void* result_obj)
+uniq void* come_decrement_ref_count(void* mem, void* protocol_fun, void* protocol_obj, bool no_decrement, bool no_free, void* result_obj)
 {
     if(result_obj) {
         if(mem == result_obj) {
@@ -8191,7 +773,7 @@ uniq void come_call_finalizer(void* fun, void* mem, void* protocol_fun, void* pr
     }
 }
 
-uniq void xassert(char* msg, _Bool test)
+uniq void xassert(char* msg, bool test)
 {
     printf("%s...", msg);
     if(!test) {
@@ -8510,10 +1092,10 @@ impl list <T>
         return result;
     }
 
-    _Bool end(list<T>* self) {
+    bool end(list<T>* self) {
         return self == null || self.it == null;
     }
-    list<T>* each(list<T>* self, void* parent, void (*block)(void*, T,int,_Bool*)) 
+    list<T>* each(list<T>* self, void* parent, void (*block)(void*, T,int,bool*)) 
     {
         if(self == null) {
             return null;
@@ -8522,7 +1104,7 @@ impl list <T>
         list_item<T>* it = self.head;
         int i = 0;
         while(it != null) {
-            _Bool end_flag = 0;
+            bool end_flag = 0;
             block(parent, it.item, i, &end_flag);
 
             if(end_flag == 1) {
@@ -8898,7 +1480,7 @@ impl list <T>
 
         return default_value;
     }
-    _Bool equals(list<T>* left, list<T>* right)
+    bool equals(list<T>* left, list<T>* right)
     {
         if(left == null && right == null) {
             return 1;
@@ -9031,7 +1613,7 @@ impl list <T>
 
         return result;
     }
-    _Bool operator_equals(list<T>* left, list<T>* right) 
+    bool operator_equals(list<T>* left, list<T>* right) 
     {
         if(left == null && right == null) {
             return 1;
@@ -9058,10 +1640,10 @@ impl list <T>
 
         return 1;
     }
-    _Bool operator_not_equals(list<T>* left, list<T>* right) {
+    bool operator_not_equals(list<T>* left, list<T>* right) {
         return !left.operator_equals(right);
     }
-    _Bool contained(list<T>* self, T& item) {
+    bool contained(list<T>* self, T& item) {
         if(self == null) {
             return 0;
         }
@@ -9074,7 +1656,7 @@ impl list <T>
         
         return 0;
     }
-    _Bool contained_by_pointer(list<T>* self, T& item) {
+    bool contained_by_pointer(list<T>* self, T& item) {
         if(self == null) {
             return 0;
         }
@@ -9269,7 +1851,7 @@ impl list <T>
 
         return result;
     }
-    list<T>*% filter(list<T>* self, void* parent, _Bool (*block)(void*, T))
+    list<T>*% filter(list<T>* self, void* parent, bool (*block)(void*, T))
     {
         list<T>*% result = new list<T>();
         
@@ -9358,7 +1940,7 @@ impl list <T>
 struct map<T, T2>
 {
     T*& keys;
-    _Bool* item_existance;
+    bool* item_existance;
     T2*& items;
     int size;
     int len;
@@ -9375,7 +1957,7 @@ impl map <T, T2>
     map<T,T2>*% initialize(map<T,T2>*% self) {
         self.keys = borrow gc_inc(new T[128]);
         self.items = borrow gc_inc(new T2[128]);
-        self.item_existance = borrow gc_inc(new _Bool[128]);
+        self.item_existance = borrow gc_inc(new bool[128]);
 
         for(int i=0; i<128; i++)
         {
@@ -9395,7 +1977,7 @@ impl map <T, T2>
     {
         self.keys = borrow gc_inc(new T[128]);
         self.items = borrow gc_inc(new T2[128]);
-        self.item_existance = borrow gc_inc(new _Bool[128]);
+        self.item_existance = borrow gc_inc(new bool[128]);
 
         for(int i=0; i<128; i++)
         {
@@ -9667,7 +2249,7 @@ impl map <T, T2>
         return result;
     }
 
-    _Bool end(map<T, T2>* self) {
+    bool end(map<T, T2>* self) {
         return self == null || self.key_list == null || self.key_list.it == null;
     }
     
@@ -9675,7 +2257,7 @@ impl map <T, T2>
         int size = self.size * 10;
         T&* keys = borrow gc_inc(new T[size]);
         T2&* items = borrow gc_inc(new T2[size]);
-        _Bool* item_existance = borrow gc_inc(new _Bool[size]);
+        bool* item_existance = borrow gc_inc(new bool[size]);
 
         int len = 0;
 
@@ -9810,7 +2392,7 @@ impl map <T, T2>
             }
         }
         
-        _Bool same_key_exist = 0;
+        bool same_key_exist = 0;
         for(var it2 = self.key_list.begin(); !self.key_list.end(); it2 = self.key_list.next()) {
             if(it2.equals(key)) {
                 same_key_exist = 1;
@@ -9890,7 +2472,7 @@ impl map <T, T2>
             }
         }
         
-        _Bool same_key_exist = 0;
+        bool same_key_exist = 0;
         for(var it2 = self.key_list.begin(); !self.key_list.end(); it2 = self.key_list.next()) {
             if(it2.equals(key)) {
                 same_key_exist = 1;
@@ -9946,7 +2528,7 @@ impl map <T, T2>
         self.insert(key, item);
     }
     
-    _Bool equals(map<T, T2>* left, map<T, T2>* right)
+    bool equals(map<T, T2>* left, map<T, T2>* right)
     {
         if(left == null && right == null) {
             return 1;
@@ -9960,7 +2542,7 @@ impl map <T, T2>
         }
 
         int n = 0;
-        _Bool result = 1;
+        bool result = 1;
         for(var it = left.key_list.begin(); !left.key_list.end(); it = left.key_list.next()) {
             T` default_value;
             memset(&default_value, 0, sizeof(T));
@@ -9986,7 +2568,7 @@ impl map <T, T2>
         return result;
     }
     
-    _Bool operator_equals(map<T, T2>* left, map<T,T2>* right) {
+    bool operator_equals(map<T, T2>* left, map<T,T2>* right) {
         if(left == null && right == null) {
             return 1;
         }
@@ -9998,7 +2580,7 @@ impl map <T, T2>
         }
 
         int n = 0;
-        _Bool result = 1;
+        bool result = 1;
         for(var it = left.key_list.begin(); !left.key_list.end(); it = left.key_list.next()) {
             T` default_value;
             memset(&default_value, 0, sizeof(T));
@@ -10024,7 +2606,7 @@ impl map <T, T2>
         return result;
     }
     
-    _Bool operator_not_equals(map<T, T2>* left, map<T,T2>* right) {
+    bool operator_not_equals(map<T, T2>* left, map<T,T2>* right) {
         if(left == null && right == null) {
             return 0;
         }
@@ -10035,7 +2617,7 @@ impl map <T, T2>
         return !(left.operator_equals(right));
     }
     
-    _Bool find(map<T, T2>* self, T& key) {
+    bool find(map<T, T2>* self, T& key) {
         if(self == null) {
             return 0;
         }
@@ -10212,7 +2794,7 @@ impl tuple1 <T>
         return self;
     }
     
-    _Bool equals(tuple1<T>* self, tuple1<T>* right)
+    bool equals(tuple1<T>* self, tuple1<T>* right)
     {
         if(self == null && right == null) {
             return 1;
@@ -10226,7 +2808,7 @@ impl tuple1 <T>
         
         return 1;
     }
-    _Bool operator_equals(tuple1<T>* self, tuple1<T>* right) 
+    bool operator_equals(tuple1<T>* self, tuple1<T>* right) 
     {
         if(self == null && right == null) {
             return 1;
@@ -10240,7 +2822,7 @@ impl tuple1 <T>
         
         return 1;
     }
-    _Bool operator_not_equals(tuple1<T>* left, tuple1<T>* right) {
+    bool operator_not_equals(tuple1<T>* left, tuple1<T>* right) {
         return !left.operator_equals(right);
     }
     
@@ -10276,7 +2858,7 @@ impl tuple2 <T, T2>
         }
         return "(" + self.v1.to_string() + "," + self.v2.to_string() + ")";
     }
-    _Bool equals(tuple2<T,T2>* self, tuple2<T,T2>* right)
+    bool equals(tuple2<T,T2>* self, tuple2<T,T2>* right)
     {
         if(self == null && right == null) {
             return 1;
@@ -10293,7 +2875,7 @@ impl tuple2 <T, T2>
         
         return 1;
     }
-    _Bool operator_equals(tuple2<T,T2>* self, tuple2<T,T2>* right) 
+    bool operator_equals(tuple2<T,T2>* self, tuple2<T,T2>* right) 
     {
         if(self == null && right == null) {
             return 1;
@@ -10310,7 +2892,7 @@ impl tuple2 <T, T2>
         
         return 1;
     }
-    _Bool operator_not_equals(tuple2<T,T2>* left, tuple2<T,T2>* right) {
+    bool operator_not_equals(tuple2<T,T2>* left, tuple2<T,T2>* right) {
         return !left.operator_equals(right);
     }
 }
@@ -10341,7 +2923,7 @@ impl tuple3 <T, T2, T3>
         }
         return "(" + self.v1.to_string() + "," + self.v2.to_string() + "," + self.v3.to_string() + ")";
     }
-    _Bool equals(tuple3<T,T2,T3>* self, tuple3<T,T2,T3>* right)
+    bool equals(tuple3<T,T2,T3>* self, tuple3<T,T2,T3>* right)
     {
         if(self == null && right == null) {
             return 1;
@@ -10361,7 +2943,7 @@ impl tuple3 <T, T2, T3>
         
         return 1;
     }
-    _Bool operator_equals(tuple3<T,T2,T3>* self, tuple3<T,T2,T3>* right) 
+    bool operator_equals(tuple3<T,T2,T3>* self, tuple3<T,T2,T3>* right) 
     {
         if(self == null && right == null) {
             return 1;
@@ -10381,7 +2963,7 @@ impl tuple3 <T, T2, T3>
         
         return 1;
     }
-    _Bool operator_not_equals(tuple3<T,T2,T3>* left, tuple3<T,T2,T3>* right) {
+    bool operator_not_equals(tuple3<T,T2,T3>* left, tuple3<T,T2,T3>* right) {
         return !left.operator_equals(right);
     }
 }
@@ -10413,7 +2995,7 @@ impl tuple4 <T, T2, T3, T4>
         }
         return "(" + self.v1.to_string() + "," + self.v2.to_string() + "," + self.v3.to_string() + "," + self.v4.to_string() + ")";
     }
-    _Bool equals(tuple4<T,T2,T3,T4>* self, tuple4<T,T2,T3,T4>* right)
+    bool equals(tuple4<T,T2,T3,T4>* self, tuple4<T,T2,T3,T4>* right)
     {
         if(self == null && right == null) {
             return 1;
@@ -10436,7 +3018,7 @@ impl tuple4 <T, T2, T3, T4>
         
         return 1;
     }
-    _Bool operator_equals(tuple4<T,T2,T3,T4>* self, tuple4<T,T2,T3,T4>* right) 
+    bool operator_equals(tuple4<T,T2,T3,T4>* self, tuple4<T,T2,T3,T4>* right) 
     {
         if(self == null && right == null) {
             return 1;
@@ -10459,7 +3041,7 @@ impl tuple4 <T, T2, T3, T4>
         
         return 1;
     }
-    _Bool operator_not_equals(tuple4<T,T2,T3,T4>* left, tuple4<T,T2,T3,T4>* right) {
+    bool operator_not_equals(tuple4<T,T2,T3,T4>* left, tuple4<T,T2,T3,T4>* right) {
         return !left.operator_equals(right);
     }
 }
@@ -10493,7 +3075,7 @@ impl tuple5 <T, T2, T3, T4, T5>
         }
         return "(" + self.v1.to_string() + "," + self.v2.to_string() + "," + self.v3.to_string() + "," + self.v4.to_string() + "," + self.v5.to_string() + ")";
     }
-    _Bool equals(tuple5<T,T2,T3,T4,T5>* self, tuple5<T,T2,T3,T4,T5>* right)
+    bool equals(tuple5<T,T2,T3,T4,T5>* self, tuple5<T,T2,T3,T4,T5>* right)
     {
         if(self == null && right == null) {
             return 1;
@@ -10519,7 +3101,7 @@ impl tuple5 <T, T2, T3, T4, T5>
         
         return 1;
     }
-    _Bool operator_equals(tuple5<T,T2,T3,T4,T5>* self, tuple5<T,T2,T3,T4,T5>* right) 
+    bool operator_equals(tuple5<T,T2,T3,T4,T5>* self, tuple5<T,T2,T3,T4,T5>* right) 
     {
         if(self == null && right == null) {
             return 1;
@@ -10545,7 +3127,7 @@ impl tuple5 <T, T2, T3, T4, T5>
         
         return 1;
     }
-    _Bool operator_not_equals(tuple5<T,T2,T3,T4,T5>* left, tuple5<T,T2,T3,T4,T5>* right) {
+    bool operator_not_equals(tuple5<T,T2,T3,T4,T5>* left, tuple5<T,T2,T3,T4,T5>* right) {
         return !left.operator_equals(right);
     }
 }
@@ -10596,7 +3178,7 @@ uniq buffer*% buffer*::clone(buffer* self)
     return result;
 }
 
-uniq _Bool buffer*::equals(buffer* left, buffer* right)
+uniq bool buffer*::equals(buffer* left, buffer* right)
 {
     if(left == null && right == null) {
         return 1;
@@ -10724,7 +3306,7 @@ if($UNIX == 0) {
         char result[128];
         
         va_list` args;
-        __builtin_va_start(args, msg);
+        __builtin_va_start(args,msg);
         vsnprintf(result, 128, msg, args);
         __builtin_va_end(args);
         
@@ -10761,7 +3343,7 @@ else {
         }
         
         va_list` args;
-        __builtin_va_start(args, msg);
+        __builtin_va_start(args,msg);
         char* result;
         int len = vasprintf(&result, msg, args);
         __builtin_va_end(args);
@@ -11131,112 +3713,112 @@ uniq list<double>*% double[]::to_list(double* self, size_t len)
 
 
 
-uniq _Bool _Bool::equals(_Bool self, _Bool right) 
+uniq bool bool::equals(bool self, bool right) 
 {
     return self == right;
 }
 
-uniq _Bool _Bool::equals(_Bool self, _Bool right) 
+uniq bool _Bool::equals(_Bool self, _Bool right) 
 {
     return self == right;
 }
 
-uniq _Bool char::equals(char self, char right) 
+uniq bool char::equals(char self, char right) 
 {
     return self == right;
 }
 
-uniq _Bool short::equals(short self, short right) 
+uniq bool short::equals(short self, short right) 
 {
     return self == right;
 }
 
-uniq _Bool int::equals(int self, int right) 
+uniq bool int::equals(int self, int right) 
 {
     return self == right;
 }
 
-uniq _Bool long::equals(long self, long right) 
+uniq bool long::equals(long self, long right) 
 {
     return self == right;
 }
 
-uniq _Bool size_t::equals(size_t self, size_t right) 
+uniq bool size_t::equals(size_t self, size_t right) 
 {
     return self == right;
 }
 
-uniq _Bool float::equals(float self, float right) 
+uniq bool float::equals(float self, float right) 
 {
     return self == right;
 }
 
-uniq _Bool double::equals(double self, double right) 
+uniq bool double::equals(double self, double right) 
 {
     return self == right;
 }
 
-uniq _Bool _Bool::operator_equals(_Bool self, _Bool right)
+uniq bool bool::operator_equals(bool self, bool right)
 {
     return self == right;
 }
 
-uniq _Bool _Bool::operator_equals(_Bool self, _Bool right)
+uniq bool _Bool::operator_equals(bool self, bool right)
 {
     return self == right;
 }
 
-uniq _Bool char::operator_equals(char self, char right)
+uniq bool char::operator_equals(char self, char right)
 {
     return self == right;
 }
 
-uniq _Bool short::operator_equals(short self, short right)
+uniq bool short::operator_equals(short self, short right)
 {
     return self == right;
 }
 
-uniq _Bool int::operator_equals(int self, int right)
+uniq bool int::operator_equals(int self, int right)
 {
     return self == right;
 }
 
-uniq _Bool long::operator_equals(long self, long right)
+uniq bool long::operator_equals(long self, long right)
 {
     return self == right;
 }
 
-uniq _Bool _Bool::operator_not_equals(_Bool self, _Bool right)
+uniq bool bool::operator_not_equals(bool self, bool right)
 {
     return !(self == right);
 }
 
-uniq _Bool _Bool::operator_not_equals(_Bool self, _Bool right)
+uniq bool _Bool::operator_not_equals(bool self, bool right)
 {
     return !(self == right);
 }
 
-uniq _Bool char::operator_not_equals(char self, char right)
+uniq bool char::operator_not_equals(char self, char right)
 {
     return !(self == right);
 }
 
-uniq _Bool short::operator_not_equals(short self, short right)
+uniq bool short::operator_not_equals(short self, short right)
 {
     return !(self == right);
 }
 
-uniq _Bool int::operator_not_equals(int self, int right)
+uniq bool int::operator_not_equals(int self, int right)
 {
     return !(self == right);
 }
 
-uniq _Bool long::operator_not_equals(long self, long right)
+uniq bool long::operator_not_equals(long self, long right)
 {
     return !(self == right);
 }
 
-uniq _Bool char*::equals(char* self, char* right) 
+uniq bool char*::equals(char* self, char* right) 
 {
     if(self == null && right == null) {
         return 1;
@@ -11248,7 +3830,7 @@ uniq _Bool char*::equals(char* self, char* right)
     return strcmp(self, right) == 0;
 }
 
-uniq _Bool string::equals(char* self, char* right) 
+uniq bool string::equals(char* self, char* right) 
 {
     if(self == null && right == null) {
         return 1;
@@ -11260,17 +3842,17 @@ uniq _Bool string::equals(char* self, char* right)
     return strcmp(self, right) == 0;
 }
 
-uniq _Bool void*::equals(void* self, void* right) 
+uniq bool void*::equals(void* self, void* right) 
 {
     return self == right;
 }
 
-uniq _Bool _Bool*::equals(_Bool* self, _Bool* right) 
+uniq bool bool*::equals(bool* self, bool* right) 
 {
     return *self == *right;
 }
 
-uniq _Bool string::operator_equals(char* self, char* right) 
+uniq bool string::operator_equals(char* self, char* right) 
 {
     if(self == null && right == null) {
         return 1;
@@ -11282,7 +3864,7 @@ uniq _Bool string::operator_equals(char* self, char* right)
     return strcmp(self, right) == 0;
 }
 
-uniq _Bool char*::operator_equals(char* self, char* right) 
+uniq bool char*::operator_equals(char* self, char* right) 
 {
     if(self == null && right == null) {
         return 1;
@@ -11294,17 +3876,17 @@ uniq _Bool char*::operator_equals(char* self, char* right)
     return strcmp(self, right) == 0;
 }
 
-uniq _Bool void*::operator_equals(char* self, char* right) 
+uniq bool void*::operator_equals(char* self, char* right) 
 {
     return self == right;
 }
 
-uniq _Bool void*::operator_not_equals(char* self, char* right) 
+uniq bool void*::operator_not_equals(char* self, char* right) 
 {
     return !self.operator_equals(right);
 }
 
-uniq _Bool string::operator_not_equals(char* self, char* right) 
+uniq bool string::operator_not_equals(char* self, char* right) 
 {
     if(self == null && right == null) {
         return 0;
@@ -11316,7 +3898,7 @@ uniq _Bool string::operator_not_equals(char* self, char* right)
     return strcmp(self, right) != 0;
 }
 
-uniq _Bool char*::operator_not_equals(char* self, char* right) 
+uniq bool char*::operator_not_equals(char* self, char* right) 
 {
     if(self == null && right == null) {
         return 0;
@@ -11392,9 +3974,9 @@ uniq size_t char[]::length(char* self, size_t len)
     return len;
 }
 
-uniq _Bool char*[]::contained(char** self, size_t len, char* str) 
+uniq bool char*[]::contained(char** self, size_t len, char* str) 
 {
-    _Bool result = 0;
+    bool result = 0;
     if(self == null) {
         return result;
     }
@@ -11435,12 +4017,12 @@ uniq size_t double[]::length(double* self, size_t len)
 
 
 
-uniq unsigned int _Bool::get_hash_key(_Bool value)
+uniq unsigned int bool::get_hash_key(bool value)
 {
     return (((int)value).get_hash_key());
 }
 
-uniq unsigned int _Bool::get_hash_key(_Bool value)
+uniq unsigned int _Bool::get_hash_key(bool value)
 {
     return (((int)value).get_hash_key());
 }
@@ -11516,12 +4098,12 @@ uniq unsigned int void*::get_hash_key(void* value)
 
 
 
-uniq _Bool _Bool::clone(_Bool self)
+uniq bool bool::clone(bool self)
 {
     return self;
 }
 
-uniq _Bool _Bool::clone(_Bool self)
+uniq bool _Bool::clone(bool self)
 {
     return self;
 }
@@ -11565,39 +4147,39 @@ uniq float float::clone(float self)
 
 
 
-uniq _Bool xisalpha(char c)
+uniq bool xisalpha(char c)
 {
-    _Bool result = (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+    bool result = (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
     return result;
 }
 
-uniq _Bool xisblank(char c)
+uniq bool xisblank(char c)
 {
     return c == ' ' || c == '\t';
 }
 
-uniq _Bool xisdigit(char c)
+uniq bool xisdigit(char c)
 {
     return (c >= '0' && c <= '9');
 }
 
-uniq _Bool xisspace(char c)
+uniq bool xisspace(char c)
 {
     return c == ' ' || c == '\t' || c == '\n' || c == '\r' || c == 28 || c == 11;
 }
 
-uniq _Bool xisalnum(char c)
+uniq bool xisalnum(char c)
 {
     return xisalpha(c) || xisdigit(c);
 }
 
-uniq _Bool xisascii(char c)
+uniq bool xisascii(char c)
 {
-    _Bool result = (c >= ' ' && c <= '~');
+    bool result = (c >= ' ' && c <= '~');
     return result;
 }
 
-uniq _Bool xispunct(char c) {
+uniq bool xispunct(char c) {
     return (c >= '!' && c <= '/') || (c >= ':' && c <= '@') || (c >= '[' && c <= '`') || (c >= '{' && c <= '~');
  }
 
@@ -11778,7 +4360,7 @@ uniq string xsprintf(char* msg, ...)
         return string("");
     }
     va_list` args;
-    __builtin_va_start(args, msg);
+    __builtin_va_start(args,msg);
     char* result;
     int len = vasprintf(&result, msg, args);
     __builtin_va_end(args);
@@ -12026,7 +4608,7 @@ uniq string xextname(char* path)
 
 
 
-uniq string _Bool::to_string(_Bool self)
+uniq string bool::to_string(bool self)
 {
     if(self) {
         return string("true");
@@ -12036,7 +4618,7 @@ uniq string _Bool::to_string(_Bool self)
     }
 }
 
-uniq string _Bool::to_string(_Bool self)
+uniq string _Bool::to_string(bool self)
 {
     if(self) {
         return string("true");
@@ -12100,7 +4682,7 @@ uniq string char*::to_string(char* self)
 
 
 
-uniq int _Bool::compare(_Bool left, _Bool right)
+uniq int bool::compare(bool left, bool right)
 {
     if(!left && right) {
         return -1;
@@ -12118,7 +4700,7 @@ uniq int _Bool::compare(_Bool left, _Bool right)
     return 0;
 }
 
-uniq int _Bool::compare(_Bool left, _Bool right)
+uniq int _Bool::compare(bool left, bool right)
 {
     if(!left && right) {
         return -1;
@@ -12305,7 +4887,7 @@ if($UNIX == 0) {
         char msg2[128];
         
         va_list` args;
-        __builtin_va_start(args, self);
+        __builtin_va_start(args,self);
         int len = snprintf(msg2, 128, self, args);
         __builtin_va_end(args);
         
@@ -12325,7 +4907,7 @@ else {
         char* msg2;
     
         va_list` args;
-        __builtin_va_start(args, self);
+        __builtin_va_start(args,self);
         vasprintf(&msg2,self,args);
         __builtin_va_end(args);
         
@@ -12483,13 +5065,13 @@ typedef struct
   re_capture* captures;
   int         capture_capacity;   
   int         total_groups;       
-  _Bool        ignore_case;
+  bool        ignore_case;
 } match_context;
 
 
 
 
-uniq int re_matchp_ex(re_t pattern, const char* text, int* matchlength, re_capture* captures, int max_captures, _Bool ignore_case)
+uniq int re_matchp_ex(re_t pattern, const char* text, int* matchlength, re_capture* captures, int max_captures, bool ignore_case)
 {
   *matchlength = 0;
   if (pattern == 0)
@@ -13160,7 +5742,7 @@ uniq const char* matchquestion(regex_t* token, regex_t* rest, const char* text, 
   return ((void*)0);
 }
 
-uniq unsigned char re_fold_char(unsigned char c, _Bool ignore_case)
+uniq unsigned char re_fold_char(unsigned char c, bool ignore_case)
 {
   if (ignore_case && c >= 'A' && c <= 'Z')
   {
@@ -13238,7 +5820,7 @@ uniq int matchalphanum(char c)
 {
   return ((c == '_') || matchalpha(c) || matchdigit(c));
 }
-uniq int matchrange(char c, const char* str, _Bool ignore_case)
+uniq int matchrange(char c, const char* str, bool ignore_case)
 {
   unsigned char needle = (unsigned char)c;
   unsigned char start = (unsigned char)str[0];
@@ -13282,7 +5864,7 @@ uniq int matchmetachar(char c, const char* str)
   }
 }
 
-uniq int matchcharclass(char c, const char* str, _Bool ignore_case)
+uniq int matchcharclass(char c, const char* str, bool ignore_case)
 {
   unsigned char needle = re_fold_char((unsigned char)c, ignore_case);
   do
@@ -13410,7 +5992,7 @@ uniq string string::upper_case(char* str)
     return result;
 }
 
-uniq int char*::index_regex(char* self, char* reg, int default_value, _Bool ignore_case=0)
+uniq int char*::index_regex(char* self, char* reg, int default_value, bool ignore_case=0)
 {
     if(self == null || reg == null) {
         return default_value;
@@ -13471,7 +6053,7 @@ uniq int char*::rindex(char* str, char* search_str, int default_value)
     return default_value;
 }
 
-uniq int char*::rindex_regex(char* self, char* reg, int default_value, _Bool ignore_case=0)
+uniq int char*::rindex_regex(char* self, char* reg, int default_value, bool ignore_case=0)
 {
     if(self == null || reg == null) {
         return default_value;
@@ -13661,7 +6243,7 @@ uniq int string::rindex(char* str, char* search_str, int default_value=-1)
     return char*::rindex(str, search_str, default_value);
 }
 
-uniq int string::rindex_regex(char* self, char* reg, int default_value=-1, _Bool ignore_case=0)
+uniq int string::rindex_regex(char* self, char* reg, int default_value=-1, bool ignore_case=0)
 {
     return char*::rindex_regex(self, reg, default_value, ignore_case);
 }
@@ -13676,7 +6258,7 @@ uniq int string::index(char* str, char* search_str, int default_value=-1)
     return char*::index(str, search_str, default_value);
 }
 
-uniq int string::index_regex(char* self, char* reg, int default_value=-1, _Bool ignore_case=0)
+uniq int string::index_regex(char* self, char* reg, int default_value=-1, bool ignore_case=0)
 {
     return char*::index_regex(self, reg, default_value, ignore_case);
 }
@@ -13691,7 +6273,7 @@ uniq string string::multiply(char* str, int n)
     return char*::multiply(str, n);
 }
 
-uniq _Bool char*::match(char* self, char* reg, _Bool ignore_case=0)
+uniq bool char*::match(char* self, char* reg, bool ignore_case=0)
 {
     if(self == null || reg == null) {
         return 0;
@@ -13724,7 +6306,7 @@ uniq _Bool char*::match(char* self, char* reg, _Bool ignore_case=0)
     }
 }
 
-uniq list<string>*% char*::scan(char* self, char* reg, _Bool ignore_case=0)
+uniq list<string>*% char*::scan(char* self, char* reg, bool ignore_case=0)
 {
     if(self == null || reg == null) {
         return new list<string>();
@@ -13787,7 +6369,7 @@ uniq list<string>*% char*::scan(char* self, char* reg, _Bool ignore_case=0)
     return result;
 }
 
-uniq list<string>*% char*::split(char* self, char* reg, _Bool ignore_case=0)
+uniq list<string>*% char*::split(char* self, char* reg, bool ignore_case=0)
 {
     if(self == null || reg == null) {
         return new list<string>();
@@ -13842,7 +6424,7 @@ uniq list<string>*% char*::split(char* self, char* reg, _Bool ignore_case=0)
     return result;
 }
 
-uniq string string::sub(char* self, char* reg, char* replace, _Bool ignore_case=0)
+uniq string string::sub(char* self, char* reg, char* replace, bool ignore_case=0)
 {
     return char*::sub(self, reg, replace, 1, ignore_case);
 }
@@ -13852,22 +6434,22 @@ uniq list<string>*% string::split_str(char* self, char* str)
     return char*::split_str(self, str);
 }
 
-uniq list<string>*% string::scan(char* self, char* reg, _Bool ignore_case=0)
+uniq list<string>*% string::scan(char* self, char* reg, bool ignore_case=0)
 {
     return char*::scan(self, reg, ignore_case);
 }
 
-uniq list<string>*% string::split(char* self, char* reg, _Bool ignore_case=0)
+uniq list<string>*% string::split(char* self, char* reg, bool ignore_case=0)
 {
     return char*::split(self, reg, ignore_case);
 }
 
-uniq _Bool string::match(char* self, char* reg, _Bool ignore_case=0)
+uniq bool string::match(char* self, char* reg, bool ignore_case=0)
 {
     return char*::match(self, reg, ignore_case);
 }
 
-uniq string char*::sub(char* self, char* reg, char* replace, _Bool global=1, _Bool ignore_case=0)
+uniq string char*::sub(char* self, char* reg, char* replace, bool global=1, bool ignore_case=0)
 {
     if(self == null || reg == null) {
         return string("");
@@ -13925,7 +6507,7 @@ uniq string char*::sub(char* self, char* reg, char* replace, _Bool global=1, _Bo
     return result.to_string();
 }
 
-uniq string char*::sub_block(char* self, char* reg, _Bool global=1, _Bool ignore_case=0, void* parent, string (*block)(void* parent, char* match_string, list<string>* group_strings))
+uniq string char*::sub_block(char* self, char* reg, bool global=1, bool ignore_case=0, void* parent, string (*block)(void* parent, char* match_string, list<string>* group_strings))
 {
     if(self == null || reg == null) {
         return string("");
@@ -14017,7 +6599,7 @@ uniq string char*::sub_block(char* self, char* reg, _Bool global=1, _Bool ignore
     return result.to_string();
 }
 
-uniq list<string>*% char*::scan_block(char* self, char* reg, _Bool ignore_case=0, void* parent, string (*block)(void* parent, char* match_string, list<string>* group_strings))
+uniq list<string>*% char*::scan_block(char* self, char* reg, bool ignore_case=0, void* parent, string (*block)(void* parent, char* match_string, list<string>* group_strings))
 {
     if(self == null || reg == null) {
         return new list<string>();
@@ -14092,7 +6674,7 @@ uniq list<string>*% char*::scan_block(char* self, char* reg, _Bool ignore_case=0
     return result;
 }
 
-uniq string string::sub_block(char* self, char* reg, _Bool global=1, _Bool ignore_case=0, void* parent, string (*block)(void* parent, char* match_string, list<string>* group_strings))
+uniq string string::sub_block(char* self, char* reg, bool global=1, bool ignore_case=0, void* parent, string (*block)(void* parent, char* match_string, list<string>* group_strings))
 {
     return char*::sub_block(self, reg, global, ignore_case, parent, block);
 }
@@ -14100,7 +6682,7 @@ uniq string string::sub_block(char* self, char* reg, _Bool global=1, _Bool ignor
 #line 6734 "/usr/local/include/neo-c.h"
 
 if($UNIX == 1) {
-#line 1 "/usr/include/wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/wchar.h"
 
 
 
@@ -14123,9 +6705,7 @@ if($UNIX == 1) {
 
 
 
-#line 25 "/usr/include/wchar.h"
 
-#line 1 "/usr/include/bits/libc-header-start.h"
 
 
 
@@ -14152,11 +6732,8 @@ if($UNIX == 1) {
 
 
 
-#line 30 "/usr/include/bits/libc-header-start.h"
 
-#line 32 "/usr/include/bits/libc-header-start.h"
 
-#line 1 "/usr/include/features.h"
 
 
 
@@ -14172,12 +6749,11 @@ if($UNIX == 1) {
 
 
 
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
 
-#line 34 "/usr/include/bits/libc-header-start.h"
 
 
 
-#line 43 "/usr/include/bits/libc-header-start.h"
 
 
 
@@ -14201,19 +6777,15 @@ if($UNIX == 1) {
 
 
 
-#line 84 "/usr/include/bits/libc-header-start.h"
 
 
 
 
 
-#line 101 "/usr/include/bits/libc-header-start.h"
 
 
-#line 28 "/usr/include/wchar.h"
 
 
-#line 1 "/usr/include/bits/floatn.h"
 
 
 
@@ -14231,9 +6803,7 @@ if($UNIX == 1) {
 
 
 
-#line 31 "/usr/include/wchar.h"
 
-#line 1 "/usr/lib/clang/21/include/stddef.h"
 
 
 
@@ -14246,7 +6816,9 @@ if($UNIX == 1) {
 
 
 
+#line 69 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
 
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
 
 
 
@@ -14255,13 +6827,9 @@ if($UNIX == 1) {
 
 
 
-#line 37 "/usr/lib/clang/21/include/stddef.h"
 
-#line 80 "/usr/lib/clang/21/include/stddef.h"
 
-#line 85 "/usr/lib/clang/21/include/stddef.h"
 
-#line 1 "/usr/lib/clang/21/include/__stddef_size_t.h"
 
 
 
@@ -14274,12 +6842,10 @@ if($UNIX == 1) {
 
 
 
-#line 88 "/usr/lib/clang/21/include/stddef.h"
-#line 90 "/usr/lib/clang/21/include/stddef.h"
+#line 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
 
-#line 95 "/usr/lib/clang/21/include/stddef.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 1 "/usr/lib/clang/21/include/__stddef_wchar_t.h"
 
 
 
@@ -14289,17 +6855,12 @@ if($UNIX == 1) {
 
 
 
-#line 11 "/usr/lib/clang/21/include/__stddef_wchar_t.h"
 
 
 
 
 
-#line 26 "/usr/lib/clang/21/include/__stddef_wchar_t.h"
-#line 98 "/usr/lib/clang/21/include/stddef.h"
-#line 100 "/usr/lib/clang/21/include/stddef.h"
 
-#line 1 "/usr/lib/clang/21/include/__stddef_null.h"
 
 
 
@@ -14309,33 +6870,21 @@ if($UNIX == 1) {
 
 
 
-#line 11 "/usr/lib/clang/21/include/__stddef_null.h"
 
 
 
 
 
 
-#line 18 "/usr/lib/clang/21/include/__stddef_null.h"
 
-#line 28 "/usr/lib/clang/21/include/__stddef_null.h"
-#line 103 "/usr/lib/clang/21/include/stddef.h"
-#line 105 "/usr/lib/clang/21/include/stddef.h"
 
-#line 110 "/usr/lib/clang/21/include/stddef.h"
 
-#line 115 "/usr/lib/clang/21/include/stddef.h"
 
-#line 120 "/usr/lib/clang/21/include/stddef.h"
 
-#line 125 "/usr/lib/clang/21/include/stddef.h"
 
 
 
-#line 132 "/usr/lib/clang/21/include/stddef.h"
-#line 36 "/usr/include/wchar.h"
 
-#line 1 "/usr/lib/clang/21/include/stdarg.h"
 
 
 
@@ -14357,32 +6906,25 @@ if($UNIX == 1) {
 
 
 
-#line 45 "/usr/lib/clang/21/include/stdarg.h"
 
-#line 1 "/usr/lib/clang/21/include/__stdarg___gnuc_va_list.h"
 
 
 
 
+#line 69 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 77 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
-#line 48 "/usr/lib/clang/21/include/stdarg.h"
-#line 50 "/usr/lib/clang/21/include/stdarg.h"
+#line 83 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 55 "/usr/lib/clang/21/include/stdarg.h"
 
-#line 60 "/usr/lib/clang/21/include/stdarg.h"
 
-#line 65 "/usr/lib/clang/21/include/stdarg.h"
 
-#line 70 "/usr/lib/clang/21/include/stdarg.h"
-#line 39 "/usr/include/wchar.h"
 
-#line 50 "/usr/include/wchar.h"
+#line 106 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 1 "/usr/include/bits/wchar.h"
 
 
 
@@ -14390,8 +6932,11 @@ if($UNIX == 1) {
 
 
 
+#line 118 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 129 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 157 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
@@ -14400,820 +6945,6681 @@ if($UNIX == 1) {
 
 
 
+#line 168 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 21 "/usr/include/bits/wchar.h"
 
 
 
+#line 173 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
 
+#line 178 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
 
+#line 187 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 40 "/usr/include/bits/wchar.h"
 
-#line 48 "/usr/include/bits/wchar.h"
-#line 52 "/usr/include/wchar.h"
-#line 1 "/usr/include/bits/types/wint_t.h"
-#line 3 "/usr/include/bits/types/wint_t.h"
+#line 194 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
 
 
 
-#line 11 "/usr/include/bits/types/wint_t.h"
+#line 212 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
 
 
-#line 19 "/usr/include/bits/types/wint_t.h"
 
-typedef unsigned int wint_t;
-#line 53 "/usr/include/wchar.h"
-#line 1 "/usr/include/bits/types/mbstate_t.h"
-#line 3 "/usr/include/bits/types/mbstate_t.h"
 
-#line 1 "/usr/include/bits/types/__mbstate_t.h"
-#line 5 "/usr/include/bits/types/mbstate_t.h"
 
-typedef __mbstate_t mbstate_t;
-#line 54 "/usr/include/wchar.h"
-#line 1 "/usr/include/bits/types/__FILE.h"
-#line 55 "/usr/include/wchar.h"
 
-#line 1 "/usr/include/bits/types/FILE.h"
-#line 58 "/usr/include/wchar.h"
-#line 1 "/usr/include/bits/types/locale_t.h"
 
 
+#line 224 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 230 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 236 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 238 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
 
+#line 247 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 249 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 251 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
+#line 257 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
 
-#line 61 "/usr/include/wchar.h"
-#line 62 "/usr/include/wchar.h"
 
+#line 267 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 67 "/usr/include/wchar.h"
 
-#line 69 "/usr/include/wchar.h"
 
-#line 73 "/usr/include/wchar.h"
 
-#line 77 "/usr/include/wchar.h"
 
+#line 292 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
 
 
+#line 302 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
-#line 88 "/usr/include/wchar.h"
 
 
 
 
 
-struct tm;
+#line 314 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
-extern wchar_t *wcscpy (wchar_t *__restrict __dest,
-			const wchar_t *__restrict __src)
-      ;
 
 
-extern wchar_t *wcsncpy (wchar_t *__restrict __dest,
-			 const wchar_t *__restrict __src, size_t __n)
-      ;
 
-#line 107 "/usr/include/wchar.h"
+#line 325 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-extern size_t wcslcpy (wchar_t *__restrict __dest,
-		       const wchar_t *__restrict __src, size_t __n)
-    ;
 
 
 
-extern size_t wcslcat (wchar_t *__restrict __dest,
-		       const wchar_t *__restrict __src, size_t __n)
-     ;
-#line 118 "/usr/include/wchar.h"
 
+#line 335 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-extern wchar_t *wcscat (wchar_t *__restrict __dest,
-			const wchar_t *__restrict __src)
-      ;
 
-extern wchar_t *wcsncat (wchar_t *__restrict __dest,
-			 const wchar_t *__restrict __src, size_t __n)
-      ;
 
 
-extern int wcscmp (const wchar_t *__s1, const wchar_t *__s2)
-      __attribute__ ((__pure__)) ;
+#line 348 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-extern int wcsncmp (const wchar_t *__s1, const wchar_t *__s2, size_t __n)
-      __attribute__ ((__pure__)) ;
 
-#line 136 "/usr/include/wchar.h"
 
-extern int wcscasecmp (const wchar_t *__s1, const wchar_t *__s2) ;
 
 
-extern int wcsncasecmp (const wchar_t *__s1, const wchar_t *__s2,
-			size_t __n) ;
 
+#line 357 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
-extern int wcscasecmp_l (const wchar_t *__s1, const wchar_t *__s2,
-			 locale_t __loc) ;
 
-extern int wcsncasecmp_l (const wchar_t *__s1, const wchar_t *__s2,
-			  size_t __n, locale_t __loc) ;
-#line 151 "/usr/include/wchar.h"
 
 
 
-extern int wcscoll (const wchar_t *__s1, const wchar_t *__s2) ;
 
 
 
-extern size_t wcsxfrm (wchar_t *__restrict __s1,
-		       const wchar_t *__restrict __s2, size_t __n) ;
 
-#line 162 "/usr/include/wchar.h"
 
 
 
 
 
-extern int wcscoll_l (const wchar_t *__s1, const wchar_t *__s2,
-		      locale_t __loc) ;
 
 
+#line 386 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 395 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-extern size_t wcsxfrm_l (wchar_t *__s1, const wchar_t *__s2,
-			 size_t __n, locale_t __loc) ;
 
 
-extern wchar_t *wcsdup (const wchar_t *__s) 
-  __attribute__ ((__malloc__)) ;
-#line 180 "/usr/include/wchar.h"
 
 
-#line 188 "/usr/include/wchar.h"
-extern wchar_t *wcschr (const wchar_t *__wcs, wchar_t __wc)
-      __attribute__ ((__pure__));
-#line 191 "/usr/include/wchar.h"
+#line 410 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 198 "/usr/include/wchar.h"
-extern wchar_t *wcsrchr (const wchar_t *__wcs, wchar_t __wc)
-      __attribute__ ((__pure__));
-#line 201 "/usr/include/wchar.h"
 
-#line 203 "/usr/include/wchar.h"
 
 
-extern wchar_t *wcschrnul (const wchar_t *__s, wchar_t __wc)
-      __attribute__ ((__pure__));
-#line 208 "/usr/include/wchar.h"
 
 
 
-extern size_t wcscspn (const wchar_t *__wcs, const wchar_t *__reject)
-      __attribute__ ((__pure__));
 
 
-extern size_t wcsspn (const wchar_t *__wcs, const wchar_t *__accept)
-      __attribute__ ((__pure__));
+#line 423 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 225 "/usr/include/wchar.h"
-extern wchar_t *wcspbrk (const wchar_t *__wcs, const wchar_t *__accept)
-      __attribute__ ((__pure__));
-#line 228 "/usr/include/wchar.h"
+#line 425 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 236 "/usr/include/wchar.h"
-extern wchar_t *wcsstr (const wchar_t *__haystack, const wchar_t *__needle)
-      __attribute__ ((__pure__));
-#line 239 "/usr/include/wchar.h"
+#line 429 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 433 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-extern wchar_t *wcstok (wchar_t *__restrict __s,
-			const wchar_t *__restrict __delim,
-			wchar_t **__restrict __ptr) ;
+#line 437 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 441 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-extern size_t wcslen (const wchar_t *__s)  __attribute__ ((__pure__));
 
-#line 249 "/usr/include/wchar.h"
+#line 446 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 257 "/usr/include/wchar.h"
-extern wchar_t *wcswcs (const wchar_t *__haystack, const wchar_t *__needle)
-      __attribute__ ((__pure__));
-#line 261 "/usr/include/wchar.h"
+#line 450 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 263 "/usr/include/wchar.h"
+#line 454 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-extern size_t wcsnlen (const wchar_t *__s, size_t __maxlen)
-      __attribute__ ((__pure__));
-#line 267 "/usr/include/wchar.h"
+#line 458 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
-#line 277 "/usr/include/wchar.h"
-extern wchar_t *wmemchr (const wchar_t *__s, wchar_t __c, size_t __n)
-      __attribute__ ((__pure__));
-#line 280 "/usr/include/wchar.h"
 
 
-extern int wmemcmp (const wchar_t *__s1, const wchar_t *__s2, size_t __n)
-      __attribute__ ((__pure__));
+#line 470 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
-extern wchar_t *wmemcpy (wchar_t *__restrict __s1,
-			 const wchar_t *__restrict __s2, size_t __n) ;
 
 
 
-extern wchar_t *wmemmove (wchar_t *__s1, const wchar_t *__s2, size_t __n)
-     ;
 
 
-extern wchar_t *wmemset (wchar_t *__s, wchar_t __c, size_t __n) ;
 
-#line 298 "/usr/include/wchar.h"
 
 
-extern wchar_t *wmempcpy (wchar_t *__restrict __s1,
-			  const wchar_t *__restrict __s2, size_t __n)
-     ;
-#line 304 "/usr/include/wchar.h"
 
 
 
 
-extern wint_t btowc (int __c) ;
+#line 491 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
-extern int wctob (wint_t __c) ;
 
 
 
-extern int mbsinit (const mbstate_t *__ps)  __attribute__ ((__pure__));
 
 
 
-extern size_t mbrtowc (wchar_t *__restrict __pwc,
-		       const char *__restrict __s, size_t __n,
-		       mbstate_t *__restrict __p) ;
 
 
-extern size_t wcrtomb (char *__restrict __s, wchar_t __wc,
-		       mbstate_t *__restrict __ps) ;
 
 
-extern size_t __mbrlen (const char *__restrict __s, size_t __n,
-			mbstate_t *__restrict __ps) ;
-extern size_t mbrlen (const char *__restrict __s, size_t __n,
-		      mbstate_t *__restrict __ps) ;
 
-#line 358 "/usr/include/wchar.h"
 
 
 
-extern size_t mbsrtowcs (wchar_t *__restrict __dst,
-			 const char **__restrict __src, size_t __len,
-			 mbstate_t *__restrict __ps) ;
 
 
 
-extern size_t wcsrtombs (char *__restrict __dst,
-			 const wchar_t **__restrict __src, size_t __len,
-			 mbstate_t *__restrict __ps) ;
 
 
-#line 373 "/usr/include/wchar.h"
 
 
-extern size_t mbsnrtowcs (wchar_t *__restrict __dst,
-			  const char **__restrict __src, size_t __nmc,
-			  size_t __len, mbstate_t *__restrict __ps) ;
 
 
 
-extern size_t wcsnrtombs (char *__restrict __dst,
-			  const wchar_t **__restrict __src,
-			  size_t __nwc, size_t __len,
-			  mbstate_t *__restrict __ps) ;
-#line 386 "/usr/include/wchar.h"
 
 
 
-#line 390 "/usr/include/wchar.h"
 
-extern int wcwidth (wchar_t __c) ;
 
 
 
-extern int wcswidth (const wchar_t *__s, size_t __n) ;
-#line 397 "/usr/include/wchar.h"
 
 
 
 
-extern double wcstod (const wchar_t *__restrict __nptr,
-		      wchar_t **__restrict __endptr) ;
 
-#line 405 "/usr/include/wchar.h"
 
-extern float wcstof (const wchar_t *__restrict __nptr,
-		     wchar_t **__restrict __endptr) ;
-extern long double wcstold (const wchar_t *__restrict __nptr,
-			    wchar_t **__restrict __endptr) ;
-#line 411 "/usr/include/wchar.h"
 
-#line 413 "/usr/include/wchar.h"
 
 
-#line 419 "/usr/include/wchar.h"
 
-#line 421 "/usr/include/wchar.h"
-extern _Float32 wcstof32 (const wchar_t *__restrict __nptr,
-			  wchar_t **__restrict __endptr) ;
-#line 424 "/usr/include/wchar.h"
 
-#line 426 "/usr/include/wchar.h"
-extern _Float64 wcstof64 (const wchar_t *__restrict __nptr,
-			  wchar_t **__restrict __endptr) ;
-#line 429 "/usr/include/wchar.h"
 
-#line 434 "/usr/include/wchar.h"
 
-#line 436 "/usr/include/wchar.h"
-extern _Float32x wcstof32x (const wchar_t *__restrict __nptr,
-			    wchar_t **__restrict __endptr) ;
-#line 439 "/usr/include/wchar.h"
 
-#line 441 "/usr/include/wchar.h"
-extern _Float64x wcstof64x (const wchar_t *__restrict __nptr,
-			    wchar_t **__restrict __endptr) ;
-#line 444 "/usr/include/wchar.h"
 
-#line 450 "/usr/include/wchar.h"
 
 
 
 
-extern long int wcstol (const wchar_t *__restrict __nptr,
-			wchar_t **__restrict __endptr, int __base) ;
 
 
 
-extern unsigned long int wcstoul (const wchar_t *__restrict __nptr,
-				  wchar_t **__restrict __endptr, int __base)
-     ;
 
-#line 464 "/usr/include/wchar.h"
 
 
 
-extern long long int wcstoll (const wchar_t *__restrict __nptr,
-			      wchar_t **__restrict __endptr, int __base)
-     ;
 
 
 
 
-extern unsigned long long int wcstoull (const wchar_t *__restrict __nptr,
-					wchar_t **__restrict __endptr,
-					int __base) ;
-#line 478 "/usr/include/wchar.h"
 
-#line 480 "/usr/include/wchar.h"
 
 
 
-extern long long int wcstoq (const wchar_t *__restrict __nptr,
-			     wchar_t **__restrict __endptr, int __base)
-     ;
 
 
 
 
-extern unsigned long long int wcstouq (const wchar_t *__restrict __nptr,
-				       wchar_t **__restrict __endptr,
-				       int __base) ;
-#line 494 "/usr/include/wchar.h"
 
 
 
-#line 528 "/usr/include/wchar.h"
-extern long int __isoc23_wcstol (const wchar_t *__restrict __nptr,
-				 wchar_t **__restrict __endptr, int __base)
-     ;
-extern unsigned long int __isoc23_wcstoul (const wchar_t *__restrict __nptr,
-					   wchar_t **__restrict __endptr,
-					   int __base)
-     ;
 
-extern long long int __isoc23_wcstoll (const wchar_t *__restrict __nptr,
-				       wchar_t **__restrict __endptr,
-				       int __base)
-     ;
 
-extern unsigned long long int __isoc23_wcstoull (const wchar_t *__restrict __nptr,
-						 wchar_t **__restrict __endptr,
-						 int __base)
-     ;
-#line 555 "/usr/include/wchar.h"
 
-#line 557 "/usr/include/wchar.h"
 
 
 
-extern long int wcstol_l (const wchar_t *__restrict __nptr,
-			  wchar_t **__restrict __endptr, int __base,
-			  locale_t __loc) ;
 
-extern unsigned long int wcstoul_l (const wchar_t *__restrict __nptr,
-				    wchar_t **__restrict __endptr,
-				    int __base, locale_t __loc) ;
 
 
-extern long long int wcstoll_l (const wchar_t *__restrict __nptr,
-				wchar_t **__restrict __endptr,
-				int __base, locale_t __loc) ;
 
 
-extern unsigned long long int wcstoull_l (const wchar_t *__restrict __nptr,
-					  wchar_t **__restrict __endptr,
-					  int __base, locale_t __loc)
-     ;
 
 
+#line 596 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 605 "/usr/include/wchar.h"
-extern long int __isoc23_wcstol_l (const wchar_t *__restrict __nptr,
-				   wchar_t **__restrict __endptr, int __base,
-				   locale_t __loc) ;
-extern unsigned long int __isoc23_wcstoul_l (const wchar_t *__restrict __nptr,
-					     wchar_t **__restrict __endptr,
-					     int __base, locale_t __loc)
-     ;
 
-extern long long int __isoc23_wcstoll_l (const wchar_t *__restrict __nptr,
-					 wchar_t **__restrict __endptr,
-					 int __base, locale_t __loc)
-     ;
 
-extern unsigned long long int __isoc23_wcstoull_l (const wchar_t *__restrict __nptr,
-						   wchar_t **__restrict __endptr,
-						   int __base, locale_t __loc)
-     ;
-#line 628 "/usr/include/wchar.h"
 
-extern double wcstod_l (const wchar_t *__restrict __nptr,
-			wchar_t **__restrict __endptr, locale_t __loc)
-     ;
 
-extern float wcstof_l (const wchar_t *__restrict __nptr,
-		       wchar_t **__restrict __endptr, locale_t __loc)
-     ;
 
-extern long double wcstold_l (const wchar_t *__restrict __nptr,
-			      wchar_t **__restrict __endptr,
-			      locale_t __loc) ;
 
-#line 646 "/usr/include/wchar.h"
 
-#line 648 "/usr/include/wchar.h"
-extern _Float32 wcstof32_l (const wchar_t *__restrict __nptr,
-			    wchar_t **__restrict __endptr,
-			    locale_t __loc) ;
-#line 652 "/usr/include/wchar.h"
 
-#line 654 "/usr/include/wchar.h"
-extern _Float64 wcstof64_l (const wchar_t *__restrict __nptr,
-			    wchar_t **__restrict __endptr,
-			    locale_t __loc) ;
-#line 658 "/usr/include/wchar.h"
 
-#line 664 "/usr/include/wchar.h"
 
-#line 666 "/usr/include/wchar.h"
-extern _Float32x wcstof32x_l (const wchar_t *__restrict __nptr,
-			      wchar_t **__restrict __endptr,
-			      locale_t __loc) ;
-#line 670 "/usr/include/wchar.h"
 
-#line 672 "/usr/include/wchar.h"
-extern _Float64x wcstof64x_l (const wchar_t *__restrict __nptr,
-			      wchar_t **__restrict __endptr,
-			      locale_t __loc) ;
-#line 676 "/usr/include/wchar.h"
 
-#line 683 "/usr/include/wchar.h"
 
 
-#line 686 "/usr/include/wchar.h"
 
 
-extern wchar_t *wcpcpy (wchar_t *__restrict __dest,
-			const wchar_t *__restrict __src) ;
 
 
 
-extern wchar_t *wcpncpy (wchar_t *__restrict __dest,
-			 const wchar_t *__restrict __src, size_t __n)
-     ;
-#line 697 "/usr/include/wchar.h"
 
 
 
 
-#line 714 "/usr/include/wchar.h"
 
 
 
-extern __FILE *open_wmemstream (wchar_t **__bufloc, size_t *__sizeloc) 
-  __attribute__ ((__malloc__)) ;
-#line 720 "/usr/include/wchar.h"
 
-#line 722 "/usr/include/wchar.h"
 
 
-extern int fwide (__FILE *__fp, int __mode) ;
 
 
 
 
 
 
-extern int fwprintf (__FILE *__restrict __stream,
-		     const wchar_t *__restrict __format, ...)
-     ;
 
 
 
 
-extern int wprintf (const wchar_t *__restrict __format, ...)
-     ;
+#line 649 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-extern int swprintf (wchar_t *__restrict __s, size_t __n,
-		     const wchar_t *__restrict __format, ...)
-      ;
 
 
 
 
 
-extern int vfwprintf (__FILE *__restrict __s,
-		      const wchar_t *__restrict __format,
-		      __gnuc_va_list __arg)
-     ;
 
 
 
 
-extern int vwprintf (const wchar_t *__restrict __format,
-		     __gnuc_va_list __arg)
-     ;
 
 
-extern int vswprintf (wchar_t *__restrict __s, size_t __n,
-		      const wchar_t *__restrict __format,
-		      __gnuc_va_list __arg)
-      ;
 
 
 
 
 
 
-extern int fwscanf (__FILE *__restrict __stream,
-		    const wchar_t *__restrict __format, ...)
-     ;
 
+#line 691 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 713 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 723 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-extern int wscanf (const wchar_t *__restrict __format, ...)
-     ;
+#line 727 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-extern int swscanf (const wchar_t *__restrict __s,
-		    const wchar_t *__restrict __format, ...)
-      ;
 
 
 
+#line 737 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 747 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 805 "/usr/include/wchar.h"
-extern int __isoc23_fwscanf (__FILE *__restrict __stream,
-			     const wchar_t *__restrict __format, ...);
-extern int __isoc23_wscanf (const wchar_t *__restrict __format, ...);
-extern int __isoc23_swscanf (const wchar_t *__restrict __s,
-			     const wchar_t *__restrict __format, ...)
-     ;
-#line 841 "/usr/include/wchar.h"
+#line 757 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 843 "/usr/include/wchar.h"
+#line 763 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-#line 845 "/usr/include/wchar.h"
+#line 770 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 772 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
-extern int vfwscanf (__FILE *__restrict __s,
-		     const wchar_t *__restrict __format,
-		     __gnuc_va_list __arg)
-     ;
 
+#line 781 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 787 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
+#line 790 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
-extern int vwscanf (const wchar_t *__restrict __format,
-		    __gnuc_va_list __arg)
-     ;
 
-extern int vswscanf (const wchar_t *__restrict __s,
-		     const wchar_t *__restrict __format,
-		     __gnuc_va_list __arg)
-      ;
 
 
-#line 882 "/usr/include/wchar.h"
-extern int __isoc23_vfwscanf (__FILE *__restrict __s,
-			      const wchar_t *__restrict __format,
-			      __gnuc_va_list __arg);
-extern int __isoc23_vwscanf (const wchar_t *__restrict __format,
-			     __gnuc_va_list __arg);
-extern int __isoc23_vswscanf (const wchar_t *__restrict __s,
-			      const wchar_t *__restrict __format,
-			      __gnuc_va_list __arg) ;
-#line 922 "/usr/include/wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-#line 924 "/usr/include/wchar.h"
 
 
 
 
 
 
-extern wint_t fgetwc (__FILE *__stream);
-extern wint_t getwc (__FILE *__stream);
 
 
 
 
 
-extern wint_t getwchar (void);
 
 
 
 
 
 
-extern wint_t fputwc (wchar_t __wc, __FILE *__stream);
-extern wint_t putwc (wchar_t __wc, __FILE *__stream);
 
 
 
 
 
-extern wint_t putwchar (wchar_t __wc);
 
 
 
 
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 37 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-extern wchar_t *fgetws (wchar_t *__restrict __ws, int __n,
-			__FILE *__restrict __stream);
+#line 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 55 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 61 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 67 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 73 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-extern int fputws (const wchar_t *__restrict __ws,
-		   __FILE *__restrict __stream);
+#line 79 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 85 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 91 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 97 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 103 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 109 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-extern wint_t ungetwc (wint_t __wc, __FILE *__stream);
+#line 115 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 121 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-#line 978 "/usr/include/wchar.h"
+#line 127 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 133 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 139 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 145 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 151 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 157 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 163 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-extern wint_t getwc_unlocked (__FILE *__stream);
-extern wint_t getwchar_unlocked (void);
+#line 169 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 175 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 181 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 187 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 193 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 199 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 205 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-extern wint_t fgetwc_unlocked (__FILE *__stream);
+#line 211 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 217 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 223 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 229 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 235 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 241 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 247 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-extern wint_t fputwc_unlocked (wchar_t __wc, __FILE *__stream);
+#line 253 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 259 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 265 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 271 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 277 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 283 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 289 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 295 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-extern wint_t putwc_unlocked (wchar_t __wc, __FILE *__stream);
-extern wint_t putwchar_unlocked (wchar_t __wc);
+#line 301 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 307 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 313 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 319 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 325 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 331 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 337 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 343 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-extern wchar_t *fgetws_unlocked (wchar_t *__restrict __ws, int __n,
-				 __FILE *__restrict __stream);
+#line 349 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 355 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 361 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 367 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 373 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 379 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 385 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-extern int fputws_unlocked (const wchar_t *__restrict __ws,
-			    __FILE *__restrict __stream);
-#line 1033 "/usr/include/wchar.h"
+#line 391 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 397 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 403 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 409 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 415 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-extern size_t wcsftime (wchar_t *__restrict __s, size_t __maxsize,
-			const wchar_t *__restrict __format,
-			const struct tm *__restrict __tp) ;
+#line 421 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-#line 1043 "/usr/include/wchar.h"
+#line 427 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 433 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-extern size_t wcsftime_l (wchar_t *__restrict __s, size_t __maxsize,
-			  const wchar_t *__restrict __format,
-			  const struct tm *__restrict __tp,
-			  locale_t __loc) ;
-#line 1050 "/usr/include/wchar.h"
+#line 439 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 445 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-#line 1056 "/usr/include/wchar.h"
+#line 451 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 457 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 463 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-#line 1062 "/usr/include/wchar.h"
+#line 469 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
-#line 1067 "/usr/include/wchar.h"
+#line 475 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 481 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
 
+#line 487 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 493 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 499 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 505 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 511 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 517 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 523 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 529 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 535 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 541 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 547 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 553 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 559 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 565 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 571 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 577 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 583 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 589 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 595 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 601 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 607 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 613 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 619 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 625 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 631 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 637 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 643 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 649 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 655 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 661 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 667 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 673 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 679 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 685 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 691 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 697 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 703 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 709 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 715 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 721 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 727 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 733 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 739 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 745 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 751 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 757 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 763 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 769 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 775 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 781 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 787 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 793 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 799 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 805 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 811 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 817 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 823 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 829 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 835 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 841 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 847 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 853 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 859 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 865 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 871 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 877 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 883 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 889 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 895 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 901 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 907 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 913 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 919 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 925 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 931 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 937 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 943 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 949 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 955 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 961 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 967 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 973 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 979 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 985 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 991 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 997 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 1003 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 1009 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+
+#line 1015 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h"
+#line 795 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+#line 803 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 830 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+#line 836 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+#line 850 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+#line 858 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h"
+
+#line 37 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h"
+
+#line 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h"
+
+#line 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h"
+
+#line 55 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h"
+
+#line 61 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h"
+
+#line 67 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h"
+
+#line 73 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h"
+#line 861 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+#line 863 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+#line 872 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+#line 880 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+#line 888 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+#line 899 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+#line 911 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+#line 921 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+#line 929 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+#line 937 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+#line 945 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+#line 954 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+#line 962 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+#line 970 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+#line 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+
+
+
+
+
+
+
+
+#line 12 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+
+
+
+#line 21 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+#line 27 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+#line 149 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+#line 157 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+
+#line 161 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+
+
+
+
+
+#line 169 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+
+#line 174 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+
+#line 177 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+#line 179 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+#line 289 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+
+
+
+
+
+#line 296 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+
+
+#line 303 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+#line 305 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+
+
+
+
+#line 312 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+
+
+#line 317 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+
+#line 319 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h"
+#line 973 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+#line 1026 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+#line 1030 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+#line 1038 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+#line 1049 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+#line 1053 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+#line 1061 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+#line 1067 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+#line 1085 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+#line 1091 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+#line 1109 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+#line 28 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+#line 48 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+#line 59 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+#line 62 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+#line 64 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+#line 66 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+#line 71 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+
+
+#line 6 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+#line 8 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+#line 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+#line 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+
+
+
+
+
+#line 28 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+typedef signed char           __int8_t;
+#line 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+typedef unsigned char           __uint8_t;
+typedef short                   __int16_t;
+typedef unsigned short          __uint16_t;
+typedef int                     __int32_t;
+typedef unsigned int            __uint32_t;
+typedef long long               __int64_t;
+typedef unsigned long long      __uint64_t;
+
+typedef long                    __darwin_intptr_t;
+typedef unsigned int            __darwin_natural_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef int                     __darwin_ct_rune_t;     
+
+
+
+
+
+typedef union {
+	char            __mbstate8[128];
+	long long       _mbstateL;                      
+} __mbstate_t;
+
+typedef __mbstate_t             __darwin_mbstate_t;     
+
+#line 77 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+typedef long        __darwin_ptrdiff_t;     
+#line 83 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+#line 87 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+typedef unsigned long           __darwin_size_t;        
+#line 91 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+#line 95 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+typedef __builtin_va_list       __darwin_va_list;       
+#line 99 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+#line 103 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+typedef int          __darwin_wchar_t;       
+#line 107 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+typedef __darwin_wchar_t        __darwin_rune_t;        
+
+#line 111 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+typedef unsigned int           __darwin_wint_t;        
+#line 115 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+typedef unsigned long           __darwin_clock_t;       
+typedef __uint32_t              __darwin_socklen_t;     
+typedef long                    __darwin_ssize_t;       
+typedef long                    __darwin_time_t;        
+
+#line 122 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+#line 124 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+#line 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h"
+#line 38 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h"
+#line 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+
+#line 40 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+
+#line 44 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+
+
+
+
+
+
+
+#line 66 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+
+typedef __int64_t       __darwin_blkcnt_t;      
+typedef __int32_t       __darwin_blksize_t;     
+typedef __int32_t       __darwin_dev_t;         
+typedef unsigned int    __darwin_fsblkcnt_t;    
+typedef unsigned int    __darwin_fsfilcnt_t;    
+typedef __uint32_t      __darwin_gid_t;         
+typedef __uint32_t      __darwin_id_t;          
+typedef __uint64_t      __darwin_ino64_t;       
+#line 76 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+typedef __darwin_ino64_t __darwin_ino_t;        
+#line 80 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+typedef __darwin_natural_t __darwin_mach_port_name_t; 
+typedef __darwin_mach_port_name_t __darwin_mach_port_t; 
+typedef __uint16_t      __darwin_mode_t;        
+typedef __int64_t       __darwin_off_t;         
+typedef __int32_t       __darwin_pid_t;         
+typedef __uint32_t      __darwin_sigset_t;      
+typedef __int32_t       __darwin_suseconds_t;   
+typedef __uint32_t      __darwin_uid_t;         
+typedef __uint32_t      __darwin_useconds_t;    
+typedef unsigned char   __darwin_uuid_t[16];
+typedef char    __darwin_uuid_string_t[37];
+
+#line 93 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h"
+
+
+#line 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h"
+
+struct __darwin_pthread_handler_rec {
+	void (*__routine)(void *);	
+	void *__arg;			
+	struct __darwin_pthread_handler_rec *__next;
+};
+
+struct _opaque_pthread_attr_t {
+	long __sig;
+	char __opaque[56];
+};
+
+struct _opaque_pthread_cond_t {
+	long __sig;
+	char __opaque[40];
+};
+
+struct _opaque_pthread_condattr_t {
+	long __sig;
+	char __opaque[8];
+};
+
+struct _opaque_pthread_mutex_t {
+	long __sig;
+	char __opaque[56];
+};
+
+struct _opaque_pthread_mutexattr_t {
+	long __sig;
+	char __opaque[8];
+};
+
+struct _opaque_pthread_once_t {
+	long __sig;
+	char __opaque[8];
+};
+
+struct _opaque_pthread_rwlock_t {
+	long __sig;
+	char __opaque[192];
+};
+
+struct _opaque_pthread_rwlockattr_t {
+	long __sig;
+	char __opaque[16];
+};
+
+struct _opaque_pthread_t {
+	long __sig;
+	struct __darwin_pthread_handler_rec  *__cleanup_stack;
+	char __opaque[8176];
+};
+
+typedef struct _opaque_pthread_attr_t __darwin_pthread_attr_t;
+typedef struct _opaque_pthread_cond_t __darwin_pthread_cond_t;
+typedef struct _opaque_pthread_condattr_t __darwin_pthread_condattr_t;
+typedef unsigned long __darwin_pthread_key_t;
+typedef struct _opaque_pthread_mutex_t __darwin_pthread_mutex_t;
+typedef struct _opaque_pthread_mutexattr_t __darwin_pthread_mutexattr_t;
+typedef struct _opaque_pthread_once_t __darwin_pthread_once_t;
+typedef struct _opaque_pthread_rwlock_t __darwin_pthread_rwlock_t;
+typedef struct _opaque_pthread_rwlockattr_t __darwin_pthread_rwlockattr_t;
+typedef struct _opaque_pthread_t *__darwin_pthread_t;
+#line 95 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+
+#line 101 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+
+#line 28 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+
+
+#line 40 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+typedef	int		__darwin_nl_item;
+typedef	int		__darwin_wctrans_t;
+#line 44 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+typedef	__uint32_t	__darwin_wctype_t;
+#line 48 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+#line 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+#line 61 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+#line 69 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+#line 72 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 73 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 134 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+ 
+#line 141 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 154 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 161 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 168 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+#line 174 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 181 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 183 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 185 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 189 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+#line 193 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 195 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+#line 101 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+
+#line 193 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+
+#line 254 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+
+#line 315 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+
+#line 353 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+
+#line 378 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+
+#line 394 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+
+
+
+
+
+
+#line 402 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+#line 404 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+
+
+
+
+#line 410 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+#line 485 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+#line 487 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+#line 489 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+#line 491 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+#line 197 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 489 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+
+#line 491 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h"
+#line 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 48 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 62 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 80 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 98 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+
+
+#line 111 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 124 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+
+#line 127 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 129 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 141 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 157 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 221 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 223 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 225 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 233 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+
+
+
+
+
+#line 515 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 534 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+#line 536 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+
+#line 539 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+#line 198 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 536 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+
+
+#line 539 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h"
+#line 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h"
+
+#line 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h"
+
+#line 62 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h"
+
+#line 2828 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h"
+
+#line 4345 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h"
+#line 199 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+#line 202 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 253 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+#line 270 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+#line 285 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 287 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+
+#line 298 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 302 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 306 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 310 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+#line 315 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+#line 327 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 331 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 335 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 339 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 343 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+#line 356 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 360 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 364 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 368 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 372 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+#line 385 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 389 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 393 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 397 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 401 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+#line 409 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 413 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 417 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 512 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+
+
+#line 520 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 524 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 528 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 532 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 536 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 540 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 544 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 548 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 552 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 556 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 560 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 564 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 568 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 572 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 576 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 580 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 584 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 588 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+
+
+#line 596 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 600 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 604 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 608 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 612 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 614 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 616 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+#line 74 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+#line 46 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+#line 51 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+#line 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+#line 76 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 46 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+typedef __darwin_size_t        size_t;
+#line 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 77 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_mbstate_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+#line 47 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h"
+
+
+#line 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 51 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h"
+typedef signed char           int8_t;
+#line 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h"
+typedef short                   int16_t;
+#line 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h"
+typedef int                     int32_t;
+#line 58 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h"
+typedef long long               int64_t;
+#line 59 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int8_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int8_t.h"
+typedef unsigned char           u_int8_t;
+#line 61 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h"
+typedef unsigned short                  u_int16_t;
+#line 62 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h"
+typedef unsigned int            u_int32_t;
+#line 63 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int64_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int64_t.h"
+typedef unsigned long long      u_int64_t;
+#line 64 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+#line 66 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+typedef int64_t                 register_t;
+#line 70 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_intptr_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_intptr_t.h"
+
+typedef __darwin_intptr_t       intptr_t;
+#line 72 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h"
+
+#line 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h"
+typedef unsigned long           uintptr_t;
+#line 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h"
+#line 73 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+#line 75 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+#line 77 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+typedef u_int64_t               user_addr_t;
+typedef u_int64_t               user_size_t;
+typedef int64_t                 user_ssize_t;
+typedef int64_t                 user_long_t;
+typedef u_int64_t               user_ulong_t;
+typedef int64_t                 user_time_t;
+typedef int64_t                 user_off_t;
+#line 93 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+
+#line 97 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+
+#line 100 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+
+
+#line 105 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+typedef u_int64_t               syscall_arg_t;
+#line 109 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h"
+#line 38 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h"
+#line 41 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h"
+#line 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_mbstate_t.h"
+typedef __darwin_mbstate_t mbstate_t;
+#line 78 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ct_rune_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ct_rune_t.h"
+typedef __darwin_ct_rune_t ct_rune_t;
+#line 79 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h"
+typedef __darwin_rune_t rune_t;
+#line 80 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h"
+
+#line 47 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h"
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h"
+typedef __darwin_wchar_t wchar_t;
+#line 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h"
+
+#line 58 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h"
+#line 81 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+#line 85 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+#line 89 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+#line 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 37 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_header_macro.h"
+
+
+
+
+
+
+
+
+#line 44 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+#line 45 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+
+#line 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___gnuc_va_list.h"
+
+
+
+
+
+
+
+
+
+#line 12 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___gnuc_va_list.h"
+typedef __builtin_va_list __gnuc_va_list;
+#line 48 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+#line 50 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+
+#line 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_list.h"
+
+
+
+
+
+
+
+
+
+#line 12 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_list.h"
+typedef __builtin_va_list va_list;
+#line 53 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+#line 55 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+
+#line 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_arg.h"
+
+
+
+
+
+
+
+
+
+#line 11 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_arg.h"
+
+#line 16 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_arg.h"
+
+#line 21 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_arg.h"
+#line 58 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+#line 60 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+
+#line 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___va_copy.h"
+
+
+
+
+
+
+
+
+#line 63 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+#line 65 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+
+#line 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_va_copy.h"
+
+
+
+
+
+
+
+
+#line 68 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+#line 70 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h"
+#line 91 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 68 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 70 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 71 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 614 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 616 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+#line 72 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 74 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h"
+
+#line 37 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 44 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h"
+typedef __darwin_va_list va_list;
+#line 46 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h"
+
+#line 48 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h"
+#line 78 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 46 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 79 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+#line 46 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+#line 51 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+#line 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+#line 80 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h"
+
+#line 42 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 614 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 616 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+#line 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h"
+
+
+
+int     renameat(int, const char *, int, const char *) ;
+
+#line 51 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h"
+
+int renamex_np(const char *, const char *, unsigned int)    ;
+int renameatx_np(int, const char *, int, const char *, unsigned int)    ;
+
+#line 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h"
+
+
+
+#line 60 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h"
+#line 82 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 28 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h"
+
+
+
+
+
+int	 printf(const char * restrict, ...) __attribute__((__format__ (__printf__, 1, 2)));
+
+
+#line 83 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+typedef __darwin_off_t		fpos_t;
+
+#line 89 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+
+
+
+
+
+struct __sbuf {
+	unsigned char *	_base;
+	int		_size;
+};
+
+
+struct __sFILEX;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef	struct __sFILE {
+	unsigned char *	_p;	
+	int	_r;		
+	int	_w;		
+	short	_flags;		
+	short	_file;		
+	struct	__sbuf _bf;	
+	int	_lbfsize;	
+
+	
+	void	*_cookie;	
+	int	(*  _close)(void *);
+	int	(*  _read) (void *, char *, int __n);
+	fpos_t	(*  _seek) (void *, fpos_t, int);
+	int	(*  _write)(void *, const char *, int __n);
+
+	
+	struct	__sbuf _ub;	
+	struct __sFILEX *_extra; 
+	int	_ur;		
+
+	
+	unsigned char _ubuf[3];	
+	unsigned char _nbuf[1];	
+
+	
+	struct	__sbuf _lb;	
+
+	
+	int	_blksize;	
+	fpos_t	_offset;	
+} FILE;
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h"
+
+
+#line 40 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h"
+
+#line 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h"
+
+#line 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h"
+#line 165 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+extern FILE *__stdinp ;
+extern FILE *__stdoutp ;
+extern FILE *__stderrp ;
+
+
+#line 176 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+	
+#line 189 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+
+
+
+
+
+
+
+#line 202 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 205 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+				
+#line 209 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+#line 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 220 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 228 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+
+void	 clearerr(FILE *);
+int	 fclose(FILE *);
+int	 feof(FILE *);
+int	 ferror(FILE *);
+int	 fflush(FILE *);
+int	 fgetc(FILE *);
+int	 fgetpos(FILE * restrict, fpos_t *);
+char *	fgets(char * restrict , int __size, FILE *);
+#line 241 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+FILE	*fopen(const char * restrict __filename, const char * restrict __mode) __asm("_" "fopen" "$DARWIN_EXTSN");
+#line 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+int	 fprintf(FILE * restrict, const char * restrict, ...) __attribute__((__format__ (__printf__, 2, 3)));
+int	 fputc(int, FILE *);
+int	 fputs(const char * restrict, FILE * restrict) __asm("_" "fputs" );
+size_t	 fread(void * restrict  __ptr, size_t __size, size_t __nitems, FILE * restrict __stream);
+FILE	*freopen(const char * restrict, const char * restrict,
+				 FILE * restrict) __asm("_" "freopen" );
+int	 fscanf(FILE * restrict, const char * restrict, ...) __attribute__((__format__ (__scanf__, 2, 3)));
+int	 fseek(FILE *, long, int);
+int	 fsetpos(FILE *, const fpos_t *);
+long	 ftell(FILE *);
+size_t	 fwrite(const void * restrict  __ptr, size_t __size, size_t __nitems, FILE * restrict __stream) __asm("_" "fwrite" );
+int	 getc(FILE *);
+int	 getchar(void);
+
+#line 262 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+char *	gets(char *) ;
+
+void	 perror(const char *) ;
+int	 putc(int, FILE *);
+int	 putchar(int);
+int	 puts(const char *);
+int	 remove(const char *);
+int	 rename (const char *__old, const char *__new);
+void	 rewind(FILE *);
+int	 scanf(const char * restrict, ...) __attribute__((__format__ (__scanf__, 1, 2)));
+void	 setbuf(FILE * restrict, char * restrict );
+int	 setvbuf(FILE * restrict, char * restrict , int, size_t __size);
+
+
+
+#line 280 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+int	 sprintf(char * restrict , const char * restrict, ...) __attribute__((__format__ (__printf__, 2, 3))) ;
+
+int	 sscanf(const char * restrict, const char * restrict, ...) __attribute__((__format__ (__scanf__, 2, 3)));
+FILE	*tmpfile(void);
+
+
+#line 289 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+char *	tmpnam(char *);
+
+int	 ungetc(int, FILE *);
+int	 vfprintf(FILE * restrict, const char * restrict, va_list) __attribute__((__format__ (__printf__, 2, 0)));
+int	 vprintf(const char * restrict, va_list) __attribute__((__format__ (__printf__, 1, 0)));
+
+
+
+#line 300 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+int	 vsprintf(char * restrict , const char * restrict, va_list) __attribute__((__format__ (__printf__, 2, 0))) ;
+
+
+
+
+
+
+
+
+#line 310 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 314 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 28 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h"
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h"
+
+
+
+
+
+char *	ctermid(char *);
+
+
+#line 316 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+#line 320 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+FILE	*fdopen(int, const char *) __asm("_" "fdopen" "$DARWIN_EXTSN");
+#line 324 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+int	 fileno(FILE *);
+
+#line 327 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+
+
+
+#line 334 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+int	 pclose(FILE *) ;
+#line 337 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+FILE	*popen(const char *, const char *) __asm("_" "popen" "$DARWIN_EXTSN") ;
+#line 341 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 343 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+
+
+
+
+#line 351 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+int	__srget(FILE *);
+int	__svfscanf(FILE *, const char *, va_list) __attribute__((__format__ (__scanf__, 2, 0)));
+int	__swbuf(int, FILE *);
+
+
+
+
+
+
+#line 365 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+inline __attribute__ ((__always_inline__)) int __sputc(int _c, FILE *_p) {
+	if (--_p->_w >= 0 || (_p->_w >= _p->_lbfsize && (char)_c != '\n'))
+		return (*_p->_p++ = _c);
+	else
+		return (__swbuf(_c, _p));
+}
+#line 377 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 382 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+void	 flockfile(FILE *);
+int	 ftrylockfile(FILE *);
+void	 funlockfile(FILE *);
+int	 getc_unlocked(FILE *);
+int	 getchar_unlocked(void);
+int	 putc_unlocked(int, FILE *);
+int	 putchar_unlocked(int);
+
+
+#line 397 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+#line 402 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+char *	tempnam(const char *__dir, const char *__prefix) __asm("_" "tempnam" );
+
+
+#line 409 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 413 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_off_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_off_t.h"
+typedef __darwin_off_t          off_t;
+#line 423 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+int	 fseeko(FILE * __stream, off_t __offset, int __whence);
+off_t	 ftello(FILE * __stream);
+
+#line 429 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 431 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+int	 snprintf(char * restrict  __str, size_t __size, const char * restrict __format, ...) __attribute__((__format__ (__printf__, 3, 4)));
+int	 vfscanf(FILE * restrict __stream, const char * restrict __format, va_list) __attribute__((__format__ (__scanf__, 2, 0)));
+int	 vscanf(const char * restrict __format, va_list) __attribute__((__format__ (__scanf__, 1, 0)));
+int	 vsnprintf(char * restrict  __str, size_t __size, const char * restrict __format, va_list) __attribute__((__format__ (__printf__, 3, 0)));
+int	 vsscanf(const char * restrict __str, const char * restrict __format, va_list) __attribute__((__format__ (__scanf__, 2, 0)));
+
+#line 439 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ssize_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ssize_t.h"
+typedef __darwin_ssize_t        ssize_t;
+#line 448 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+int	dprintf(int, const char * restrict, ...) __attribute__((__format__ (__printf__, 2, 3))) ;
+int	vdprintf(int, const char * restrict, va_list) __attribute__((__format__ (__printf__, 2, 0))) ;
+ssize_t getdelim(char * *restrict __linep, size_t * restrict __linecapp, int __delimiter, FILE * restrict __stream) ;
+ssize_t getline(char * *restrict __linep, size_t * restrict __linecapp, FILE * restrict __stream) ;
+FILE *fmemopen(void * restrict __buf , size_t __size, const char * restrict __mode) ;
+FILE *open_memstream(char * *__bufp, size_t *__sizep) ;
+
+#line 458 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+
+
+
+#line 464 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+extern const int sys_nerr;		
+extern const char *const sys_errlist[];
+
+int	 asprintf(char * *restrict, const char * restrict, ...) __attribute__((__format__ (__printf__, 2, 3)));
+char *	ctermid_r(char *);
+char *	fgetln(FILE *, size_t *__len);
+const char *fmtcheck(const char *, const char *) __attribute__((format_arg(2)));
+int	 fpurge(FILE *);
+void	 setbuffer(FILE *, char *, int __size);
+int	 setlinebuf(FILE *);
+int	 vasprintf(char * *restrict, const char * restrict, va_list) __attribute__((__format__ (__printf__, 2, 0)));
+
+
+
+
+
+FILE	*funopen(const void *,
+				 int (* )(void *, char *, int __n),
+				 int (* )(void *, const char *, int __n),
+				 fpos_t (* )(void *, fpos_t, int),
+				 int (* )(void *));
+
+#line 489 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 494 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 496 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+
+#line 499 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_common.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_common.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 28 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_common.h"
+
+#line 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_common.h"
+
+#line 44 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_common.h"
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+
+
+#line 37 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+extern int __snprintf_chk (char * restrict , size_t __maxlen, int, size_t,
+			  const char * restrict, ...);
+extern int __vsnprintf_chk (char * restrict , size_t __maxlen, int, size_t,
+			  const char * restrict, va_list);
+
+extern int __sprintf_chk (char * restrict , int, size_t,
+			  const char * restrict, ...);
+extern int __vsprintf_chk (char * restrict , int, size_t,
+			  const char * restrict, va_list);
+
+#line 62 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 67 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 71 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 75 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+
+#line 80 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 84 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+
+#line 90 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 92 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+
+
+#line 99 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 101 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 106 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 111 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 116 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+
+#line 118 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h"
+#line 501 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+#line 502 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h"
+#line 62 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h"
+#line 92 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/time.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 65 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 67 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 68 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 69 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 614 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 616 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+#line 70 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_clock_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_clock_t.h"
+typedef __darwin_clock_t        clock_t;
+#line 71 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+#line 46 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+#line 51 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+
+#line 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h"
+#line 72 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 46 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 73 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_time_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_time_t.h"
+typedef __darwin_time_t         time_t;
+#line 74 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timespec.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timespec.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timespec.h"
+
+struct timespec
+{
+	__darwin_time_t tv_sec;
+	long            tv_nsec;
+};
+#line 75 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+
+
+struct tm {
+	int	tm_sec;		
+	int	tm_min;		
+	int	tm_hour;	
+	int	tm_mday;	
+	int	tm_mon;		
+	int	tm_year;	
+	int	tm_wday;	
+	int	tm_yday;	
+	int	tm_isdst;	
+	long	tm_gmtoff;	
+	char	*	tm_zone;	
+};
+
+#line 99 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+#line 101 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+extern char *	tzname[];
+#line 103 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+extern int getdate_err;
+#line 106 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+extern long timezone __asm("_" "timezone" );
+#line 108 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+extern int daylight;
+
+
+char *	asctime(const struct tm *);
+clock_t clock(void) __asm("_" "clock" );
+char *	ctime(const time_t *);
+double difftime(time_t, time_t);
+struct tm *getdate(const char *);
+struct tm *gmtime(const time_t *);
+struct tm *localtime(const time_t *);
+time_t mktime(struct tm *) __asm("_" "mktime" );
+size_t strftime(char * restrict, size_t __maxsize, const char * restrict, const struct tm * restrict) __asm("_" "strftime" );
+char *	strptime(const char * restrict, const char * restrict, struct tm * restrict) __asm("_" "strptime" );
+time_t time(time_t *);
+
+#line 124 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+void tzset(void);
+#line 126 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+
+char * asctime_r(const struct tm * restrict, char * restrict );
+char * ctime_r(const time_t *, char *);
+struct tm *gmtime_r(const time_t * restrict, struct tm * restrict);
+struct tm *localtime_r(const time_t * restrict, struct tm * restrict);
+
+#line 134 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+time_t posix2time(time_t);
+#line 138 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+void tzsetwall(void);
+time_t time2posix(time_t);
+time_t timelocal(struct tm * const);
+time_t timegm(struct tm * const);
+#line 143 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+#line 145 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+int nanosleep(const struct timespec *__rqtp, struct timespec *__rmtp) __asm("_" "nanosleep"  );
+#line 147 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+#line 155 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+typedef enum {
+_CLOCK_REALTIME  = 0,
+#line 159 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+_CLOCK_MONOTONIC  = 6,
+#line 162 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+_CLOCK_MONOTONIC_RAW  = 4,
+#line 164 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+_CLOCK_MONOTONIC_RAW_APPROX  = 5,
+#line 166 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+_CLOCK_UPTIME_RAW  = 8,
+#line 168 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+_CLOCK_UPTIME_RAW_APPROX  = 9,
+#line 171 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+_CLOCK_PROCESS_CPUTIME_ID  = 12,
+#line 173 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+_CLOCK_THREAD_CPUTIME_ID  = 16
+#line 175 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+} clockid_t;
+
+
+int clock_getres(clockid_t __clock_id, struct timespec *__res);
+
+
+int clock_gettime(clockid_t __clock_id, struct timespec *__tp);
+
+#line 184 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+__uint64_t clock_gettime_nsec_np(clockid_t __clock_id);
+#line 187 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+ 
+ 
+int clock_settime(clockid_t __clock_id, const struct timespec *__tp);
+
+#line 195 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+#line 197 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+#line 199 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+int timespec_get(struct timespec *ts, int base);
+#line 202 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_time.h"
+
+
+#line 64 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/time.h"
+#line 93 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 59 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 60 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 61 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wint_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wint_t.h"
+typedef __darwin_wint_t wint_t;
+#line 63 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_wctype_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_wctype_t.h"
+typedef __darwin_wctype_t wctype_t;
+#line 64 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+
+
+
+#line 70 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+
+#line 74 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 69 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 71 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 72 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 41 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 44 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+
+
+
+#line 48 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 46 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h"
+
+#line 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ct_rune_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 51 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h"
+
+#line 47 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h"
+
+
+#line 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h"
+
+#line 58 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h"
+#line 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wint_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+
+#line 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+
+#line 59 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+
+
+
+
+typedef struct {
+	__darwin_rune_t	__min;		
+	__darwin_rune_t	__max;		
+	__darwin_rune_t	__map;		
+	__uint32_t *	__types;	
+} _RuneEntry;
+
+typedef struct {
+	int		__nranges;	
+	_RuneEntry *	__ranges;	
+} _RuneRange;
+
+typedef struct {
+	char		__name[14];	
+	__uint32_t	__mask;		
+} _RuneCharClass;
+
+typedef struct {
+	char		__magic[8];	
+	char		__encoding[32];	
+
+	__darwin_rune_t	(*__sgetrune)(const char * __string, __darwin_size_t __n, char const *  *);
+	int		(*__sputrune)(__darwin_rune_t, char * __string, __darwin_size_t __n, char *  *);
+	__darwin_rune_t	__invalid_rune;	
+
+	__uint32_t	__runetype[(1 <<8 )];
+	__darwin_rune_t	__maplower[(1 <<8 )];
+	__darwin_rune_t	__mapupper[(1 <<8 )];
+
+	
+
+
+
+
+	_RuneRange	__runetype_ext;
+	_RuneRange	__maplower_ext;
+	_RuneRange	__mapupper_ext;
+
+	void *	__variable;	
+	int		__variable_len;	
+
+	
+
+
+	int		__ncharclasses;
+	_RuneCharClass *	__charclasses;
+} _RuneLocale;
+
+#line 112 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h"
+
+
+extern _RuneLocale _DefaultRuneLocale;
+extern _RuneLocale *_CurrentRuneLocale;
+
+#line 73 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+
+
+#line 96 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+#line 120 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+#line 122 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+#line 124 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+
+
+
+
+#line 130 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+
+
+unsigned long		___runetype(__darwin_ct_rune_t);
+__darwin_ct_rune_t	___tolower(__darwin_ct_rune_t);
+__darwin_ct_rune_t	___toupper(__darwin_ct_rune_t);
+
+
+inline int
+isascii(int _c)
+{
+	return ((_c & ~0x7F) == 0);
+}
+
+#line 151 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+int             	__maskrune(__darwin_ct_rune_t, unsigned long);
+
+#line 155 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+inline int
+__istype(__darwin_ct_rune_t _c, unsigned long _f)
+{
+#line 162 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+	return (isascii(_c) ? !!(_DefaultRuneLocale.__runetype[_c] & _f)
+		: !!__maskrune(_c, _f));
+#line 165 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+}
+
+inline __darwin_ct_rune_t
+__isctype(__darwin_ct_rune_t _c, unsigned long _f)
+{
+#line 173 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+	return (_c < 0 || _c >= (1 <<8 )) ? 0 :
+		!!(_DefaultRuneLocale.__runetype[_c] & _f);
+#line 176 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+}
+
+#line 191 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+__darwin_ct_rune_t	__toupper(__darwin_ct_rune_t);
+__darwin_ct_rune_t	__tolower(__darwin_ct_rune_t);
+
+#line 196 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+inline int
+__wcwidth(__darwin_ct_rune_t _c)
+{
+	unsigned int _x;
+
+	if (_c == 0)
+		return (0);
+	_x = (unsigned int)__maskrune(_c, 0xe0000000L|0x00040000L);
+	if ((_x & 0xe0000000L) != 0)
+		return ((_x & 0xe0000000L) >> 30);
+	return ((_x & 0x00040000L) != 0 ? 1 : -1);
+}
+
+#line 211 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+#line 214 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+inline int
+isalnum(int _c)
+{
+	return (__istype(_c, 0x00000100L|0x00000400L));
+}
+
+inline int
+isalpha(int _c)
+{
+	return (__istype(_c, 0x00000100L));
+}
+
+inline int
+isblank(int _c)
+{
+	return (__istype(_c, 0x00020000L));
+}
+
+inline int
+iscntrl(int _c)
+{
+	return (__istype(_c, 0x00000200L));
+}
+
+
+inline int
+isdigit(int _c)
+{
+	return (__isctype(_c, 0x00000400L));
+}
+
+inline int
+isgraph(int _c)
+{
+	return (__istype(_c, 0x00000800L));
+}
+
+inline int
+islower(int _c)
+{
+	return (__istype(_c, 0x00001000L));
+}
+
+inline int
+isprint(int _c)
+{
+	return (__istype(_c, 0x00040000L));
+}
+
+inline int
+ispunct(int _c)
+{
+	return (__istype(_c, 0x00002000L));
+}
+
+inline int
+isspace(int _c)
+{
+	return (__istype(_c, 0x00004000L));
+}
+
+inline int
+isupper(int _c)
+{
+	return (__istype(_c, 0x00008000L));
+}
+
+
+inline int
+isxdigit(int _c)
+{
+	return (__isctype(_c, 0x00010000L));
+}
+
+inline int
+toascii(int _c)
+{
+	return (_c & 0x7F);
+}
+
+inline int
+tolower(int _c)
+{
+        return (__tolower(_c));
+}
+
+inline int
+toupper(int _c)
+{
+        return (__toupper(_c));
+}
+
+#line 308 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+inline int
+digittoint(int _c)
+{
+	return (__maskrune(_c, 0x0F));
+}
+
+inline int
+ishexnumber(int _c)
+{
+	return (__istype(_c, 0x00010000L));
+}
+
+inline int
+isideogram(int _c)
+{
+	return (__istype(_c, 0x00080000L));
+}
+
+inline int
+isnumber(int _c)
+{
+	return (__istype(_c, 0x00000400L));
+}
+
+inline int
+isphonogram(int _c)
+{
+	return (__istype(_c, 0x00200000L));
+}
+
+inline int
+isrune(int _c)
+{
+	return (__istype(_c, 0xFFFFFFF0L));
+}
+
+inline int
+isspecial(int _c)
+{
+	return (__istype(_c, 0x00100000L));
+}
+#line 351 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+
+#line 386 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h"
+#line 67 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h"
+#line 76 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+
+
+
+
+#line 81 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+
+inline int
+iswalnum(wint_t _wc)
+{
+	return (__istype(_wc, 0x00000100L|0x00000400L));
+}
+
+inline int
+iswalpha(wint_t _wc)
+{
+	return (__istype(_wc, 0x00000100L));
+}
+
+inline int
+iswcntrl(wint_t _wc)
+{
+	return (__istype(_wc, 0x00000200L));
+}
+
+inline int
+iswctype(wint_t _wc, wctype_t _charclass)
+{
+	return (__istype(_wc, _charclass));
+}
+
+inline int
+iswdigit(wint_t _wc)
+{
+	return (__isctype(_wc, 0x00000400L));
+}
+
+inline int
+iswgraph(wint_t _wc)
+{
+	return (__istype(_wc, 0x00000800L));
+}
+
+inline int
+iswlower(wint_t _wc)
+{
+	return (__istype(_wc, 0x00001000L));
+}
+
+inline int
+iswprint(wint_t _wc)
+{
+	return (__istype(_wc, 0x00040000L));
+}
+
+inline int
+iswpunct(wint_t _wc)
+{
+	return (__istype(_wc, 0x00002000L));
+}
+
+inline int
+iswspace(wint_t _wc)
+{
+	return (__istype(_wc, 0x00004000L));
+}
+
+inline int
+iswupper(wint_t _wc)
+{
+	return (__istype(_wc, 0x00008000L));
+}
+
+inline int
+iswxdigit(wint_t _wc)
+{
+	return (__isctype(_wc, 0x00010000L));
+}
+
+inline wint_t
+towlower(wint_t _wc)
+{
+		return (__tolower(_wc));
+}
+
+inline wint_t
+towupper(wint_t _wc)
+{
+		return (__toupper(_wc));
+}
+
+#line 186 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h"
+
+
+wctype_t
+	wctype(const char *);
+
+#line 40 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h"
+#line 94 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+
+
+
+
+wint_t	btowc(int);
+wint_t	fgetwc(FILE *);
+wchar_t	*
+	fgetws(wchar_t * restrict , int __n,
+		FILE * restrict);
+wint_t	fputwc(wchar_t, FILE *);
+int	fputws(const wchar_t * restrict, FILE * restrict);
+int	fwide(FILE *, int);
+int	fwprintf(FILE * restrict, const wchar_t * restrict, ...);
+int	fwscanf(FILE * restrict, const wchar_t * restrict, ...);
+wint_t	getwc(FILE *);
+wint_t	getwchar(void);
+size_t	mbrlen(const char * restrict , size_t __n,
+		mbstate_t * restrict);
+size_t	mbrtowc(wchar_t * restrict, const char * restrict ,
+	    size_t __n, mbstate_t * restrict);
+int	mbsinit(const mbstate_t *);
+size_t	mbsrtowcs(wchar_t * restrict ,
+		const char ** restrict, size_t __len, mbstate_t * restrict);
+wint_t	putwc(wchar_t, FILE *);
+wint_t	putwchar(wchar_t);
+int	swprintf(wchar_t * restrict , size_t __maxlen,
+		const wchar_t * restrict, ...);
+int	swscanf(const wchar_t * restrict, const wchar_t * restrict, ...);
+wint_t	ungetwc(wint_t, FILE *);
+int	vfwprintf(FILE * restrict, const wchar_t * restrict,
+	    __darwin_va_list);
+int	vswprintf(wchar_t * restrict , size_t __maxlen,
+		const wchar_t * restrict, __darwin_va_list);
+int	vwprintf(const wchar_t * restrict, __darwin_va_list);
+size_t	wcrtomb(char * restrict, wchar_t, mbstate_t * restrict);
+wchar_t	*wcscat(wchar_t * restrict, const wchar_t * restrict);
+wchar_t	*wcschr(const wchar_t *, wchar_t);
+int	wcscmp(const wchar_t *, const wchar_t *);
+int	wcscoll(const wchar_t *, const wchar_t *);
+wchar_t	*wcscpy(wchar_t * restrict ,
+		const wchar_t * restrict) ;
+size_t	wcscspn(const wchar_t *, const wchar_t *);
+size_t	wcsftime(wchar_t * restrict , size_t __maxlen,
+		const wchar_t * restrict, const struct tm * restrict)
+		__asm("_" "wcsftime" );
+size_t	wcslen(const wchar_t *);
+wchar_t	*
+		wcsncat(wchar_t * restrict ,
+		const wchar_t * restrict , size_t __n)
+		;
+int	wcsncmp(const wchar_t *,
+		const wchar_t *, size_t);
+wchar_t	*
+		wcsncpy(wchar_t * restrict ,
+		const wchar_t * restrict , size_t __n)
+		;
+wchar_t	*wcspbrk(const wchar_t *, const wchar_t *);
+wchar_t	*wcsrchr(const wchar_t *, wchar_t);
+size_t	wcsrtombs(char * restrict ,
+		const wchar_t ** restrict, size_t __len, mbstate_t * restrict);
+size_t	wcsspn(const wchar_t *, const wchar_t *);
+wchar_t	*wcsstr(const wchar_t * restrict, const wchar_t * restrict);
+size_t	wcsxfrm(wchar_t * restrict ,
+		const wchar_t * restrict, size_t __n);
+int	wctob(wint_t);
+double	wcstod(const wchar_t * restrict, wchar_t ** restrict);
+wchar_t	*
+		wcstok(wchar_t * restrict , const wchar_t * restrict,
+	    wchar_t * * restrict);
+long	 wcstol(const wchar_t * restrict, wchar_t * * restrict,
+		int);
+unsigned long
+	 wcstoul(const wchar_t * restrict, wchar_t * * restrict, int);
+wchar_t	* 
+		wmemchr(const wchar_t * , wchar_t, size_t __n);
+int	wmemcmp(const wchar_t *, const wchar_t *,
+		size_t __n);
+wchar_t	*
+		wmemcpy(wchar_t * restrict ,
+		const wchar_t * restrict , size_t __n);
+wchar_t	*
+		wmemmove(wchar_t *, const wchar_t *,
+		size_t __n);
+wchar_t	*
+		wmemset(wchar_t *, wchar_t, size_t __n);
+int	wprintf(const wchar_t * restrict, ...);
+int	wscanf(const wchar_t * restrict, ...);
+int	wcswidth(const wchar_t *, size_t __n);
+int	wcwidth(wchar_t);
+
+
+
+
+
+
+
+
+
+#line 194 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+int	vfwscanf(FILE * restrict, const wchar_t * restrict,
+	    __darwin_va_list);
+int	vswscanf(const wchar_t * restrict, const wchar_t * restrict,
+	    __darwin_va_list);
+int	vwscanf(const wchar_t * restrict, __darwin_va_list);
+float	wcstof(const wchar_t * restrict, wchar_t * * restrict);
+long double
+	wcstold(const wchar_t * restrict, wchar_t * * restrict);
+#line 204 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+long long
+	wcstoll(const wchar_t * restrict, wchar_t * * restrict, int);
+unsigned long long
+	wcstoull(const wchar_t * restrict, wchar_t * * restrict, int);
+#line 209 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+#line 211 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+
+
+
+
+
+
+#line 219 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+size_t  mbsnrtowcs(wchar_t * restrict ,
+		const char ** restrict, size_t, size_t __len,
+		mbstate_t * restrict);
+wchar_t *	wcpcpy(
+		wchar_t * restrict ,
+		const wchar_t * restrict) 
+		
+		;
+wchar_t *	wcpncpy(
+		wchar_t * restrict ,
+		const wchar_t * restrict , size_t __n)
+		
+		;
+wchar_t * wcsdup(const wchar_t *)
+		;
+int     wcscasecmp(const wchar_t *, const wchar_t *) ;
+int     wcsncasecmp(const wchar_t *, const wchar_t *, size_t n) ;
+size_t  wcsnlen(const wchar_t *, size_t __n)  ;
+size_t  wcsnrtombs(char * restrict , const wchar_t ** restrict, size_t,
+            size_t __len, mbstate_t * restrict);
+FILE *open_wmemstream(wchar_t * * __bufp, size_t * __sizep) ;
+
+#line 243 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+
+
+
+
+#line 249 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+wchar_t *
+		fgetwln(FILE * restrict, size_t *__len) ;
+size_t	wcslcat(wchar_t *, const wchar_t *, size_t __len);
+size_t	wcslcpy(wchar_t *, const wchar_t *, size_t __len);
+
+#line 256 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+
+
+
+#line 262 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wchar.h"
+#line 68 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/wchar.h"
 #line 6737 "/usr/local/include/neo-c.h"
-#line 1 "/usr/include/libgen.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libgen.h"
 
 
 
@@ -15231,9 +13637,6 @@ extern size_t wcsftime_l (wchar_t *__restrict __s, size_t __maxsize,
 
 
 
-#line 20 "/usr/include/libgen.h"
-
-#line 1 "/usr/include/features.h"
 
 
 
@@ -15247,15 +13650,9 @@ extern size_t wcsftime_l (wchar_t *__restrict __s, size_t __maxsize,
 
 
 
+#line 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libgen.h"
 
-
-
-#line 22 "/usr/include/libgen.h"
-
-
-
-
-extern char *dirname (char *__path) ;
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
 
 
 
@@ -15263,10 +13660,652 @@ extern char *dirname (char *__path) ;
 
 
 
-extern char *__xpg_basename (char *__path) ;
-#line 36 "/usr/include/libgen.h"
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libgen.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libgen.h"
+
+
+
+
+
+#line 42 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libgen.h"
+
+char *	basename(char *);
+char *	dirname(char *);
+
+#line 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libgen.h"
+
+
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+#line 614 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+
+#line 616 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h"
+#line 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libgen.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 62 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 64 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/limits.h"
+
+
+
+
+#line 7 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/limits.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 41 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h"
+
+
+
+#line 6 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h"
+
+#line 8 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h"
+
+#line 10 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h"
+
+#line 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h"
+#line 46 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 55 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 59 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 69 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 71 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 84 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 88 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 92 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 96 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 106 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 110 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 112 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 121 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 124 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 128 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 131 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 133 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+
+#line 135 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h"
+#line 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/limits.h"
+#line 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/limits.h"
+#line 65 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 67 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 69 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+
+#line 71 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+
+
+#line 78 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+
+
+
+
+
+
+#line 91 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+
+
+
+
+#line 99 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+
+#line 101 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+
+#line 105 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+
+#line 116 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+
+#line 119 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+                                        
+                                        
+                                        
+#line 127 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+
+
+#line 130 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h"
+#line 66 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 81 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 91 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 103 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 106 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 111 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 120 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 134 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 137 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 142 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+
+#line 145 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+
+#line 150 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 157 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 162 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+#line 164 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h"
+
+
+#line 58 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libgen.h"
+
+
+
+char *	basename_r(const char *, char *)
+		 
+		 ;
+
+char *	dirname_r(const char *, char *)
+		 
+		 ;
+
+
+
+#line 72 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libgen.h"
 #line 6738 "/usr/local/include/neo-c.h"
     
     typedef wchar_t*% wstring;
@@ -15491,7 +14530,7 @@ extern char *__xpg_basename (char *__path) ;
             return string("");
         }
         
-        int len = 16*(wcslen(wstr)+1);
+        int len = 6*(wcslen(wstr)+1);
     
         string result = new char[len];
     
@@ -15592,7 +14631,7 @@ extern char *__xpg_basename (char *__path) ;
     
         while(p >= str) {
             int len2 = wcslen(p);
-            _Bool result = 1;
+            bool result = 1;
             int i;
             for(i=0; i<len && i < len2; i++) {
                 if(p[i] != search_str[i]) {
@@ -15718,7 +14757,7 @@ extern char *__xpg_basename (char *__path) ;
     }
     
     
-    uniq _Bool wchar_t*::equals(wchar_t left, wchar_t right)
+    uniq bool wchar_t*::equals(wchar_t left, wchar_t right)
     {
         return left == right;
     }
@@ -15734,22 +14773,22 @@ extern char *__xpg_basename (char *__path) ;
         return wchar_t*::multiply(str, n);
     }
     
-    uniq _Bool wchar_t*::operator_equals(wchar_t* left, wchar_t* right)
+    uniq bool wchar_t*::operator_equals(wchar_t* left, wchar_t* right)
     {
         return wcscmp(left, right) == 0;
     }
     
-    uniq _Bool wstring::operator_equals(wchar_t* left, wchar_t* right)
+    uniq bool wstring::operator_equals(wchar_t* left, wchar_t* right)
     {
         return wcscmp(left, right) == 0;
     }
     
-    uniq _Bool wchar_t*::operator_not_equals(wchar_t* left, wchar_t* right)
+    uniq bool wchar_t*::operator_not_equals(wchar_t* left, wchar_t* right)
     {
         return wcscmp(left, right) != 0;
     }
     
-    uniq _Bool wstring::operator_not_equals(wchar_t* left, wchar_t* right)
+    uniq bool wstring::operator_not_equals(wchar_t* left, wchar_t* right)
     {
         return wcscmp(left, right) != 0;
     }
@@ -15881,7 +14920,7 @@ extern char *__xpg_basename (char *__path) ;
         return result;
     }
     
-    uniq _Bool wchar_t*::equals(wchar_t* left, wchar_t* right)
+    uniq bool wchar_t*::equals(wchar_t* left, wchar_t* right)
     {
         if(left == null && right == null) {
             return 1;
@@ -15892,7 +14931,7 @@ extern char *__xpg_basename (char *__path) ;
         return wcscmp(left, right) == 0;
     }
     
-    uniq _Bool wstring::equals(wchar_t* left, wchar_t* right)
+    uniq bool wstring::equals(wchar_t* left, wchar_t* right)
     {
         if(left == null && right == null) {
             return 1;
@@ -15904,12 +14943,12 @@ extern char *__xpg_basename (char *__path) ;
     }
     
     
-    uniq _Bool wchar_t::operator_equals(wchar_t left, wchar_t right)
+    uniq bool wchar_t::operator_equals(wchar_t left, wchar_t right)
     {
         return left == right;
     }
     
-    uniq _Bool wchar_t::operator_not_equals(wchar_t left, wchar_t right)
+    uniq bool wchar_t::operator_not_equals(wchar_t left, wchar_t right)
     {
         return left != right;
     }
@@ -15919,7 +14958,7 @@ extern char *__xpg_basename (char *__path) ;
         return value;
     }
     
-    uniq _Bool wchar_t::equals(wchar_t left, wchar_t right)
+    uniq bool wchar_t::equals(wchar_t left, wchar_t right)
     {
         return left == right;
     }
@@ -16074,17 +15113,17 @@ extern char *__xpg_basename (char *__path) ;
         return string::chomp(str);
     }
     
-    uniq _Bool wchar_t*::equals(wchar_t* left, wchar_t* right)
+    uniq bool wchar_t*::equals(wchar_t* left, wchar_t* right)
     {
         return wcscmp(left, right) == 0;
     }
     
-    uniq _Bool wchar_t*::operator_equals(wchar_t* left, wchar_t* right)
+    uniq bool wchar_t*::operator_equals(wchar_t* left, wchar_t* right)
     {
         return wcscmp(left, right) == 0;
     }
     
-    uniq _Bool wchar_t*::operator_not_equals(wchar_t* left, wchar_t* right)
+    uniq bool wchar_t*::operator_not_equals(wchar_t* left, wchar_t* right)
     {
         return wcscmp(left, right) != 0;
     }
@@ -16102,13 +15141,13 @@ if($UNIX == 1) {
         buffer*% buf = new buffer.initialize();
         
         while(1) {
-            char buf2[8192];
+            char buf2[1024];
             
-            int size = fread(buf2, 1, 8192, f);
+            int size = fread(buf2, 1, 1024, f);
             
             buf.append(buf2, size);
     
-            if(size < 8192) {
+            if(size < 1024) {
                 break;
             }
         }
@@ -16161,7 +15200,7 @@ if($UNIX == 1) {
         return f;
     }
     
-    uniq int char*::write(char* self, char* file_name, _Bool append=0) 
+    uniq int char*::write(char* self, char* file_name, bool append=0) 
     {
         if(self == null || file_name == null) {
             return -1;
@@ -16209,13 +15248,13 @@ if($UNIX == 1) {
         buffer*% buf = new buffer.initialize();
         
         while(1) {
-            char buf2[8192];
+            char buf2[1024];
             
-            int size = fread(buf2, 1, 8192, f);
+            int size = fread(buf2, 1, 1024, f);
             
             buf.append(buf2, size);
     
-            if(size < 8192) {
+            if(size < 1024) {
                 break;
             }
         }
@@ -16240,9 +15279,9 @@ if($UNIX == 1) {
         }
         
         while(1) {
-            char buf[8192];
+            char buf[1024];
             
-            if(fgets(buf, 8192, f) == ((void*)0)) {
+            if(fgets(buf, 1024, f) == ((void*)0)) {
                 break;
             }
             
@@ -16252,45 +15291,48 @@ if($UNIX == 1) {
         return result;
     }
     
-    uniq _Bool xiswalpha(wchar_t c)
+    uniq bool xiswalpha(wchar_t c)
     {
-        _Bool result = (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+        bool result = (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
         return result;
     }
     
-    uniq _Bool xiswblank(wchar_t c)
+    uniq bool xiswblank(wchar_t c)
     {
         return c == ' ' || c == '\t';
     }
     
-    uniq _Bool xiswdigit(wchar_t c)
+    uniq bool xiswdigit(wchar_t c)
     {
         return (c >= '0' && c <= '9');
     }
     
-    uniq _Bool xiswalnum(wchar_t c)
+    uniq bool xiswalnum(wchar_t c)
     {
         return xiswalpha(c) || xiswdigit(c);
     }
     
-    uniq _Bool xiswascii(wchar_t c)
+    uniq bool xiswascii(wchar_t c)
     {
-        _Bool result = (c >= ' ' && c <= '~');
+        bool result = (c >= ' ' && c <= '~');
         return result;
     }
 }
 #line 2 "main.nc"
-#line 1 "/usr/include/stdint.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
 
 
 
 
 
+#line 8 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
 
+#line 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
 
 
 
 
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h"
 
 
 
@@ -16302,9 +15344,7 @@ if($UNIX == 1) {
 
 
 
-#line 24 "/usr/include/stdint.h"
 
-#line 1 "/usr/include/bits/libc-header-start.h"
 
 
 
@@ -16319,6 +15359,8 @@ if($UNIX == 1) {
 
 
 
+#line 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h"
 
 
 
@@ -16331,11 +15373,8 @@ if($UNIX == 1) {
 
 
 
-#line 30 "/usr/include/bits/libc-header-start.h"
 
-#line 32 "/usr/include/bits/libc-header-start.h"
 
-#line 1 "/usr/include/features.h"
 
 
 
@@ -16348,15 +15387,15 @@ if($UNIX == 1) {
 
 
 
+#line 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h"
 
 
 
 
-#line 34 "/usr/include/bits/libc-header-start.h"
 
 
 
-#line 43 "/usr/include/bits/libc-header-start.h"
 
 
 
@@ -16376,21 +15415,19 @@ if($UNIX == 1) {
 
 
 
+#line 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h"
 
 
 
 
-#line 84 "/usr/include/bits/libc-header-start.h"
 
 
 
 
 
-#line 101 "/usr/include/bits/libc-header-start.h"
 
 
-#line 27 "/usr/include/stdint.h"
-#line 1 "/usr/include/bits/types.h"
 
 
 
@@ -16406,14 +15443,14 @@ if($UNIX == 1) {
 
 
 
+#line 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
 
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint8_t.h"
 
 
 
 
 
-#line 28 "/usr/include/stdint.h"
-#line 1 "/usr/include/bits/wchar.h"
 
 
 
@@ -16431,21 +15468,18 @@ if($UNIX == 1) {
 
 
 
-#line 29 "/usr/include/stdint.h"
-#line 1 "/usr/include/bits/wordsize.h"
 
 
-#line 10 "/usr/include/bits/wordsize.h"
 
-#line 12 "/usr/include/bits/wordsize.h"
 
-#line 14 "/usr/include/bits/wordsize.h"
-#line 30 "/usr/include/stdint.h"
 
 
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint8_t.h"
+typedef unsigned char uint8_t;
+#line 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint16_t.h"
 
 
-#line 1 "/usr/include/bits/stdint-intn.h"
 
 
 
@@ -16463,10 +15497,8 @@ if($UNIX == 1) {
 
 
 
-#line 35 "/usr/include/stdint.h"
 
 
-#line 1 "/usr/include/bits/stdint-uintn.h"
 
 
 
@@ -16474,6 +15506,10 @@ if($UNIX == 1) {
 
 
 
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint16_t.h"
+typedef unsigned short uint16_t;
+#line 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint32_t.h"
 
 
 
@@ -16485,9 +15521,7 @@ if($UNIX == 1) {
 
 
 
-#line 21 "/usr/include/bits/stdint-uintn.h"
 
-#line 1 "/usr/include/bits/types.h"
 
 
 
@@ -16504,22 +15538,19 @@ if($UNIX == 1) {
 
 
 
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint32_t.h"
+typedef unsigned int uint32_t;
+#line 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint64_t.h"
 
 
 
 
 
-#line 23 "/usr/include/bits/stdint-uintn.h"
 
-typedef __uint8_t uint8_t;
-typedef __uint16_t uint16_t;
-typedef __uint32_t uint32_t;
-typedef __uint64_t uint64_t;
-#line 38 "/usr/include/stdint.h"
 
 
 
-#line 1 "/usr/include/bits/stdint-least.h"
 
 
 
@@ -16538,18 +15569,36 @@ typedef __uint64_t uint64_t;
 
 
 
-#line 21 "/usr/include/bits/stdint-least.h"
 
-#line 1 "/usr/include/bits/types.h"
+#line 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint64_t.h"
+typedef unsigned long long uint64_t;
+#line 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
 
 
+typedef int8_t           int_least8_t;
+typedef int16_t         int_least16_t;
+typedef int32_t         int_least32_t;
+typedef int64_t         int_least64_t;
+typedef uint8_t         uint_least8_t;
+typedef uint16_t       uint_least16_t;
+typedef uint32_t       uint_least32_t;
+typedef uint64_t       uint_least64_t;
 
 
 
+typedef int8_t            int_fast8_t;
+typedef int16_t          int_fast16_t;
+typedef int32_t          int_fast32_t;
+typedef int64_t          int_fast64_t;
+typedef uint8_t          uint_fast8_t;
+typedef uint16_t        uint_fast16_t;
+typedef uint32_t        uint_fast32_t;
+typedef uint64_t        uint_fast64_t;
 
 
 
 
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h"
 
 
 
@@ -16562,139 +15611,218 @@ typedef __uint64_t uint64_t;
 
 
 
-#line 23 "/usr/include/bits/stdint-least.h"
 
 
-typedef __int_least8_t int_least8_t;
-typedef __int_least16_t int_least16_t;
-typedef __int_least32_t int_least32_t;
-typedef __int_least64_t int_least64_t;
 
 
-typedef __uint_least8_t uint_least8_t;
-typedef __uint_least16_t uint_least16_t;
-typedef __uint_least32_t uint_least32_t;
-typedef __uint_least64_t uint_least64_t;
-#line 42 "/usr/include/stdint.h"
 
 
 
 
 
-typedef signed char		int_fast8_t;
-#line 49 "/usr/include/stdint.h"
-typedef long int		int_fast16_t;
-typedef long int		int_fast32_t;
-typedef long int		int_fast64_t;
-#line 58 "/usr/include/stdint.h"
 
 
-typedef unsigned char		uint_fast8_t;
-#line 62 "/usr/include/stdint.h"
-typedef unsigned long int	uint_fast16_t;
-typedef unsigned long int	uint_fast32_t;
-typedef unsigned long int	uint_fast64_t;
-#line 71 "/usr/include/stdint.h"
 
 
 
-#line 76 "/usr/include/stdint.h"
-typedef long int		intptr_t;
-#line 79 "/usr/include/stdint.h"
-typedef unsigned long int	uintptr_t;
-#line 87 "/usr/include/stdint.h"
 
+#line 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_intptr_t.h"
 
 
-typedef __intmax_t		intmax_t;
-typedef __uintmax_t		uintmax_t;
 
 
-#line 101 "/usr/include/stdint.h"
 
 
 
 
-#line 109 "/usr/include/stdint.h"
 
-#line 114 "/usr/include/stdint.h"
 
 
-#line 120 "/usr/include/stdint.h"
 
 
 
-#line 127 "/usr/include/stdint.h"
 
-#line 132 "/usr/include/stdint.h"
 
 
-#line 138 "/usr/include/stdint.h"
 
 
 
-#line 150 "/usr/include/stdint.h"
 
-#line 160 "/usr/include/stdint.h"
 
 
-#line 171 "/usr/include/stdint.h"
 
 
 
-#line 183 "/usr/include/stdint.h"
+#line 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h"
 
 
 
-#line 187 "/usr/include/stdint.h"
 
-#line 189 "/usr/include/stdint.h"
 
 
-#line 192 "/usr/include/stdint.h"
 
 
 
 
 
-#line 209 "/usr/include/stdint.h"
 
 
-#line 213 "/usr/include/stdint.h"
 
 
-#line 224 "/usr/include/stdint.h"
 
 
-#line 231 "/usr/include/stdint.h"
 
 
-#line 235 "/usr/include/stdint.h"
 
 
-#line 245 "/usr/include/stdint.h"
 
 
-#line 255 "/usr/include/stdint.h"
 
 
-#line 264 "/usr/include/stdint.h"
 
-#line 266 "/usr/include/stdint.h"
+#line 55 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
 
-#line 275 "/usr/include/stdint.h"
 
-#line 284 "/usr/include/stdint.h"
 
-#line 293 "/usr/include/stdint.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h"
 
-#line 296 "/usr/include/stdint.h"
 
-#line 299 "/usr/include/stdint.h"
 
-#line 305 "/usr/include/stdint.h"
 
-#line 307 "/usr/include/stdint.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h"
+typedef long int intmax_t;
+#line 59 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+#line 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h"
+typedef unsigned long int uintmax_t;
+#line 60 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+
+#line 66 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 71 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 79 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+
+
+
+
+
+
+
+
+
+
+
+#line 95 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 98 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+   
+
+
+
+
+
+#line 106 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 111 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+
+#line 117 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 122 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 127 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+
+#line 133 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 138 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 143 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+
+
+#line 152 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 158 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+
+#line 163 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+
+#line 172 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 174 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 178 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 186 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+
+
+
+
+#line 198 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 201 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
+
+#line 204 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h"
 #line 3 "main.nc"
 
 #line 5 "main.nc"
@@ -16916,7 +16044,7 @@ void restore_context(sTask* task)
     );
 }
 
-_Bool timer_callback(struct repeating_timer *t) 
+bool timer_callback(struct repeating_timer *t) 
 {
     save_context(gTasks[gCurrentTask]);
      
